@@ -54,8 +54,8 @@ for p in R.rglob('*'):
  if not p.is_file() or '.git' in p.parts or '__pycache__' in p.parts:continue
  assert p.suffix.lower() not in ['.mp3','.mp4','.wav','.vtt','.srt'],p
  if p.suffix.lower() in ['.png','.jpg','.jpeg','.webp']:
-  # Only the two intentional fan-art rasters ship: the wide head collage (social preview) and the elongated figure (hero).
-  assert p.relative_to(R).as_posix() in ('docs/art/inside-kevins-mind.png','docs/art/psychedelic-body.png'),p
+  # Only the intentional fan-art rasters ship: social preview, hero figure and face/brain favicon.
+  assert p.relative_to(R).as_posix() in ('docs/art/inside-kevins-mind.png','docs/art/psychedelic-body.png','docs/favicon.png'),p
  if p.suffix in ['.md','.html','.json','.css','.js','.svg']:
   text=p.read_text()
   assert not re.search(r'/Users/|drive\.google\.com/(?:file|drive)|AIza[\w-]{25}|gh[pousr]_[A-Za-z0-9]{20}|sediment://',text),p
@@ -65,7 +65,7 @@ for p in R.rglob('*'):
     assert (p.parent/dest.split('#')[0]).exists(),(p,dest)
 # Site: canonical filename, hashed assets, static content and the 404 under the repository prefix.
 digest=lambda p:hashlib.sha256((R/'docs'/p).read_bytes()).hexdigest()[:10]
-for asset in ['style.css','app.js','favicon.svg','art/currents.svg','art/strings.svg','art/inside-kevins-mind.png','art/psychedelic-body.png']:
+for asset in ['style.css','app.js','favicon.png','art/currents.svg','art/strings.svg','art/inside-kevins-mind.png','art/psychedelic-body.png']:
  assert f'{asset}?v={digest(asset)}' in index,asset
 # Hero order: figure, then the generated ribbon band, then the dark lip, all before the agent strip; no spacer element.
 assert index.index('class="mind-figure"')<index.index('class="mind-strings"')<index.index('class="mind-lip"')<index.index('id="agents"')
@@ -89,9 +89,9 @@ disclosure=re.search(r'<details class="agent-disclosure" id="agent-disclosure"[^
 assert disclosure and ' open' not in disclosure.group(0)
 assert index.index('id="agent-disclosure"')<index.index('id="agents-title"')<index.index('class="caret"')<index.index('id="agent-prompt"')<index.index('</details>',index.index('id="agent-prompt"'))
 assert '#agent-disclosure' in (R/'docs/app.js').read_text()
-# SVG files served on their own (favicon, <img> art) must be well-formed XML or browsers will show nothing.
+# SVG illustration files must be well-formed XML or browsers will show nothing.
 import xml.dom.minidom
-for p in list((R/'docs/art').glob('*.svg'))+[R/'docs/favicon.svg']:
+for p in (R/'docs/art').glob('*.svg'):
  xml.dom.minidom.parseString(p.read_bytes())
 assert 'whether' not in (R/'site/index.html').read_text().lower()
 expected=re.sub(r'\]\((?!https?://|#)([^)]+)\)',lambda m:'](https://github.com/EthanSK/tame-impala-agentic-training/blob/main/'+m[1]+')',(R/'TAME_IMPALA_AGENTS.md').read_text())
@@ -99,4 +99,9 @@ assert (R/'docs/TAME_IMPALA_AGENTS.md').read_text()==expected
 expected_best=re.sub(r'\]\((?!https?://|#)([^)]+)\)',lambda m:'](https://github.com/EthanSK/tame-impala-agentic-training/blob/main/'+m[1]+')',guide)
 assert (R/'docs/BEST_PRODUCTION_2025_AGENTS.md').read_text()==expected_best
 assert 'href="BEST_PRODUCTION_2025_AGENTS.md" download' in index
+
+# Browser icon must be the shipped square PNG at its intended display/export size.
+icon=(R/"docs/favicon.png").read_bytes()
+assert icon[:8] == b"\x89PNG\r\n\x1a\n" and int.from_bytes(icon[16:20],"big") == 64 and int.from_bytes(icon[20:24],"big") == 64
+assert f'favicon.png?v={digest("favicon.png")}' in lost
 print(f'PASS: {len(a["claims"])} unchanged factual claims, six technique groups, {len(best["notes"])} separately attributed compilation notes, generated parity, hashed assets, local links and public-content scan')

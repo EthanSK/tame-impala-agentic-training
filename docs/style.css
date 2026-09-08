@@ -62,11 +62,9 @@ svg { display: block; }
 .masthead nav a { text-decoration: none; border-bottom: 2px solid transparent; padding: 4px 0; white-space: nowrap; }
 .masthead nav a:hover { border-color: var(--ink); }
 
-/* The opening: the head sits beside the copy, then an impossibly long liquid torso and arms whose waves widen
-   into full-width ribbons and thin into strings that run into the dark Currents strip. Nothing here is blank
-   space: the figure width is derived from the hero height (never stretched), and the ribbon band absorbs
-   whatever height remains, so a taller viewport means a longer body, not a gap. */
-.mind-hero { position: relative; isolation: isolate; --hero-h: max(570px, calc(100svh - 24px)); --fig-top: clamp(30px, 4.5vh, 60px); --fig-w: min(clamp(280px, 38vw, 600px), calc((var(--hero-h) - var(--fig-top) - 72px) / 1.5)); min-height: var(--hero-h); overflow: hidden; background: var(--paper); }
+/* A close portrait crop, not the whole tall illustration. The face scales with width; the hero has
+   a bounded height and clips the long abstract body below it. Extra mobile height reveals more torso. */
+.mind-hero { position: relative; isolation: isolate; --hero-h: clamp(560px, calc(100svh - 80px), 800px); --fig-top: clamp(24px, 3vh, 40px); --fig-w: clamp(680px, 64vw, 1080px); height: var(--hero-h); overflow: hidden; background: var(--paper); }
 .mind-layout { position: relative; z-index: 3; display: flex; justify-content: space-between; align-items: flex-start; padding: clamp(45px, 6.5vh, 84px) var(--gutter) 0; gap: 36px; }
 .mind-title { width: 31%; max-width: 390px; font: 700 clamp(26px, 3vw, 44px)/1.18 var(--brand); letter-spacing: -.02em; text-transform: uppercase; margin: 0; }
 .mind-overline { display: block; font: 400 11px/1.5 var(--plain); letter-spacing: .32em; color: var(--turquoise-deep); margin-bottom: 18px; }
@@ -76,16 +74,16 @@ svg { display: block; }
 .mind-count { font: 400 10px/1.6 var(--plain); color: var(--mute); }
 .mind-actions { display: flex; align-items: flex-start; flex-direction: column; gap: 18px; }
 .mind-actions .primary { font-size: 11px; padding: 11px 13px; }
-.mind-figure { position: absolute; top: var(--fig-top); left: 50%; width: var(--fig-w); transform: translateX(-50%); z-index: 1; pointer-events: none; mix-blend-mode: darken; }
-.mind-figure img { display: block; width: 100%; height: auto; filter: brightness(1.04); -webkit-mask-image: linear-gradient(#000 80%, transparent 98%), linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); -webkit-mask-composite: source-in; mask-image: linear-gradient(#000 80%, transparent 98%), linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-composite: intersect; }
-.mind-strings { position: absolute; left: 0; right: 0; top: calc(var(--fig-top) + var(--fig-w) * 1.5 * .84); bottom: 0; z-index: 2; pointer-events: none; }
+.mind-figure { position: absolute; top: var(--fig-top); bottom: 0; left: 50%; width: var(--fig-w); transform: translateX(-50%); overflow: hidden; z-index: 1; pointer-events: none; mix-blend-mode: darken; -webkit-mask-image: linear-gradient(#000 87%, transparent 100%); mask-image: linear-gradient(#000 87%, transparent 100%); }
+.mind-figure img { display: block; width: 100%; height: auto; filter: brightness(1.04); -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.mind-strings { position: absolute; left: 0; right: 0; bottom: 0; height: clamp(90px, 10vw, 140px); z-index: 2; pointer-events: none; }
 .mind-strings img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%; }
 .mind-landscape { position: absolute; bottom: clamp(70px, 9vw, 124px); left: calc(var(--gutter) + 15px); width: clamp(100px, 12vw, 178px); aspect-ratio: 1; transform: rotate(-8deg); box-shadow: 5px 8px 0 rgba(17,16,20,.13); border: 8px solid #fff; z-index: 3; }
 .mind-landscape svg { width: 100%; height: 100%; }
 .mind-lip { position: absolute; left: 0; right: 0; bottom: -1px; height: clamp(56px, 7vw, 104px); z-index: 2; pointer-events: none; }
 .mind-lip svg { width: 100%; height: 100%; }
 @media (max-width: 1000px) {
-  .mind-hero { display: flex; flex-direction: column; }
+  .mind-hero { --hero-h: clamp(720px, calc(100svh - 24px), 980px); display: flex; flex-direction: column; }
   .mind-layout { padding-top: 28px; display: block; text-align: center; }
   .mind-title { width: 100%; max-width: 760px; margin: auto; font-size: clamp(20px, 4vw, 34px); line-height: 1.25; }
   .mind-overline { margin-bottom: 10px; font-size: 10px; }
@@ -94,8 +92,9 @@ svg { display: block; }
   .mind-summary { font-size: 13px; margin-bottom: 9px; }
   .mind-count { margin-bottom: 13px; }
   .mind-actions { flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; gap: 14px 22px; }
-  .mind-figure { position: relative; top: auto; left: auto; transform: none; width: min(92vw, 520px); margin: 8px auto 0; }
-  .mind-strings { position: relative; top: auto; bottom: auto; flex: 1 0 auto; min-height: 120px; margin-top: calc(min(92vw, 520px) * -.24); }
+  .mind-figure { position: relative; top: auto; bottom: auto; left: auto; transform: none; flex: 1; min-height: 300px; width: 100%; margin: 8px 0 0; }
+  .mind-figure img { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: max(clamp(440px, 120vw, 760px), calc((var(--hero-h) - 240px) / 1.2)); max-width: none; }
+  .mind-strings { height: 90px; }
   .mind-landscape { display: none; }
 }
 @media (max-width: 400px) { .mind-actions { gap: 12px; } .mind-actions .primary { font-size: 10px; padding: 10px 12px; } }
