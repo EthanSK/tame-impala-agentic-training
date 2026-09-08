@@ -167,6 +167,69 @@ def currents():
     return ''.join(o)
 
 
+def _smooth(pts):
+    """Catmull-Rom curve through the points, written as cubic Béziers."""
+    d = f'M{n1(pts[0][0])} {n1(pts[0][1])}'
+    for i in range(len(pts) - 1):
+        p0, p1 = pts[max(0, i - 1)], pts[i]
+        p2, p3 = pts[i + 1], pts[min(len(pts) - 1, i + 2)]
+        c1 = (p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6)
+        c2 = (p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6)
+        d += f'C{n1(c1[0])} {n1(c1[1])} {n1(c2[0])} {n1(c2[1])} {n1(p2[0])} {n1(p2[1])}'
+    return d
+
+
+# Ribbon colours sampled by eye from the figure's liquid body: pink, cream highlight, coral, plum, turquoise, orchid.
+RIBBONS = ['#f07ba6', '#fbe4d0', '#ff9b7c', '#5b3a93', '#3eb5b7', '#b481dc']
+
+
+def strings():
+    """Below the figure: its liquid waves widen into full-width ribbons, then thin into violet strings.
+
+    Rows run top to bottom. The top rows are thick and keep the figure's palette, swelling most under the
+    body; the bottom rows shrink to hairlines and blend toward the Currents violet so they read as strings
+    entering the dark strip. Cropped from the top when the band is short, so a short hero shows only strings.
+    """
+    W, H = 1440, 420
+    rows = 17
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" preserveAspectRatio="xMidYMax slice">']
+    a = o.append
+    for i in range(rows):
+        t = i / (rows - 1)
+        y0 = 36 + 344 * t
+        amp = 6 + 34 * (1 - t) ** 1.1
+        width = 1.6 + 17 * (1 - t) ** 1.3
+        pts = []
+        x = -24.0
+        while x <= W + 24:
+            swell = .55 + .45 * math.exp(-((x - W / 2) / 420) ** 2)
+            y = y0 + amp * swell * (math.sin(x / 170) + .35 * math.sin(x / 70)) + 16 * (1 - t) * math.sin(x / 390)
+            pts.append((x, y))
+            x += 24
+        base = RIBBONS[i % len(RIBBONS)]
+        col = base if t < .6 else mix(base, '#a88ae0', (t - .6) / .4)
+        a(f'<path d="{_smooth(pts)}" fill="none" stroke="{col}" stroke-width="{n1(width)}" stroke-linecap="round" opacity="{n1(.97 - .12 * t)}"/>')
+    a('</svg>')
+    return ''.join(o)
+
+
+def lip():
+    """The dark Currents strip rising into the hero as a wave, with violet strings crossing its edge."""
+    W, H = 1440, 120
+
+    def edge(x):
+        return 68 + 20 * math.sin(x / 230 + .6) + 9 * math.sin(x / 88 + 1.4)
+
+    xs = list(range(-30, W + 31, 30))
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" preserveAspectRatio="none" aria-hidden="true" focusable="false">']
+    a = o.append
+    a(f'<path d="{_smooth([(x, edge(x)) for x in xs])}V{H + 10}H-30Z" fill="#0c0813"/>')
+    for k, op in [(-30, .45), (-18, .6), (-8, .8), (12, .9), (26, .9), (40, .9), (54, .85)]:
+        a(f'<path d="{_smooth([(x, edge(x) + k) for x in xs])}" fill="none" stroke="#a88ae0" stroke-width="1.4" opacity="{op}"/>')
+    a('</svg>')
+    return ''.join(o)
+
+
 # Sources section and 404: an arched window opening onto turquoise sky, sand rising through the lower panes.
 ARCH = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" aria-hidden="true" focusable="false">'
         '<defs><linearGradient id="sr-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2fb3c1"/><stop offset="1" stop-color="#d7f0f1"/></linearGradient>'

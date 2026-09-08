@@ -54,7 +54,8 @@ for p in R.rglob('*'):
  if not p.is_file() or '.git' in p.parts or '__pycache__' in p.parts:continue
  assert p.suffix.lower() not in ['.mp3','.mp4','.wav','.vtt','.srt'],p
  if p.suffix.lower() in ['.png','.jpg','.jpeg','.webp']:
-  assert p.relative_to(R).as_posix() == 'docs/art/inside-kevins-mind.png',p
+  # Only the two intentional fan-art rasters ship: the wide head collage (social preview) and the elongated figure (hero).
+  assert p.relative_to(R).as_posix() in ('docs/art/inside-kevins-mind.png','docs/art/psychedelic-body.png'),p
  if p.suffix in ['.md','.html','.json','.css','.js','.svg']:
   text=p.read_text()
   assert not re.search(r'/Users/|drive\.google\.com/(?:file|drive)|AIza[\w-]{25}|gh[pousr]_[A-Za-z0-9]{20}|sediment://',text),p
@@ -64,8 +65,11 @@ for p in R.rglob('*'):
     assert (p.parent/dest.split('#')[0]).exists(),(p,dest)
 # Site: canonical filename, hashed assets, static content and the 404 under the repository prefix.
 digest=lambda p:hashlib.sha256((R/'docs'/p).read_bytes()).hexdigest()[:10]
-for asset in ['style.css','app.js','favicon.svg','art/currents.svg','art/inside-kevins-mind.png']:
+for asset in ['style.css','app.js','favicon.svg','art/currents.svg','art/strings.svg','art/inside-kevins-mind.png','art/psychedelic-body.png']:
  assert f'{asset}?v={digest(asset)}' in index,asset
+# Hero order: figure, then the generated ribbon band, then the dark lip, all before the agent strip; no spacer element.
+assert index.index('class="mind-figure"')<index.index('class="mind-strings"')<index.index('class="mind-lip"')<index.index('id="agents"')
+assert 'mind-portrait' not in index and 'mind-spacer' not in index
 lost=(R/'docs/404.html').read_text()
 assert f'/tame-impala-agentic-training/style.css?v={digest("style.css")}' in lost
 assert 'href="TAME_IMPALA_AGENTS.md" download' in index and 'href="reference.json" download' in index

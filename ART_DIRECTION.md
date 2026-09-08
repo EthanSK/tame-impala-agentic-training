@@ -9,7 +9,7 @@ These are design decisions about the website. They say nothing about how the rec
 | Component | Album reference | What is borrowed | How it is built |
 |---|---|---|---|
 | Masthead and opening title | Ethan's AIMVS type pairing | Extended geometric capitals | Michroma wordmark, Microgramma D Extended Bold title; both served from `docs/fonts` |
-| Hero | Inside Tame Impala’s mind; *Innerspeaker* (2010) | Recent-photo likeness, playful pink brain cutaway and a small tilted landscape fragment | Generated portrait anchored across the bottom; `scripts/art.py` → `innerspeaker()` supplies the landscape fragment |
+| Hero | Inside Tame Impala’s mind; *Currents* (2015); *Innerspeaker* (2010) | Recent-photo likeness with the playful pink brain cutaway, an impossibly long liquid torso and arms, waves that become strings, and a small tilted landscape fragment | `docs/art/psychedelic-body.png` sits beside the copy with its width derived from the hero height; `scripts/art.py` → `strings()` widens its waves into a full-width ribbon band that thins into violet strings; `lip()` raises the dark Currents strip into the hero as a wave; `innerspeaker()` supplies the landscape fragment |
 | Note chips | All five | Each album's dominant colours | Small 12 px CSS swatches beside the cited era on each note |
 | Search and filters | *Lonerism* (2012) | Sun-bleached garden seen through iron bars, light leak in the top corner, pale circular label | CSS gradients for the photo strip and bars; the peach circle holds the live result count; pressed topic buttons use the park-sign green |
 | Production techniques | *Deadbeat* (2025) | White insert, heavy black print, monochrome grain | White paper with an SVG-noise grain overlay; the "Production techniques" title wraps to remain readable |
@@ -60,10 +60,11 @@ Album artwork, wordmarks and trademarks remain the property of their rights hold
 - Use album eras as visual inspiration for the UI. The opening moves from the portrait straight to the production notes; do not add a front-and-centre notes-by-era overview.
 - Keep the long research text on white or sand with dark ink. Spend visual risk in the hero and the section backgrounds, not in the note list.
 - Generated SVG illustrations must build deterministically from `python3 scripts/build.py`. Change the seed or parameters in `scripts/art.py`, never hand-edit generated SVG in `docs/`.
-- Asset links carry a content hash (`style.css?v=…`, `app.js?v=…`, `art/currents.svg?v=…`) so readers see new styles after a deploy. `scripts/check.py` verifies the hashes match the files.
+- Asset links carry a content hash (`style.css?v=…`, `app.js?v=…`, `art/currents.svg?v=…`, `art/strings.svg?v=…`, both rasters) so readers see new styles after a deploy. `scripts/check.py` verifies the hashes match the files and that only the two intentional rasters ship.
+- Never fill hero height with empty space. The head stays beside the copy; extra height goes below the neck, into the long body and the ribbon band, and the figure is scaled uniformly (`--fig-w` is derived from the hero height) so the face is never stretched. A taller viewport means a longer body and more strings, not a gap or a spacer.
 - Motion includes disclosure expansion and collapse, button hover and the agent caret turning; these stop under `prefers-reduced-motion`. Never autoplay audio or video.
 - Keep the type pairing exactly as pinned above. New text takes `var(--plain)` or `var(--brand)`; `scripts/check.py` checks the pinned font variables, vendored assets and removal of the previous font roles.
-- The "Ask your agents" section starts collapsed. Its closed row is the heading plus a caret only; put no paragraph in the resting state. Opening it shows the master-file instruction and companion, with the optional prompt and copy button in a nested disclosure. Place this section just below the initial viewport, with the portrait anchored at the bottom of the taller hero. Keep this until Ethan changes direction.
+- The "Ask your agents" section starts collapsed. Its closed row is the heading plus a caret only; put no paragraph in the resting state. Opening it shows the master-file instruction and companion, with the optional prompt and copy button in a nested disclosure. Place this section just below the initial viewport, with the figure starting near the copy and its liquid body filling the hero. Keep this until Ethan changes direction.
 
 
 ## Portrait
@@ -72,4 +73,15 @@ The opening image is an AI-generated fan-art transformation of a recent press ph
 
 The built-in image generation tool created `docs/art/inside-kevins-mind.png`. Its prompt asked for Kevin’s recognizable 2025 appearance, his head peeking from the bottom centre of a wide warm-white canvas, and a clean, humorous pink brain cutaway with the hair lifting like a lid. There is no gore. HTML supplies the title and controls, so the image contains no baked-in text. On desktop the face occupies roughly a third of the viewport width; on phones a centred crop keeps the brain and face visible.
 
-The main portrait is a saved raster asset, not regenerated during the deterministic site build. Its content hash is inserted into the page and verified by the checks.
+That wide head collage now serves as the social preview image (`og:image`). Both rasters are saved assets, not regenerated during the deterministic site build; their content hashes are inserted into the page and verified by the checks.
+
+### The elongated figure
+
+`docs/art/psychedelic-body.png` (1024 × 1536) is the hero image. It is fan art, not a photograph of anyone's body: the same built-in image generation tool extended the head collage downward into an invented, impossibly long liquid torso and arms that dissolve into parallel pink, coral, purple and turquoise waves on a cream ground. The brain cutaway and likeness are preserved from the first collage; everything below the neck is abstract. The rights position is the same as the head collage: derived from the Julian Klincewicz press portrait, not covered by the MIT license.
+
+How it is composed on the page:
+
+- The figure is centred between the title and the copy, its top aligned near the copy so the head reads first. Its width is `min(38vw, (hero height − top offset − 72px) / 1.5)`, so on any viewport it ends at least 72px above the hero's bottom without ever being stretched. `mix-blend-mode: darken` with a 4% brightness lift makes the cream ground vanish into the paper, and bottom and side masks soften the raster boundary; blending happens on the figure container so its stacking context does not leave a rectangular cream panel.
+- `art/strings.svg` (`scripts/art.py` → `strings()`) starts under that fade: seventeen ribbons in the figure's palette, thickest under the body, following parallel curves, thinning to hairlines and blending toward the Currents violet as they descend. It is cropped from the top (`xMidYMax slice`), so a short hero shows only the thin strings and a tall one shows the full band.
+- `lip()` draws the dark Currents strip rising into the hero as a wave, with violet lines crossing its edge, so the strings appear to run into the streamlines behind "Ask your agents".
+- On phones the figure is in normal flow under the copy at 92vw, the band overlaps its lower 16% and grows to fill the remaining hero height, and the landscape fragment is hidden.
