@@ -8,14 +8,14 @@ These are design decisions about the website. They say nothing about how the rec
 
 | Component | Album reference | What is borrowed | How it is built |
 |---|---|---|---|
-| Masthead and opening title | Album wordmarks | Extended geometric capitals | Locally served Michroma with system fallbacks |
+| Masthead and opening title | Ethan's AIMVS type pairing | Extended geometric capitals | Michroma wordmark, Microgramma D Extended Bold title; both served from `docs/fonts` |
 | Hero | Inside Tame Impala’s mind; *Innerspeaker* (2010) | Recent-photo likeness, playful pink brain cutaway and a small tilted landscape fragment | Generated portrait anchored across the bottom; `scripts/art.py` → `innerspeaker()` supplies the landscape fragment |
 | Note chips | All five | Each album's dominant colours | Small 12 px CSS swatches beside the cited era on each note |
 | Search and filters | *Lonerism* (2012) | Sun-bleached garden seen through iron bars, light leak in the top corner, pale circular label | CSS gradients for the photo strip and bars; the peach circle holds the live result count; pressed topic buttons use the park-sign green |
-| Production notes | *Deadbeat* (2025) | White insert, heavy black print running off the sheet, monochrome grain | White paper with an SVG-noise grain overlay; the "Production notes" title is intentionally clipped at the page edge |
-| Agent section | *Currents* (2015) | Pale violet streamlines on near-black, a chrome sphere bending them, a single red-to-orange streak | `scripts/art.py` → `currents()`: lines are warped around the sphere by a radial field and a trailing wobble; written to `docs/art/currents.svg` |
+| Production techniques | *Deadbeat* (2025) | White insert, heavy black print, monochrome grain | White paper with an SVG-noise grain overlay; the "Production techniques" title wraps to remain readable |
+| Agent section | *Currents* (2015) | Pale violet streamlines on near-black, a chrome sphere bending them, a single red-to-orange streak | `scripts/art.py` → `currents()`: lines are warped around the sphere by a radial field and a trailing wobble; written to `docs/art/currents.svg`. The setup itself is a native `<details>` that starts closed: one heading row with a rotating caret, the download, prompt, copy button, examples and companion inside |
 | Sources | *The Slow Rush* (2020) | Vermilion room, arched window opening to turquoise, sand filling the floor, nested doorway | CSS radial background; hand-written arch SVG (`ARCH`) and dune lip (`DUNE`); the source list sits on the sand |
-| Contribute | *Deadbeat* (2025) | Giant black headline cut by the edge, orange vinyl label | Archivo at weight 900 with negative tracking, clipped; the orange sticker is a CSS circle with a centre hole |
+| Contribute | *Deadbeat* (2025) | Giant black headline cut by the edge, orange vinyl label | Microgramma D Extended Bold, clipped at the page edge on desktop and wrapped on phones; the orange sticker is a CSS circle with a centre hole |
 | Footer | The record | Vinyl grooves | `repeating-radial-gradient` centred off-canvas |
 | 404 page | *The Slow Rush* (2020) | The arch, on vermilion | Same arch SVG under the repository prefix |
 
@@ -36,11 +36,12 @@ Notes whose era text names an album get that album's swatch; notes from intervie
 
 ## Type
 
-- **Display: Michroma** (SIL Open Font License, vendored at `docs/fonts/Michroma-Regular.ttf` with `docs/fonts/OFL-Michroma.txt`), used for the masthead, opening title and section eyebrows. It is an extended geometric face and a close web adaptation of the feel of the album wordmarks, not a verified match of the original typeface. Local fallbacks: Eurostile, Microgramma, Bank Gothic, then Helvetica Neue / Arial with the same tracking.
-- **Body and headlines: Archivo** (SIL Open Font License, vendored at `docs/fonts/Archivo-Variable.ttf` with `docs/fonts/OFL-Archivo.txt`), variable weight. The 900 weight carries the Deadbeat-style headlines. Local fallbacks: Helvetica Neue, Helvetica, Arial.
-- **Data: the system monospace stack** for claim IDs, timestamps, era lines and gear lists.
+Ethan pinned the website to the same two faces he uses in AIMVS. Every run of text on the site, including claim IDs, timestamps, gear lines, form controls, the agent prompt, source sections, footer and the 404 page, uses one of them. There is no third family, no italic and no monospace role; `font-synthesis: none` prevents browsers from faking a bold or italic.
 
-Both faces are served locally with `font-display: swap`; system fallbacks keep the notes readable while they load. The files come from the [Google Fonts Michroma](https://github.com/google/fonts/tree/main/ofl/michroma) and [Archivo](https://github.com/google/fonts/tree/main/ofl/archivo) repositories.
+- **Plain text: Michroma** (`--plain`), served from `docs/fonts/Michroma-Regular.ttf` under the SIL Open Font License (`docs/fonts/OFL-Michroma.txt`). Body copy runs at 14px/1.7; small labels run 9–11px because the face is wide.
+- **Headings and emphasis: Microgramma D Extended Bold** (`--brand`, CSS family `MicrogrammaBold`), served from `docs/fonts/Microgramma D Extended Bold.otf`. It carries every heading, `strong`, `summary`, button, navigation link and the Deadbeat-style headlines. The file is the same regenerated no-hint OTF AIMVS uses for Firefox's font sanitizer. It is a third-party typeface supplied from Ethan's own assets: its license terms are not recorded in this repository and it is excluded from the MIT license. Do not describe it as OFL.
+
+Both faces load with `font-display: swap` so the notes are readable in the fallback stack (Eurostile, Bank Gothic, then Helvetica Neue / Arial) while they arrive. The pairing is a project preference carried over from AIMVS; it is not a verified identification of any typeface used on Tame Impala artwork.
 
 ## References and credits
 
@@ -52,7 +53,7 @@ The five reference images were the official store and artist-portfolio product i
 - *The Slow Rush* — photography by [Neil Krug](https://oriole-parrotfish-z679.squarespace.com/tameimpala); product page: <https://storeus.tameimpala.com/products/the-slow-rush-vinyl>
 - *Deadbeat* — product page: <https://storeus.tameimpala.com/products/deadbeat-vinyl>
 
-Album artwork, wordmarks and trademarks remain the property of their rights holders. The site's SVG illustrations are original abstractions generated by `scripts/art.py` and the CSS in `docs/style.css`; they are covered by the repository's MIT license, the referenced artwork is not.
+Album artwork, wordmarks and trademarks remain the property of their rights holders. The site's SVG illustrations are original abstractions generated by `scripts/art.py` and the CSS in `docs/style.css`; they are covered by the repository's MIT license. The referenced artwork, the Michroma font (OFL) and the Microgramma D Extended Bold font (third-party rights) are not.
 
 ## Working rules for future passes
 
@@ -60,7 +61,9 @@ Album artwork, wordmarks and trademarks remain the property of their rights hold
 - Keep the long research text on white or sand with dark ink. Spend visual risk in the hero and the section backgrounds, not in the note list.
 - Generated SVG illustrations must build deterministically from `python3 scripts/build.py`. Change the seed or parameters in `scripts/art.py`, never hand-edit generated SVG in `docs/`.
 - Asset links carry a content hash (`style.css?v=…`, `app.js?v=…`, `art/currents.svg?v=…`) so readers see new styles after a deploy. `scripts/check.py` verifies the hashes match the files.
-- Motion is limited to button hover; it stops under `prefers-reduced-motion`. Never autoplay audio or video.
+- Motion is limited to button hover and the agent caret turning; both stop under `prefers-reduced-motion`. Never autoplay audio or video.
+- Keep the type pairing exactly as pinned above. New text takes `var(--plain)` or `var(--brand)`; `scripts/check.py` checks the pinned font variables, vendored assets and removal of the previous font roles.
+- The "Ask your agent about this" section starts collapsed. Its closed row is the heading plus a caret only; put no paragraph in the resting state. Opening it must reveal the download, prompt, copy button, examples and companion. Keep this until Ethan changes direction.
 
 
 ## Portrait

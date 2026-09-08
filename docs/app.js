@@ -37,6 +37,7 @@ function clearFilters() {
   filter();
 }
 document.querySelector('#clear').addEventListener('click', clearFilters);
+const disclosure = document.querySelector('#agent-disclosure');
 document.querySelector('#copy').addEventListener('click', async () => {
   const field = document.querySelector('#agent-prompt');
   const status = document.querySelector('#copy-status');
@@ -44,13 +45,17 @@ document.querySelector('#copy').addEventListener('click', async () => {
     await navigator.clipboard.writeText(field.value);
     status.textContent = "Agent prompt copied to clipboard";
   } catch {
+    disclosure.open = true;
     document.querySelector('#agent-instructions').open = true;
     field.focus(); field.select();
     status.textContent = "Failed to copy. Select the prompt text and copy it manually.";
   }
 });
 function revealHash() {
-  const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  const id = decodeURIComponent(location.hash.slice(1));
+  // The agent setup starts collapsed; a link straight to it (nav, README) opens it.
+  if (id === 'agents' || id === 'agent-disclosure' || id === 'agent-instructions' || id === 'agent-prompt') disclosure.open = true;
+  const target = document.getElementById(id);
   if (target?.classList.contains('note') && target.hidden) { clearFilters(); target.scrollIntoView(); }
 }
 window.addEventListener('hashchange', revealHash);

@@ -50,7 +50,7 @@ All available automatic captions were text-reviewed. Of the 68 notes, 45 have ma
 | [ART_DIRECTION.md](ART_DIRECTION.md) | How the website borrows from each album cover, with credits |
 | [site/](site/) | HTML templates for the website |
 | [scripts/](scripts/) | `build.py` generates everything below; `art.py` draws the illustrations; `check.py` verifies |
-| [docs/](docs/) | Generated GitHub Pages site plus its authored `style.css`, `app.js` and the vendored Michroma and Archivo fonts (OFL) |
+| [docs/](docs/) | Generated GitHub Pages site plus its authored `style.css`, `app.js` and the two shipped fonts: Michroma (OFL) and Microgramma D Extended Bold (third-party rights) |
 
 ## Coverage, honestly
 
@@ -82,8 +82,8 @@ python3 scripts/check.py
 python3 -m http.server 8080 --directory docs
 ```
 
-Open `http://localhost:8080`. The full note collection is present in the initial HTML; JavaScript adds filtering and copy controls. Both fonts ship with the site under the SIL Open Font License and use system fallbacks while loading. GitHub Pages serves `docs/` on `main`. Regenerate after changing source data, templates, styles or scripts, and commit generated files alongside the inputs; the build stamps content hashes into asset links so readers receive the new files.
+Open `http://localhost:8080`. The full note collection is present in the initial HTML; JavaScript adds filtering and copy controls. The site uses two shipped fonts, Michroma for plain text and Microgramma D Extended Bold for headings, with system fallbacks while they load. The agent setup section starts collapsed; opening it shows the download, prompt and copy button. GitHub Pages serves `docs/` on `main`. Regenerate after changing source data, templates, styles or scripts, and commit generated files alongside the inputs; the build stamps content hashes into asset links so readers receive the new files.
 
 ## Rights and attribution
 
-Original project code, original notes and generated SVG illustrations are MIT-licensed; see [LICENSE](LICENSE). This license does not grant rights to third-party interviews, course material, music, album artwork, transcripts, trademarks or linked sites. The portrait collage derives from a third-party photograph, whose rights remain with its owner. Vendored fonts retain their SIL Open Font License. Each source retains its attribution and link; artwork credits are in [ART_DIRECTION.md](ART_DIRECTION.md). Research, design and editorial drafting were assisted by AI; corrections and direct verification are welcome.
+Original project code, original notes and generated SVG illustrations are MIT-licensed; see [LICENSE](LICENSE). This license does not grant rights to third-party interviews, course material, music, album artwork, transcripts, trademarks or linked sites. The portrait collage derives from a third-party photograph, whose rights remain with its owner. Michroma ships under its SIL Open Font License; Microgramma D Extended Bold is a third-party typeface whose rights remain with its owner, and neither font is covered by the MIT license. Each source retains its attribution and link; artwork credits are in [ART_DIRECTION.md](ART_DIRECTION.md). Research, design and editorial drafting were assisted by AI; corrections and direct verification are welcome.

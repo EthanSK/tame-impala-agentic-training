@@ -75,8 +75,16 @@ for word in ['BIBLE','Bible','bible','TAME_IMPALA.md']:
   assert word not in (R/p).read_text(),(p,word)
 css=(R/'docs/style.css').read_text()
 assert 'prefers-reduced-motion' in css and ':focus-visible' in css
-assert (R/'docs/fonts/Archivo-Variable.ttf').exists() and (R/'docs/fonts/OFL-Archivo.txt').exists()
+# Type is pinned to the two AIMVS faces: Michroma for plain text, Microgramma D Extended Bold for headings and emphasis. No other family or a monospace role.
 assert (R/'docs/fonts/Michroma-Regular.ttf').exists() and (R/'docs/fonts/OFL-Michroma.txt').exists() and 'fonts/Michroma-Regular.ttf' in css
+assert (R/'docs/fonts/Microgramma D Extended Bold.otf').exists() and 'fonts/Microgramma%20D%20Extended%20Bold.otf' in css and 'font-synthesis: none' in css
+assert 'Archivo' not in css and 'monospace' not in css and not (R/'docs/fonts/Archivo-Variable.ttf').exists()
+assert '--plain: "Michroma"' in css and '--brand: "MicrogrammaBold"' in css and 'var(--body)' not in css and 'var(--display)' not in css and 'var(--mono)' not in css
+# The agent setup is a native disclosure that starts closed, with its caret and full setup inside.
+disclosure=re.search(r'<details class="agent-disclosure" id="agent-disclosure"[^>]*>',index)
+assert disclosure and ' open' not in disclosure.group(0)
+assert index.index('id="agent-disclosure"')<index.index('id="agents-title"')<index.index('class="caret"')<index.index('id="agent-prompt"')<index.index('</details>',index.index('id="agent-prompt"'))
+assert '#agent-disclosure' in (R/'docs/app.js').read_text()
 # SVG files served on their own (favicon, <img> art) must be well-formed XML or browsers will show nothing.
 import xml.dom.minidom
 for p in list((R/'docs/art').glob('*.svg'))+[R/'docs/favicon.svg']:
