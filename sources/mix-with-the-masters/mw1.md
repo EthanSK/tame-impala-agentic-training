@@ -21,9 +21,9 @@ Gear: No specific model established
 
 ### MW1-02: A song can outgrow its initial destination
 **Workflow · Currents / The Less I Know the Better · first-hand**
-Location: 01:20–03:16
+Location: 01:05–03:16
 
-He initially considered the idea unsuitable for Tame Impala and considered giving it to Mark Ronson, before deciding to keep it.
+He initially considered the idea unsuitable for Tame Impala and offered it to Mark Ronson, who encouraged him to keep it.
 
 Gear: No specific model established
 
@@ -37,7 +37,7 @@ Gear: Fender Stratocaster, Roland GR-55
 
 ### MW1-04: The famous bass begins as guitar
 **Bass · Currents / The Less I Know the Better · first-hand**
-Location: 04:30–05:36
+Location: 03:41–05:36
 
 The riff uses a modeled P-bass sound played on guitar and shifted into the bass register, then processed. This is not proof that the entire song contains no bass guitar.
 

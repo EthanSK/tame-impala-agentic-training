@@ -414,7 +414,7 @@ That chain included compression, vibrato and reverb; he liked reverb on bass.
 The riff uses a modeled P-bass sound played on guitar and shifted into the bass register, then processed. This is not proof that the entire song contains no bass guitar.
 
 - **Context:** Currents / The Less I Know the Better
-- **Evidence:** first-hand · [Mix With The Masters, part 1: Demo and guitar synth](https://mixwiththemasters.com/videos/kevin-parker-tame-impala-the-less-i-know-the-better) · 04:30–05:36
+- **Evidence:** first-hand · [Mix With The Masters, part 1: Demo and guitar synth](https://mixwiththemasters.com/videos/kevin-parker-tame-impala-the-less-i-know-the-better) · 03:41–05:36
 - **Gear:** Roland GR-55
 [Source record](https://github.com/EthanSK/tame-impala-production/blob/main/sources/mix-with-the-masters/mw1.md)
 
@@ -803,10 +803,10 @@ He tried two passive Folcrom summing units feeding Neve preamps, but disliked at
 [Source record](https://github.com/EthanSK/tame-impala-production/blob/main/sources/mix-with-the-masters/mw5.md)
 
 ### MW5-02 · Distinguish summing from stereo processing
-After abandoning multichannel summing, he retained a stereo hardware route involving SPL Vitalizer and paired Neve 1073 stages, returning to Ableton for limiting.
+After abandoning multichannel summing, he recalls a stereo route through SPL Vitalizer, then paired Neve 1073 stages, with possible SSL compression before returning to Ableton for limiting. The compressor identification remains unresolved.
 
 - **Context:** Currents / The Less I Know the Better
-- **Evidence:** first-hand · [Mix With The Masters, part 5: Mix bus and monitoring](https://mixwiththemasters.com/videos/kevin-parker-tame-impala-the-less-i-know-the-better) · 02:05–03:22
+- **Evidence:** qualified-recollection · [Mix With The Masters, part 5: Mix bus and monitoring](https://mixwiththemasters.com/videos/kevin-parker-tame-impala-the-less-i-know-the-better) · 02:10–03:22
 - **Gear:** SPL Vitalizer, Neve 1073, Ableton limiter (exact device unspecified)
 [Source record](https://github.com/EthanSK/tame-impala-production/blob/main/sources/mix-with-the-masters/mw5.md)
 
@@ -909,10 +909,10 @@ He captured demos wherever ideas occurred, with a home studio providing the main
 [Source record](https://github.com/EthanSK/tame-impala-production/blob/main/sources/external/s06.md)
 
 ### MW1-02 · A song can outgrow its initial destination
-He initially considered the idea unsuitable for Tame Impala and considered giving it to Mark Ronson, before deciding to keep it.
+He initially considered the idea unsuitable for Tame Impala and offered it to Mark Ronson, who encouraged him to keep it.
 
 - **Context:** Currents / The Less I Know the Better
-- **Evidence:** first-hand · [Mix With The Masters, part 1: Demo and guitar synth](https://mixwiththemasters.com/videos/kevin-parker-tame-impala-the-less-i-know-the-better) · 01:20–03:16
+- **Evidence:** first-hand · [Mix With The Masters, part 1: Demo and guitar synth](https://mixwiththemasters.com/videos/kevin-parker-tame-impala-the-less-i-know-the-better) · 01:05–03:16
 - **Gear:** No specific model established
 [Source record](https://github.com/EthanSK/tame-impala-production/blob/main/sources/mix-with-the-masters/mw1.md)
 
@@ -949,10 +949,10 @@ He admires a producer’s ability to hear what a song needs to reach completion,
 [Source record](https://github.com/EthanSK/tame-impala-production/blob/main/sources/tape-notes/tn188.md)
 
 ### TN188-21 · Loser used a different recording method
-The song largely retained its studio multitracking to tape, beginning with a complete drum performance and layering instruments afterward, with very little looping.
+The song largely retained its studio multitracking to tape, beginning with a complete drum performance and layering instruments afterward, with very little looping. He later corrects himself about Innerspeaker, recalling that it too was recorded largely from beginning to end without looping.
 
-- **Context:** Deadbeat / My Old Ways, Loser and related songs
-- **Evidence:** first-hand · [Tape Notes 188: Tame Impala — My Old Ways and Loser](https://podcasts.apple.com/us/podcast/tn-188-tame-impala/id1249834293?i=1000787528506) · 56:21–59:58
+- **Context:** Deadbeat / Loser; Innerspeaker recollection
+- **Evidence:** qualified-recollection · [Tape Notes 188: Tame Impala — My Old Ways and Loser](https://podcasts.apple.com/us/podcast/tn-188-tame-impala/id1249834293?i=1000787528506) · 56:21–59:58; 63:13–63:34
 - **Gear:** tape machine (model unspecified)
 [Source record](https://github.com/EthanSK/tame-impala-production/blob/main/sources/tape-notes/tn188.md)
 

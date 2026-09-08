@@ -16,7 +16,7 @@ Every item below has a cited context. Similar names and uncertain identification
 
 ## Ableton limiter (exact device unspecified)
 
-- **MW5-02 / Currents / The Less I Know the Better:** Distinguish summing from stereo processing. [MW5](sources/mix-with-the-masters/mw5.md) · 02:05–03:22 · first-hand
+- **MW5-02 / Currents / The Less I Know the Better:** Distinguish summing from stereo processing. [MW5](sources/mix-with-the-masters/mw5.md) · 02:10–03:22 · qualified-recollection
 
 ## Ableton Multiband Dynamics
 
@@ -102,7 +102,7 @@ Every item below has a cited context. Similar names and uncertain identification
 
 - **AM02 / Pre-release Currents / 2015:** Preamp crunch. [S07](sources/external/s07.md) · https://www.reddit.com/r/IAmA/comments/34clpm/comment/cqtk6uf/ · first-hand
 - **MW5-01 / Currents / The Less I Know the Better:** The summing experiment was abandoned. [MW5](sources/mix-with-the-masters/mw5.md) · 00:22–02:05 · first-hand
-- **MW5-02 / Currents / The Less I Know the Better:** Distinguish summing from stereo processing. [MW5](sources/mix-with-the-masters/mw5.md) · 02:05–03:22 · first-hand
+- **MW5-02 / Currents / The Less I Know the Better:** Distinguish summing from stereo processing. [MW5](sources/mix-with-the-masters/mw5.md) · 02:10–03:22 · qualified-recollection
 
 ## Neve 1073 DPA
 
@@ -131,7 +131,7 @@ Every item below has a cited context. Similar names and uncertain identification
 - **GW02 / Currents / The Less I Know the Better (recalled 2022):** Modeled bass. [S03](sources/external/s03.md) · The Less I Know the Better recording question · qualified-recollection
 - **GW03 / Currents / The Less I Know the Better (recalled 2022):** First-take riff. [S03](sources/external/s03.md) · The Less I Know the Better recording question · first-hand
 - **MW1-03 / Currents / The Less I Know the Better:** Guitar controller opens unfamiliar sounds. [MW1](sources/mix-with-the-masters/mw1.md) · 03:23–05:36 · qualified-recollection
-- **MW1-04 / Currents / The Less I Know the Better:** The famous bass begins as guitar. [MW1](sources/mix-with-the-masters/mw1.md) · 04:30–05:36 · first-hand
+- **MW1-04 / Currents / The Less I Know the Better:** The famous bass begins as guitar. [MW1](sources/mix-with-the-masters/mw1.md) · 03:41–05:36 · first-hand
 
 ## Roland JV-1080
 
@@ -205,7 +205,7 @@ Every item below has a cited context. Similar names and uncertain identification
 ## SPL Vitalizer
 
 - **SOS08 / Currents / 2015 (reported 2020):** Disputed bus hardware. [S04](sources/external/s04.md) · Mixing · publisher-report
-- **MW5-02 / Currents / The Less I Know the Better:** Distinguish summing from stereo processing. [MW5](sources/mix-with-the-masters/mw5.md) · 02:05–03:22 · first-hand
+- **MW5-02 / Currents / The Less I Know the Better:** Distinguish summing from stereo processing. [MW5](sources/mix-with-the-masters/mw5.md) · 02:10–03:22 · qualified-recollection
 
 ## SSL 500-series bus compressor (uncertain)
 
@@ -225,7 +225,7 @@ Every item below has a cited context. Similar names and uncertain identification
 
 ## tape machine (model unspecified)
 
-- **TN188-21 / Deadbeat / My Old Ways, Loser and related songs:** Loser used a different recording method. [TN188](sources/tape-notes/tn188.md) · 56:21–59:58 · first-hand
+- **TN188-21 / Deadbeat / Loser; Innerspeaker recollection:** Loser used a different recording method. [TN188](sources/tape-notes/tn188.md) · 56:21–59:58; 63:13–63:34 · qualified-recollection
 
 ## U47-style clone (manufacturer unspecified)
 

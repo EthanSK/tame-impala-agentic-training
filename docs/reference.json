@@ -844,9 +844,9 @@
       "id": "MW1-02",
       "topic": "Workflow",
       "title": "A song can outgrow its initial destination",
-      "claim": "He initially considered the idea unsuitable for Tame Impala and considered giving it to Mark Ronson, before deciding to keep it.",
+      "claim": "He initially considered the idea unsuitable for Tame Impala and offered it to Mark Ronson, who encouraged him to keep it.",
       "source_id": "MW1",
-      "location": "01:20–03:16",
+      "location": "01:05–03:16",
       "evidence": "first-hand",
       "era": "Currents / The Less I Know the Better",
       "gear": []
@@ -871,7 +871,7 @@
       "title": "The famous bass begins as guitar",
       "claim": "The riff uses a modeled P-bass sound played on guitar and shifted into the bass register, then processed. This is not proof that the entire song contains no bass guitar.",
       "source_id": "MW1",
-      "location": "04:30–05:36",
+      "location": "03:41–05:36",
       "evidence": "first-hand",
       "era": "Currents / The Less I Know the Better",
       "gear": [
@@ -1251,10 +1251,10 @@
       "id": "MW5-02",
       "topic": "Mixing",
       "title": "Distinguish summing from stereo processing",
-      "claim": "After abandoning multichannel summing, he retained a stereo hardware route involving SPL Vitalizer and paired Neve 1073 stages, returning to Ableton for limiting.",
+      "claim": "After abandoning multichannel summing, he recalls a stereo route through SPL Vitalizer, then paired Neve 1073 stages, with possible SSL compression before returning to Ableton for limiting. The compressor identification remains unresolved.",
       "source_id": "MW5",
-      "location": "02:05–03:22",
-      "evidence": "first-hand",
+      "location": "02:10–03:22",
+      "evidence": "qualified-recollection",
       "era": "Currents / The Less I Know the Better",
       "gear": [
         "SPL Vitalizer",
@@ -1556,11 +1556,11 @@
       "id": "TN188-21",
       "topic": "Workflow",
       "title": "Loser used a different recording method",
-      "claim": "The song largely retained its studio multitracking to tape, beginning with a complete drum performance and layering instruments afterward, with very little looping.",
+      "claim": "The song largely retained its studio multitracking to tape, beginning with a complete drum performance and layering instruments afterward, with very little looping. He later corrects himself about Innerspeaker, recalling that it too was recorded largely from beginning to end without looping.",
       "source_id": "TN188",
-      "location": "56:21–59:58",
-      "evidence": "first-hand",
-      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "location": "56:21–59:58; 63:13–63:34",
+      "evidence": "qualified-recollection",
+      "era": "Deadbeat / Loser; Innerspeaker recollection",
       "gear": [
         "tape machine (model unspecified)"
       ]

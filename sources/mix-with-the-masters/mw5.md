@@ -20,10 +20,10 @@ He tried two passive Folcrom summing units feeding Neve preamps, but disliked at
 Gear: Roll Music Systems Folcrom, Neve 1073
 
 ### MW5-02: Distinguish summing from stereo processing
-**Mixing · Currents / The Less I Know the Better · first-hand**
-Location: 02:05–03:22
+**Mixing · Currents / The Less I Know the Better · qualified-recollection**
+Location: 02:10–03:22
 
-After abandoning multichannel summing, he retained a stereo hardware route involving SPL Vitalizer and paired Neve 1073 stages, returning to Ableton for limiting.
+After abandoning multichannel summing, he recalls a stereo route through SPL Vitalizer, then paired Neve 1073 stages, with possible SSL compression before returning to Ableton for limiting. The compressor identification remains unresolved.
 
 Gear: SPL Vitalizer, Neve 1073, Ableton limiter (exact device unspecified)
 
