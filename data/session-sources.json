@@ -1,0 +1,851 @@
+{
+  "sources": [
+    {
+      "id": "MW0",
+      "title": "Mix With The Masters, part 0: Trailer",
+      "url": "https://mixwiththemasters.com/videos/kevin-parker-tame-impala-the-less-i-know-the-better",
+      "date": null,
+      "kind": "supplied-captions",
+      "coverage": "Complete supplied English caption file reviewed; no complete video-frame or audio audit.",
+      "notes": "Timestamps are local to this part. Captions contain recognition errors. Recollections and unknown settings remain qualified; exact course publication date unverified."
+    },
+    {
+      "id": "MW1",
+      "title": "Mix With The Masters, part 1: Demo and guitar synth",
+      "url": "https://mixwiththemasters.com/videos/kevin-parker-tame-impala-the-less-i-know-the-better",
+      "date": null,
+      "kind": "supplied-captions",
+      "coverage": "Complete supplied English caption file reviewed; no complete video-frame or audio audit.",
+      "notes": "Timestamps are local to this part. Captions contain recognition errors. Recollections and unknown settings remain qualified; exact course publication date unverified."
+    },
+    {
+      "id": "MW2",
+      "title": "Mix With The Masters, part 2: Drums and groove",
+      "url": "https://mixwiththemasters.com/videos/kevin-parker-tame-impala-the-less-i-know-the-better",
+      "date": null,
+      "kind": "supplied-captions",
+      "coverage": "Complete supplied English caption file reviewed; no complete video-frame or audio audit.",
+      "notes": "Timestamps are local to this part. Captions contain recognition errors. Recollections and unknown settings remain qualified; exact course publication date unverified."
+    },
+    {
+      "id": "MW3",
+      "title": "Mix With The Masters, part 3: Vocals and effects",
+      "url": "https://mixwiththemasters.com/videos/kevin-parker-tame-impala-the-less-i-know-the-better",
+      "date": null,
+      "kind": "supplied-captions",
+      "coverage": "Complete supplied English caption file reviewed; no complete video-frame or audio audit.",
+      "notes": "Timestamps are local to this part. Captions contain recognition errors. Recollections and unknown settings remain qualified; exact course publication date unverified."
+    },
+    {
+      "id": "MW4",
+      "title": "Mix With The Masters, part 4: Keyboards and arrangement",
+      "url": "https://mixwiththemasters.com/videos/kevin-parker-tame-impala-the-less-i-know-the-better",
+      "date": null,
+      "kind": "supplied-captions",
+      "coverage": "Complete supplied English caption file reviewed; visual verification limited to a brief part-4 opening frame.",
+      "notes": "Timestamps are local to this part. Captions contain recognition errors. Recollections and unknown settings remain qualified; exact course publication date unverified."
+    },
+    {
+      "id": "MW5",
+      "title": "Mix With The Masters, part 5: Mix bus and monitoring",
+      "url": "https://mixwiththemasters.com/videos/kevin-parker-tame-impala-the-less-i-know-the-better",
+      "date": null,
+      "kind": "supplied-captions",
+      "coverage": "Complete supplied English caption file reviewed; no complete video-frame or audio audit.",
+      "notes": "Timestamps are local to this part. Captions contain recognition errors. Recollections and unknown settings remain qualified; exact course publication date unverified."
+    },
+    {
+      "id": "TN188",
+      "title": "Tape Notes 188: Tame Impala — My Old Ways and Loser",
+      "url": "https://podcasts.apple.com/us/podcast/tn-188-tame-impala/id1249834293?i=1000787528506",
+      "date": "2026-09-02",
+      "kind": "public-podcast",
+      "coverage": "Complete automatic speech transcript reviewed for production content; no full human audio audit.",
+      "notes": "ASR can mishear names and speaker turns. Times match an 81:23 ad-supported copy accessed 2026-09-08; dynamic advertisements can shift player offsets. Source claims are paraphrased. Song performances and advertisements excluded."
+    }
+  ],
+  "claims": [
+    {
+      "id": "MW1-01",
+      "topic": "Writing",
+      "title": "Keep the first spark",
+      "claim": "A short spontaneous demo became the foundation of the record; Parker kept its first section rather than replacing every rough detail.",
+      "source_id": "MW1",
+      "location": "00:33–03:16",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW1-02",
+      "topic": "Workflow",
+      "title": "A song can outgrow its initial destination",
+      "claim": "He initially considered the idea unsuitable for Tame Impala and considered giving it to Mark Ronson, before deciding to keep it.",
+      "source_id": "MW1",
+      "location": "01:20–03:16",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW1-03",
+      "topic": "Guitar",
+      "title": "Guitar controller opens unfamiliar sounds",
+      "claim": "The opening instrumental demo used a Strat with a taped-on synth pickup and a Roland guitar synthesizer; he tentatively recalls the GR-55 model.",
+      "source_id": "MW1",
+      "location": "03:23–05:36",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Fender Stratocaster",
+        "Roland GR-55"
+      ]
+    },
+    {
+      "id": "MW1-04",
+      "topic": "Bass",
+      "title": "The famous bass begins as guitar",
+      "claim": "The riff uses a modeled P-bass sound played on guitar and shifted into the bass register, then processed. This is not proof that the entire song contains no bass guitar.",
+      "source_id": "MW1",
+      "location": "04:30–05:36",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Roland GR-55"
+      ]
+    },
+    {
+      "id": "MW1-05",
+      "topic": "Bass",
+      "title": "Overdrive recollection is tentative",
+      "claim": "He thinks Ableton Overdrive shaped the synthesized bass and demonstrates something similar; the original exact preset and stereo treatment are not recovered.",
+      "source_id": "MW1",
+      "location": "05:36–06:40",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Ableton Overdrive"
+      ]
+    },
+    {
+      "id": "MW1-06",
+      "topic": "Workflow",
+      "title": "Leave useful mistakes in",
+      "claim": "The rough original performance contains small mistakes, which did not prevent it becoming the final foundation.",
+      "source_id": "MW1",
+      "location": "07:00–07:40",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW1-07",
+      "topic": "Drums",
+      "title": "Reuse a recorded drum idea",
+      "claim": "He reused a drum recording made weeks earlier and thinks it was recorded outside; he wanted a controlled, dry contrast to Lonerism room wash.",
+      "source_id": "MW1",
+      "location": "07:43–08:31",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW1-08",
+      "topic": "Drums",
+      "title": "Reinforce the acoustic loop",
+      "claim": "An 808 kick and Sequential Circuits Drumtraks were added later to the original drum recording.",
+      "source_id": "MW1",
+      "location": "08:31–08:52",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Roland TR-808",
+        "Sequential Circuits Drumtraks"
+      ]
+    },
+    {
+      "id": "MW1-09",
+      "topic": "Writing",
+      "title": "Return later with a different palette",
+      "claim": "The later section was developed much later in another studio, using keyboards that were then available; the arrangement changes with that palette.",
+      "source_id": "MW1",
+      "location": "08:52–10:10",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW1-10",
+      "topic": "Bass",
+      "title": "Preserve the Greco correction",
+      "claim": "For a later bass part he first says Hofner, then corrects himself to Greco. Do not turn the initial slip into a definitive Hofner attribution.",
+      "source_id": "MW1",
+      "location": "10:11–10:30",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Greco bass"
+      ]
+    },
+    {
+      "id": "MW2-01",
+      "topic": "Drums",
+      "title": "Performance before a preamp upgrade",
+      "claim": "Parker emphasizes playing and listening over premium preamps, recalling a relatively inexpensive PreSonus rack unit without confidently naming its model.",
+      "source_id": "MW2",
+      "location": "00:20–00:46",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "PreSonus preamp (model uncertain)"
+      ]
+    },
+    {
+      "id": "MW2-02",
+      "topic": "Drums",
+      "title": "Reduce sympathetic ringing at the kit",
+      "claim": "He names a Ludwig Supraphonic 400 snare and Tama kick and describes removing toms to reduce unwanted resonance.",
+      "source_id": "MW2",
+      "location": "00:46–01:30",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Ludwig Supraphonic 400",
+        "Tama kick"
+      ]
+    },
+    {
+      "id": "MW2-03",
+      "topic": "Drums",
+      "title": "Separate this setup from other bedrooms",
+      "claim": "Duvets describe a bedroom method, whereas he recalls this particular take as outdoors. These are alternatives, not one combined recording setup.",
+      "source_id": "MW2",
+      "location": "00:46–01:47",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW2-04",
+      "topic": "Drums",
+      "title": "Work with imperfect microphone capture",
+      "claim": "He recalls a borrowed vocal microphone on kick, a 57 beside the snare and another microphone above; the borrowed microphone model is unidentified.",
+      "source_id": "MW2",
+      "location": "01:47–03:03",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Shure SM57"
+      ]
+    },
+    {
+      "id": "MW2-05",
+      "topic": "Drums",
+      "title": "Compression supplies the knock",
+      "claim": "The dbx 165 was central to his drum character across several albums. Its envelope mattered; a single owned unit encouraged mono processing.",
+      "source_id": "MW2",
+      "location": "03:03–04:26",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "dbx 165"
+      ]
+    },
+    {
+      "id": "MW2-06",
+      "topic": "Drums",
+      "title": "Do not invent the distortion stage",
+      "claim": "Asked about distortion following the compressor, he is uncertain. The available discussion does not establish a fixed distortion chain.",
+      "source_id": "MW2",
+      "location": "04:26–04:48",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "dbx 165"
+      ]
+    },
+    {
+      "id": "MW2-07",
+      "topic": "Workflow",
+      "title": "Unprinted outboard complicates recall",
+      "claim": "He describes not having printed the outboard drum sound and needing the hardware running at final mix time. The recall difficulty is explicit; printing stems is an editorial practical implication.",
+      "source_id": "MW2",
+      "location": "04:48–05:03",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW2-08",
+      "topic": "Drums",
+      "title": "Editing is part of the performance",
+      "claim": "He layers drum-machine reinforcement and trims the loop, then questions its exact length. No exact universal bar count is established.",
+      "source_id": "MW2",
+      "location": "05:03–06:27",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW2-09",
+      "topic": "Drums",
+      "title": "Layering kicks changes phase and feel",
+      "claim": "Aligning the added kick with the original drum recording proved troublesome; the discussion concerns timing and phase rather than a fixed recipe.",
+      "source_id": "MW2",
+      "location": "06:27–07:10",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW2-10",
+      "topic": "Drums",
+      "title": "Hi-hat placement gives the loop feel",
+      "claim": "He describes hi-hats sitting slightly behind the beat. No millisecond offset or swing percentage is supplied.",
+      "source_id": "MW2",
+      "location": "07:10–08:05",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW2-11",
+      "topic": "Drums",
+      "title": "Judge the interacting envelopes",
+      "claim": "Kick and snare interaction is fundamental to the groove; detailed editing is a musical skill, and reproducing that recorded feel live remained difficult.",
+      "source_id": "MW2",
+      "location": "08:05–09:10",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW3-01",
+      "topic": "Vocals",
+      "title": "Keep the microphone recollection qualified",
+      "claim": "He recalls an SM7-family microphone and possibly the PreSonus preamp, probably without compression during tracking. This is a Currents recollection, not his later Deadbeat chain.",
+      "source_id": "MW3",
+      "location": "00:07–00:34",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Shure SM7 family",
+        "PreSonus preamp (model uncertain)"
+      ]
+    },
+    {
+      "id": "MW3-02",
+      "topic": "Drums",
+      "title": "Shure mixer belongs to the drum discussion",
+      "claim": "The beige Shure compressor-mixer is mentioned for many Currents drum sounds; that aside does not establish its use on this vocal track. Publisher tags identify SE-30.",
+      "source_id": "MW3",
+      "location": "00:34–00:55",
+      "evidence": "publisher-report",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Shure SE-30 (publisher identification)"
+      ]
+    },
+    {
+      "id": "MW3-03",
+      "topic": "Vocals",
+      "title": "Doubles without assumed harmonies",
+      "claim": "Parker recalls double-tracked vocals and thinks there were no harmonies on the part under discussion.",
+      "source_id": "MW3",
+      "location": "00:55–01:30",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW3-04",
+      "topic": "Vocals",
+      "title": "Old delay naming is uncertain",
+      "claim": "He cycles through Ableton delay names while remembering an old session. Do not claim the modern Echo device was used on a 2015 recording from this recollection alone.",
+      "source_id": "MW3",
+      "location": "01:30–01:54",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Ableton delay (exact device uncertain)"
+      ]
+    },
+    {
+      "id": "MW3-05",
+      "topic": "Vocals",
+      "title": "Likely reverb and dynamics",
+      "claim": "He tentatively identifies Waves RVerb, possibly Ableton Compressor, and Ableton multiband processing. Exact settings are not supplied.",
+      "source_id": "MW3",
+      "location": "01:54–02:23",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Waves RVerb",
+        "Ableton Compressor",
+        "Ableton Multiband Dynamics"
+      ]
+    },
+    {
+      "id": "MW3-06",
+      "topic": "Vocals",
+      "title": "Automate the throws",
+      "claim": "Delay and reverb throws supplied much of the vocal movement; his retrospective criticism is that the vocals were too low and reverberant.",
+      "source_id": "MW3",
+      "location": "02:23–03:20",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW3-07",
+      "topic": "Vocals",
+      "title": "Monitor for a comfortable performance",
+      "claim": "He describes tracking with one headphone ear off and monitoring through the interface rather than hearing DAW effects; Lynx Aurora is a tentative recollection.",
+      "source_id": "MW3",
+      "location": "03:20–03:56",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Lynx Aurora"
+      ]
+    },
+    {
+      "id": "MW3-08",
+      "topic": "Vocals",
+      "title": "Tight doubles still contain difference",
+      "claim": "Similar rhythmic phrasing with small natural pitch differences creates the vocal shimmer. No detuning amount or artificial delay setting is given.",
+      "source_id": "MW3",
+      "location": "03:56–05:20",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW4-01",
+      "topic": "Synths",
+      "title": "Kronos supplies the later section",
+      "claim": "He identifies Korg Kronos as the main keyboard for the section after roughly the first minute and says it became a recurring instrument from Currents onward.",
+      "source_id": "MW4",
+      "location": "00:03–00:57",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Korg Kronos"
+      ]
+    },
+    {
+      "id": "MW4-02",
+      "topic": "Synths",
+      "title": "Keep the JV-1080 uncertainty",
+      "claim": "He mentions a Roland JV-1080 or similar module but does not confidently identify every part; he thinks the Rhodes-style sound was probably Kronos.",
+      "source_id": "MW4",
+      "location": "00:57–01:43",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Roland JV-1080",
+        "Korg Kronos"
+      ]
+    },
+    {
+      "id": "MW4-03",
+      "topic": "Synths",
+      "title": "Layer without elaborate transitions",
+      "claim": "He describes the layered keyboard arrangement as relatively straightforward, with less elaborate transition processing than might be assumed.",
+      "source_id": "MW4",
+      "location": "01:43–03:40",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW4-04",
+      "topic": "Writing",
+      "title": "Finishing and spontaneity coexist",
+      "claim": "Completing the later section gave a beloved demo a satisfying destination. His account values both quick invention and patience in finishing.",
+      "source_id": "MW4",
+      "location": "03:40–04:30",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW5-01",
+      "topic": "Mixing",
+      "title": "The summing experiment was abandoned",
+      "claim": "He tried two passive Folcrom summing units feeding Neve preamps, but disliked attempted clipping and could not hear a meaningful summing improvement; cabling and latency added complexity.",
+      "source_id": "MW5",
+      "location": "00:22–02:05",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Roll Music Systems Folcrom",
+        "Neve 1073"
+      ]
+    },
+    {
+      "id": "MW5-02",
+      "topic": "Mixing",
+      "title": "Distinguish summing from stereo processing",
+      "claim": "After abandoning multichannel summing, he retained a stereo hardware route involving SPL Vitalizer and paired Neve 1073 stages, returning to Ableton for limiting.",
+      "source_id": "MW5",
+      "location": "02:05–03:22",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "SPL Vitalizer",
+        "Neve 1073",
+        "Ableton limiter (exact device unspecified)"
+      ]
+    },
+    {
+      "id": "MW5-03",
+      "topic": "Mixing",
+      "title": "The bus compressor is unresolved",
+      "claim": "Parker tentatively recalls an SSL 500-series G compressor here. Sound On Sound separately names a Manley Variable Mu in publisher narration; these are not a verified combined serial chain.",
+      "source_id": "MW5",
+      "location": "03:07–03:22",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "SSL 500-series bus compressor (uncertain)"
+      ]
+    },
+    {
+      "id": "MW5-04",
+      "topic": "Mixing",
+      "title": "Know the room you actually use",
+      "claim": "He describes Yamaha HS7 monitors without a subwoofer, four acoustic panels and a small bedroom. These are his working conditions, not a universal room-design prescription.",
+      "source_id": "MW5",
+      "location": "03:22–03:42",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": [
+        "Yamaha HS7"
+      ]
+    },
+    {
+      "id": "MW5-05",
+      "topic": "Mixing",
+      "title": "Use another trusted listening context",
+      "claim": "A trusted mastering friend in a larger room helped check the mix, including low-frequency balance around 100 Hz. The caption does not establish a reliable second monitor model.",
+      "source_id": "MW5",
+      "location": "03:42–04:27",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "MW5-06",
+      "topic": "Writing",
+      "title": "Song structure can resist expectations",
+      "claim": "Parker discusses the unconventional chorus return and section layout. His offhand release chronology is not used here as verified historical dating.",
+      "source_id": "MW5",
+      "location": "04:27–05:30",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better",
+      "gear": []
+    },
+    {
+      "id": "TN188-01",
+      "topic": "Writing",
+      "title": "Record before working the idea out",
+      "claim": "He records a phone memo while learning an idea so that the act of playing it does not overwrite the original thought.",
+      "source_id": "TN188",
+      "location": "09:11–11:45",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-02",
+      "topic": "Workflow",
+      "title": "Recreate the room, keep the intention",
+      "claim": "My Old Ways begins with a re-recorded living-room piano, not the initial memo. He wanted a stereo version that preserved the intimate perspective.",
+      "source_id": "TN188",
+      "location": "08:38–09:00; 15:45–16:32",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": [
+        "Zoom stereo recorder (model unspecified)"
+      ]
+    },
+    {
+      "id": "TN188-03",
+      "topic": "Mixing",
+      "title": "Reference another finished mix",
+      "claim": "He places reference audio such as Dua Lipa’s Levitating in the session to regain perspective while working alone.",
+      "source_id": "TN188",
+      "location": "14:41–15:33",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-04",
+      "topic": "Drums",
+      "title": "A smaller electronic drum palette",
+      "claim": "The Deadbeat foundation combines an 808 through a guitar amp with a Vermona DRM1, synchronized and recorded in different ways. No amp model or fixed settings are given.",
+      "source_id": "TN188",
+      "location": "16:37–19:14",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": [
+        "Roland TR-808",
+        "Vermona DRM1",
+        "guitar amplifier (model unspecified)"
+      ]
+    },
+    {
+      "id": "TN188-05",
+      "topic": "Drums",
+      "title": "Make the repeating bar convincing",
+      "claim": "He describes electronic grooves as a challenge of making a short repeating pattern danceable, with tiny percussion placements and gradual changes maintaining movement.",
+      "source_id": "TN188",
+      "location": "19:54–22:24",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-06",
+      "topic": "Drums",
+      "title": "Do not import every acoustic habit",
+      "claim": "Electronic beats need not inherit a drummer’s automatic continuous eighth-note hi-hat pattern; he deliberately questions those habits.",
+      "source_id": "TN188",
+      "location": "22:58–24:02",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-07",
+      "topic": "Writing",
+      "title": "Protect a simple foundation",
+      "claim": "For My Old Ways he resisted automatically building a dense arrangement, preserving the piano riff and drums as its identity.",
+      "source_id": "TN188",
+      "location": "24:16–26:27",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-08",
+      "topic": "Writing",
+      "title": "Make the form express the subject",
+      "claim": "The returning musical pattern and rising, increasingly chaotic synth parts support the song’s theme of falling back into old behavior.",
+      "source_id": "TN188",
+      "location": "26:54–29:38",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-09",
+      "topic": "Vocals",
+      "title": "Comfort determines the microphone",
+      "claim": "He values holding the microphone; a U47-style clone sounded good but did not suit that performance habit. He corrects an initial SM57 reference to SM7.",
+      "source_id": "TN188",
+      "location": "33:59–35:03",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": [
+        "Shure SM7 family",
+        "U47-style clone (manufacturer unspecified)"
+      ]
+    },
+    {
+      "id": "TN188-10",
+      "topic": "Vocals",
+      "title": "Amp treatment appears on Deadbeat",
+      "claim": "He describes routing vocals through guitar amplification, sometimes singing into a microphone connected to the amp; End of Summer is his example. The surrounding SM57/SM7 correction makes its exact microphone uncertain.",
+      "source_id": "TN188",
+      "location": "34:35–35:03",
+      "evidence": "qualified-recollection",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": [
+        "guitar amplifier (model unspecified)"
+      ]
+    },
+    {
+      "id": "TN188-11",
+      "topic": "Vocals",
+      "title": "Track through the familiar compressor",
+      "claim": "He now records vocals through his old dbx 165, previously used on early-album drums, and may add further compression and EQ in the session.",
+      "source_id": "TN188",
+      "location": "36:17–37:00",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": [
+        "dbx 165"
+      ]
+    },
+    {
+      "id": "TN188-12",
+      "topic": "Vocals",
+      "title": "A single hook contrasts with doubled verses",
+      "claim": "On My Old Ways he keeps the central hook single to suggest a sampled phrase, while the verses are doubled.",
+      "source_id": "TN188",
+      "location": "37:33–38:09",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-13",
+      "topic": "Vocals",
+      "title": "Whisper takes add width",
+      "claim": "Two more whispery takes sit hard left and right around the more central vocal double. The side layers are filtered and heavily compressed; exact cutoffs and ratios are unstated.",
+      "source_id": "TN188",
+      "location": "38:14–39:52",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-14",
+      "topic": "Vocals",
+      "title": "Separate vocal effects bus",
+      "claim": "He describes a separate effects bus on Deadbeat and names Soundtoys EchoBoy for its stereo character and Valhalla Room among the vocal effects.",
+      "source_id": "TN188",
+      "location": "39:54–40:55",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": [
+        "Soundtoys EchoBoy",
+        "Valhalla Room"
+      ]
+    },
+    {
+      "id": "TN188-15",
+      "topic": "Vocals",
+      "title": "Spring reverb device name needs care",
+      "claim": "He describes an Ableton convolution spring reverb used on most tracks, correcting his own initial spring-echo wording. The exact device version or impulse response is not established.",
+      "source_id": "TN188",
+      "location": "40:49–41:07",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": [
+        "Ableton convolution spring reverb (exact device unspecified)"
+      ]
+    },
+    {
+      "id": "TN188-16",
+      "topic": "Vocals",
+      "title": "Decapitator adds occasional grit",
+      "claim": "He names Decapitator on vocals for songs including Dracula. He does not provide a mode, drive value or mix setting.",
+      "source_id": "TN188",
+      "location": "41:13–41:31",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": [
+        "Soundtoys Decapitator"
+      ]
+    },
+    {
+      "id": "TN188-17",
+      "topic": "Synths",
+      "title": "A primitive lead among electronic repetition",
+      "claim": "He tentatively identifies the My Old Ways solo as Roland SH-1, valuing a meandering organ-like performance against the sequenced backdrop.",
+      "source_id": "TN188",
+      "location": "43:39–45:25",
+      "evidence": "qualified-recollection",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": [
+        "Roland SH-1"
+      ]
+    },
+    {
+      "id": "TN188-18",
+      "topic": "Writing",
+      "title": "Room sound closes the loop",
+      "claim": "The sound of getting off the piano stool at the end intentionally answers the opening arrival at the piano.",
+      "source_id": "TN188",
+      "location": "46:45–47:01",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-19",
+      "topic": "Workflow",
+      "title": "Direction matters, but audition the idea",
+      "claim": "He admires a producer’s ability to hear what a song needs to reach completion, while emphasizing that results remain unknown until tried.",
+      "source_id": "TN188",
+      "location": "49:49–51:35",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-20",
+      "topic": "Mixing",
+      "title": "What Fridmann demonstrated",
+      "claim": "He identifies saturation, compression that retains dynamics, and reverb that does not wash out the mix as lessons from working with Dave Fridmann as mixer. No exact settings are supplied.",
+      "source_id": "TN188",
+      "location": "51:51–53:35",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-21",
+      "topic": "Workflow",
+      "title": "Loser used a different recording method",
+      "claim": "The song largely retained its studio multitracking to tape, beginning with a complete drum performance and layering instruments afterward, with very little looping.",
+      "source_id": "TN188",
+      "location": "56:21–59:58",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": [
+        "tape machine (model unspecified)"
+      ]
+    },
+    {
+      "id": "TN188-22",
+      "topic": "Drums",
+      "title": "Full takes carry pressure and imperfections",
+      "claim": "He describes tape-recording anxiety, stick clicks and other retained performance details. He later recalls a click printed to tape, so this should not be reported as definitely click-free.",
+      "source_id": "TN188",
+      "location": "59:58–61:13; 64:09–64:29",
+      "evidence": "qualified-recollection",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-23",
+      "topic": "Writing",
+      "title": "The decisive word can arrive last",
+      "claim": "Loser was the final lyric word selected, after trying alternatives against its rhythmic space; he connects an alternative word with the album title in a tentative real-time recollection.",
+      "source_id": "TN188",
+      "location": "65:00–67:20",
+      "evidence": "qualified-recollection",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    },
+    {
+      "id": "TN188-24",
+      "topic": "Synths",
+      "title": "A familiar synth anchors the record",
+      "claim": "He calls Prophet-5 central to Dracula and recurring sounds across Deadbeat, stressing that it was conveniently beside him rather than uniquely necessary equipment.",
+      "source_id": "TN188",
+      "location": "75:09–75:56",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": [
+        "Sequential Prophet-5"
+      ]
+    },
+    {
+      "id": "TN188-25",
+      "topic": "Workflow",
+      "title": "Make the experiment before rejecting it",
+      "claim": "He advises starting more songs and testing melodies instead of assuming their quality in advance.",
+      "source_id": "TN188",
+      "location": "76:48–77:51",
+      "evidence": "first-hand",
+      "era": "Deadbeat / My Old Ways, Loser and related songs",
+      "gear": []
+    }
+  ]
+}

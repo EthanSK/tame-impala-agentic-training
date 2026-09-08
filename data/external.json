@@ -1,0 +1,692 @@
+{
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Tape Op: Tame Impala: Aussie Psyche Explosion",
+      "url": "https://tapeop.com/interviews/95/tame-impala",
+      "date": "2013-05",
+      "kind": "interview",
+      "coverage": "Public 16 November 2010 interview section read; later account-only section unread.",
+      "notes": "Publication combines interviews; these notes cover the earlier section."
+    },
+    {
+      "id": "S02",
+      "title": "Song Exploder 183: It Might Be Time",
+      "url": "https://songexploder.net/tame-impala",
+      "date": "2020-04-22",
+      "kind": "official-transcript",
+      "coverage": "Six-page official transcript read; no audio reviewed.",
+      "notes": "Official transcript: https://songexploder.net/transcripts/tame-impala-transcript.pdf . No exact drum-distortion settings identified."
+    },
+    {
+      "id": "S03",
+      "title": "Guitar World interview",
+      "url": "https://www.guitarworld.com/features/tame-impala-kevin-parker",
+      "date": "2022-05-09",
+      "kind": "interview",
+      "coverage": "Relevant interview questions and answers read.",
+      "notes": "GR-55 claims concern the opening arrangement; do not infer synthesized acoustic drums or vocals."
+    },
+    {
+      "id": "S04",
+      "title": "Sound On Sound: The Psychedelic World of Kevin Parker",
+      "url": "https://www.soundonsound.com/people/tame-impala",
+      "date": "2020-07",
+      "kind": "interview",
+      "coverage": "Publisher-indexed text read; direct retrieval returned 403.",
+      "notes": "Page 2: https://www.soundonsound.com/people/tame-impala?page=2 . SOS08 is publisher narration; its Manley identification conflicts with Parker's uncertain SSL recollection in Mix With The Masters. Preserve both accounts; no definitive chain."
+    },
+    {
+      "id": "S05",
+      "title": "Premier Guitar: Psych Wunderkind Kevin Parker",
+      "url": "https://www.premierguitar.com/artists/guitarists/tame-impala-psych-wunderkind-kevin-parker",
+      "date": "2015-08-26",
+      "kind": "interview",
+      "coverage": "Relevant interview questions and answers read.",
+      "notes": "General Hofner comments do not identify the instrument on The Less I Know the Better."
+    },
+    {
+      "id": "S06",
+      "title": "KEXP interview about Currents",
+      "url": "https://www.kexp.org/read/2015/7/8/interview-tame-impalas-kevin-parker-on-his-personal-danceable-new-album-currents/",
+      "date": "2015-07-08",
+      "kind": "interview",
+      "coverage": "Relevant interview questions and answers read.",
+      "notes": "Retrospective observations concern Currents."
+    },
+    {
+      "id": "S07",
+      "title": "Kevin Parker Reddit AMA",
+      "url": "https://www.reddit.com/r/IAmA/comments/34clpm/i_am_kevin_parker_from_tame_impala_ask_me_anything/",
+      "date": "2015",
+      "kind": "artist-ama",
+      "coverage": "Selected artist-account replies read; exact calendar day unverified.",
+      "notes": "Identity evidence appears in the AMA introduction. Another commenter supplied the purple vibrato's brand; that identification is not attributed to Parker."
+    },
+    {
+      "id": "S08",
+      "title": "Rocksucker interview",
+      "url": "https://rocksucker.co.uk/2011/06/interview-tame-impala.html",
+      "date": "2011-06-20",
+      "kind": "interview",
+      "coverage": "Relevant interview questions and answers read.",
+      "notes": "Guitar tuning interval unspecified."
+    },
+    {
+      "id": "S09",
+      "title": "Tape Notes TN:188 metadata and public audio locator",
+      "url": "https://podcasts.apple.com/us/podcast/tn-188-tame-impala/id1249834293?i=1000787528506",
+      "date": "2026-09-02",
+      "kind": "publisher-metadata",
+      "coverage": "Official episode listing and RSS read; audio not reviewed in this source record.",
+      "notes": "Publisher metadata names My Old Ways and Loser. Gear mentions: EchoBoy, Decapitator, Valhalla Room, SM58, SM7B, U47, Vermona DRM1, dbx 165, SH-1, TR-808, Prophet-5, Ableton stock plugins and Echo. Mentions establish neither song-specific use nor settings. RSS: https://feeds.megaphone.fm/TNL8747838853 ."
+    }
+  ],
+  "claims": [
+    {
+      "id": "TO01",
+      "topic": "Drums",
+      "title": "Snare-side microphone",
+      "claim": "An AKG D190 beside the snare shell became a principal kit microphone after heavy compression; attack and release were crucial.",
+      "source_id": "S01",
+      "location": "What did you end up doing for the drums?",
+      "evidence": "first-hand",
+      "era": "InnerSpeaker / 2010",
+      "gear": [
+        "AKG D190"
+      ]
+    },
+    {
+      "id": "TO02",
+      "topic": "Drums",
+      "title": "Compression timing",
+      "claim": "High ratio and low threshold brought the whole kit into that microphone; he supplemented it with kick.",
+      "source_id": "S01",
+      "location": "What did you end up doing for the drums?",
+      "evidence": "first-hand",
+      "era": "InnerSpeaker / 2010",
+      "gear": []
+    },
+    {
+      "id": "TO03",
+      "topic": "Drums",
+      "title": "Kick capture",
+      "claim": "The kick used an SM57 at a distance, with both drumheads and little damping, avoiding excessive beater attack.",
+      "source_id": "S01",
+      "location": "What did you end up doing for the drums?",
+      "evidence": "first-hand",
+      "era": "InnerSpeaker / 2010",
+      "gear": [
+        "Shure SM57"
+      ]
+    },
+    {
+      "id": "TO04",
+      "topic": "Workflow",
+      "title": "Tracking support",
+      "claim": "Tim Holmes encouraged Neve preamps and a Distressor for bass and vocals.",
+      "source_id": "S01",
+      "location": "Did you have to do anything to treat the space?",
+      "evidence": "first-hand",
+      "era": "InnerSpeaker / 2010",
+      "gear": [
+        "Neve preamps",
+        "Distressor"
+      ]
+    },
+    {
+      "id": "TO05",
+      "topic": "Workflow",
+      "title": "Familiar recorder",
+      "claim": "He chose the Boss BR-1600 because its familiar workflow made recording intuitive.",
+      "source_id": "S01",
+      "location": "What did you record to?",
+      "evidence": "first-hand",
+      "era": "InnerSpeaker / 2010",
+      "gear": [
+        "Boss BR-1600"
+      ]
+    },
+    {
+      "id": "TO06",
+      "topic": "Guitar",
+      "title": "Print guitar effects",
+      "claim": "Pedals fed a Seymour Duncan DI and mixer; he preferred printing guitar effects while tracking.",
+      "source_id": "S01",
+      "location": "How do you typically mic guitars?; delay question",
+      "evidence": "first-hand",
+      "era": "InnerSpeaker / 2010",
+      "gear": [
+        "Seymour Duncan DI"
+      ]
+    },
+    {
+      "id": "TO07",
+      "topic": "Vocals",
+      "title": "Private vocal takes",
+      "claim": "He recorded vocals at home because other people nearby inhibited him.",
+      "source_id": "S01",
+      "location": "Did you have to do anything to treat the space?",
+      "evidence": "first-hand",
+      "era": "InnerSpeaker / 2010",
+      "gear": []
+    },
+    {
+      "id": "TO08",
+      "topic": "Mixing",
+      "title": "Early limiting",
+      "claim": "The BR-864's automatic limiting created crunch; one flattened mix left mastering little headroom.",
+      "source_id": "S01",
+      "location": "How did the first Tame Impala EP come to be?",
+      "evidence": "first-hand",
+      "era": "Early EP / 2008",
+      "gear": [
+        "Boss BR-864"
+      ]
+    },
+    {
+      "id": "SE01",
+      "topic": "Workflow",
+      "title": "Solo exploration",
+      "claim": "Working alone lets him explore without worrying that an unproductive session wastes somebody else's time.",
+      "source_id": "S02",
+      "location": "PDF p1",
+      "evidence": "first-hand",
+      "era": "The Slow Rush / It Might Be Time",
+      "gear": []
+    },
+    {
+      "id": "SE02",
+      "topic": "Synths",
+      "title": "Unfamiliar timbres",
+      "claim": "An unfamiliar keyboard sound helps prevent him repeating earlier musical ideas.",
+      "source_id": "S02",
+      "location": "PDF p2",
+      "evidence": "first-hand",
+      "era": "The Slow Rush / It Might Be Time",
+      "gear": []
+    },
+    {
+      "id": "SE03",
+      "topic": "Drums",
+      "title": "Inspiring drums",
+      "claim": "Even exploratory drums need an inspiring sound for him to continue writing.",
+      "source_id": "S02",
+      "location": "PDF p2",
+      "evidence": "first-hand",
+      "era": "The Slow Rush / It Might Be Time",
+      "gear": []
+    },
+    {
+      "id": "SE04",
+      "topic": "Drums",
+      "title": "Demo drums survive",
+      "claim": "The finished drums came from the initial demo, subsequently chopped and processed.",
+      "source_id": "S02",
+      "location": "PDF p2",
+      "evidence": "first-hand",
+      "era": "The Slow Rush / It Might Be Time",
+      "gear": []
+    },
+    {
+      "id": "SE05",
+      "topic": "Mixing",
+      "title": "Distortion contrast",
+      "claim": "Chorus bass, drums and lead were distorted; the keyboard part provided a cleaner contrast.",
+      "source_id": "S02",
+      "location": "PDF p3",
+      "evidence": "first-hand",
+      "era": "The Slow Rush / It Might Be Time",
+      "gear": []
+    },
+    {
+      "id": "SE06",
+      "topic": "Bass",
+      "title": "Bass and drums",
+      "claim": "He recommends hearing the synth bass together with drums to judge the feeling.",
+      "source_id": "S02",
+      "location": "PDF p3",
+      "evidence": "first-hand",
+      "era": "The Slow Rush / It Might Be Time",
+      "gear": []
+    },
+    {
+      "id": "SE07",
+      "topic": "Writing",
+      "title": "Internalize the harmony",
+      "claim": "He internalized the chords using an eight-minute loop before finding the vocal melody.",
+      "source_id": "S02",
+      "location": "PDF pp3–4",
+      "evidence": "first-hand",
+      "era": "The Slow Rush / It Might Be Time",
+      "gear": []
+    },
+    {
+      "id": "SE08",
+      "topic": "Writing",
+      "title": "Reuse the spark",
+      "claim": "The verse reused chords from the original burst of ideas; unexpected chord changes or timing appealed to him.",
+      "source_id": "S02",
+      "location": "PDF p5",
+      "evidence": "first-hand",
+      "era": "The Slow Rush / It Might Be Time",
+      "gear": []
+    },
+    {
+      "id": "GW01",
+      "topic": "Synths",
+      "title": "Guitar synthesis",
+      "claim": "Its opening instrumental sounds came from a Roland GR-55 guitar synthesizer.",
+      "source_id": "S03",
+      "location": "Question beginning On The Less I Know The Better",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better (recalled 2022)",
+      "gear": [
+        "Roland GR-55"
+      ]
+    },
+    {
+      "id": "GW02",
+      "topic": "Bass",
+      "title": "Modeled bass",
+      "claim": "The bass used its P-Bass model, then overdrive, filtering and something he recalls as chorus.",
+      "source_id": "S03",
+      "location": "The Less I Know the Better recording question",
+      "evidence": "qualified-recollection",
+      "era": "Currents / The Less I Know the Better (recalled 2022)",
+      "gear": [
+        "Roland GR-55",
+        "P-Bass model"
+      ]
+    },
+    {
+      "id": "GW03",
+      "topic": "Bass",
+      "title": "First-take riff",
+      "claim": "The released riff loops roughly two bars from his first spontaneous performance.",
+      "source_id": "S03",
+      "location": "The Less I Know the Better recording question",
+      "evidence": "first-hand",
+      "era": "Currents / The Less I Know the Better (recalled 2022)",
+      "gear": [
+        "Roland GR-55"
+      ]
+    },
+    {
+      "id": "GW04",
+      "topic": "Guitar",
+      "title": "Perform into effects",
+      "claim": "He wants to hear the intended effected tone while playing, and rarely relies on later reamping or guitar-shaping plugins.",
+      "source_id": "S03",
+      "location": "Pedalboard or plugins?; reamping question",
+      "evidence": "first-hand",
+      "era": "2022 interview",
+      "gear": []
+    },
+    {
+      "id": "GW05",
+      "topic": "Writing",
+      "title": "Explore unfamiliar shapes",
+      "claim": "Unfamiliar instruments and exploratory chord shapes can interrupt predictable playing habits.",
+      "source_id": "S03",
+      "location": "Guitar as composing instrument?",
+      "evidence": "first-hand",
+      "era": "2022 interview",
+      "gear": []
+    },
+    {
+      "id": "GW06",
+      "topic": "Writing",
+      "title": "Extended harmony",
+      "claim": "Sevenths and ninths attracted him emotionally before he knew their theoretical names.",
+      "source_id": "S03",
+      "location": "Major 7ths question",
+      "evidence": "first-hand",
+      "era": "2022 interview",
+      "gear": []
+    },
+    {
+      "id": "GW07",
+      "topic": "Guitar",
+      "title": "Flexible pedal order",
+      "claim": "He still used the Blues Driver and Holy Grail, but rejected a universal rule that distortion belongs last.",
+      "source_id": "S03",
+      "location": "Pedalboard; drive at end?",
+      "evidence": "first-hand",
+      "era": "2022 interview",
+      "gear": [
+        "Boss Blues Driver",
+        "Electro-Harmonix Holy Grail"
+      ]
+    },
+    {
+      "id": "GW08",
+      "topic": "Workflow",
+      "title": "Enjoyment sustains practice",
+      "claim": "Enjoyment sustains practice; an expensive or particular guitar is not required to develop an individual sound.",
+      "source_id": "S03",
+      "location": "Advice for bedroom producers",
+      "evidence": "first-hand",
+      "era": "2022 interview",
+      "gear": []
+    },
+    {
+      "id": "SOS01",
+      "topic": "Drums",
+      "title": "Favoured compressor",
+      "claim": "He described the dbx 165 as his favourite compressor.",
+      "source_id": "S04",
+      "location": "New York Times",
+      "evidence": "first-hand",
+      "era": "2020 interview",
+      "gear": [
+        "dbx 165"
+      ]
+    },
+    {
+      "id": "SOS02",
+      "topic": "Synths",
+      "title": "Evocative digital synths",
+      "claim": "Roland D-50 and JV-1080 sounds appealed through childhood pop-radio associations.",
+      "source_id": "S04",
+      "location": "Current Events",
+      "evidence": "publisher-report",
+      "era": "Currents / 2015 (reported 2020)",
+      "gear": [
+        "Roland D-50",
+        "Roland JV-1080"
+      ]
+    },
+    {
+      "id": "SOS03",
+      "topic": "Drums",
+      "title": "Machine jam",
+      "claim": "Glimmer grew from a synchronized jam; he praised TR-707 through tape and reverb.",
+      "source_id": "S04",
+      "location": "Current Events",
+      "evidence": "first-hand",
+      "era": "The Slow Rush / 2020",
+      "gear": [
+        "Roland TR-707"
+      ]
+    },
+    {
+      "id": "SOS04",
+      "topic": "Synths",
+      "title": "Characterful bass",
+      "claim": "He highlighted the SH-1's personality and suitability for unconventional bass use.",
+      "source_id": "S04",
+      "location": "Current Events",
+      "evidence": "first-hand",
+      "era": "The Slow Rush / 2020",
+      "gear": [
+        "Roland SH-1"
+      ]
+    },
+    {
+      "id": "SOS05",
+      "topic": "Workflow",
+      "title": "Permanent routing",
+      "claim": "His Studer 963 routed permanently connected instruments; he did not mix through it.",
+      "source_id": "S04",
+      "location": "Current Events",
+      "evidence": "publisher-report",
+      "era": "2020 interview",
+      "gear": [
+        "Studer 963"
+      ]
+    },
+    {
+      "id": "SOS06",
+      "topic": "Vocals",
+      "title": "Destructive vocal EQ",
+      "claim": "One experiment boosted 8 kHz before compression, then repaired the result afterward for an aged-sample character.",
+      "source_id": "S04",
+      "location": "Vocal Sound",
+      "evidence": "first-hand",
+      "era": "The Slow Rush / 2020",
+      "gear": []
+    },
+    {
+      "id": "SOS07",
+      "topic": "Vocals",
+      "title": "Microphone eras",
+      "claim": "Lonerism: MD421; Currents: SM7B; The Slow Rush sessions: RE20, then SM7B after losing the RE20.",
+      "source_id": "S04",
+      "location": "Vocal Sound",
+      "evidence": "publisher-report",
+      "era": "Lonerism, Currents and The Slow Rush (reported 2020)",
+      "gear": [
+        "Sennheiser MD421",
+        "Shure SM7B",
+        "Electro-Voice RE20"
+      ]
+    },
+    {
+      "id": "SOS08",
+      "topic": "Mixing",
+      "title": "Disputed bus hardware",
+      "claim": "The publisher names Neve 1073 DPA, SPL Vitalizer and Manley Variable Mu; Parker later recalls possible SSL processing. The chain remains unresolved.",
+      "source_id": "S04",
+      "location": "Mixing",
+      "evidence": "publisher-report",
+      "era": "Currents / 2015 (reported 2020)",
+      "gear": [
+        "Neve 1073 DPA",
+        "SPL Vitalizer",
+        "Manley Variable Mu"
+      ]
+    },
+    {
+      "id": "SOS09",
+      "topic": "Mixing",
+      "title": "Simpler bus processing",
+      "claim": "He shifted toward a limiter without EQ, with occasional SSL G Bus processing.",
+      "source_id": "S04",
+      "location": "Mixing",
+      "evidence": "first-hand",
+      "era": "The Slow Rush / 2020",
+      "gear": [
+        "SSL G Bus"
+      ]
+    },
+    {
+      "id": "PG01",
+      "topic": "Bass",
+      "title": "Shared pedal chain",
+      "claim": "He described his Hofner bass feeding his guitar pedal chain, initially because he lacked separate boards.",
+      "source_id": "S05",
+      "location": "Bass-tone answer before What's on your pedalboard?",
+      "evidence": "first-hand",
+      "era": "Currents / 2015",
+      "gear": [
+        "Hofner bass"
+      ]
+    },
+    {
+      "id": "PG02",
+      "topic": "Bass",
+      "title": "Bass ambience",
+      "claim": "That chain included compression, vibrato and reverb; he liked reverb on bass.",
+      "source_id": "S05",
+      "location": "What's on your pedalboard?",
+      "evidence": "first-hand",
+      "era": "Currents / 2015",
+      "gear": []
+    },
+    {
+      "id": "PG03",
+      "topic": "Workflow",
+      "title": "Rack preamp",
+      "claim": "He identified a Seymour Duncan KTG-1 rack preamp as a device he ran instruments through.",
+      "source_id": "S05",
+      "location": "What's on your pedalboard?",
+      "evidence": "publisher-report",
+      "era": "Currents / 2015",
+      "gear": [
+        "Seymour Duncan KTG-1"
+      ]
+    },
+    {
+      "id": "PG04",
+      "topic": "Guitar",
+      "title": "Escape muscle memory",
+      "claim": "He tries to escape automatic guitar muscle memory and treats the instrument as a source of other timbres.",
+      "source_id": "S05",
+      "location": "Guitarist influences answer",
+      "evidence": "first-hand",
+      "era": "Currents / 2015",
+      "gear": []
+    },
+    {
+      "id": "PG05",
+      "topic": "Guitar",
+      "title": "Hidden guitar parts",
+      "claim": "He confirmed more guitar parts were present than listeners sometimes recognized.",
+      "source_id": "S05",
+      "location": "More guitar on the record?",
+      "evidence": "first-hand",
+      "era": "Currents / 2015",
+      "gear": []
+    },
+    {
+      "id": "KX01",
+      "topic": "Vocals",
+      "title": "Forward vocals",
+      "claim": "More prominent vocals reflected growing confidence in his singing and melodies; earlier reverb and delay partly concealed shyness.",
+      "source_id": "S06",
+      "location": "Were the vocals approached differently?",
+      "evidence": "first-hand",
+      "era": "Currents / 2015",
+      "gear": []
+    },
+    {
+      "id": "KX02",
+      "topic": "Workflow",
+      "title": "Capture demos anywhere",
+      "claim": "He captured demos wherever ideas occurred, with a home studio providing the main continuous workspace.",
+      "source_id": "S06",
+      "location": "Recording on the road?",
+      "evidence": "first-hand",
+      "era": "Currents / 2015",
+      "gear": []
+    },
+    {
+      "id": "KX03",
+      "topic": "Writing",
+      "title": "Distinct tracks",
+      "claim": "A goal was to keep individual tracks distinct from one another.",
+      "source_id": "S06",
+      "location": "Representative of the rhythm of the album?",
+      "evidence": "first-hand",
+      "era": "Currents / 2015",
+      "gear": []
+    },
+    {
+      "id": "AM01",
+      "topic": "Drums",
+      "title": "Available overdrive",
+      "claim": "He said he generally avoided the dbx 165's Peakstop stage and used available overdrive, including Ableton's standard Overdrive.",
+      "source_id": "S07",
+      "location": "https://www.reddit.com/r/IAmA/comments/34clpm/comment/cqtk6uf/",
+      "evidence": "first-hand",
+      "era": "Pre-release Currents / 2015",
+      "gear": [
+        "dbx 165",
+        "Ableton Overdrive"
+      ]
+    },
+    {
+      "id": "AM02",
+      "topic": "Mixing",
+      "title": "Preamp crunch",
+      "claim": "He used a pair of Neve 1073s for mixing and valued their crunch.",
+      "source_id": "S07",
+      "location": "https://www.reddit.com/r/IAmA/comments/34clpm/comment/cqtk6uf/",
+      "evidence": "first-hand",
+      "era": "Pre-release Currents / 2015",
+      "gear": [
+        "Neve 1073"
+      ]
+    },
+    {
+      "id": "AM03",
+      "topic": "Guitar",
+      "title": "Reverb before drive",
+      "claim": "Reversing a conventional pedal order and putting reverb first were experiments he enjoyed for distorted spatial effects.",
+      "source_id": "S07",
+      "location": "https://www.reddit.com/r/IAmA/comments/34clpm/comment/cqte5yx/",
+      "evidence": "first-hand",
+      "era": "Pre-release Currents / 2015",
+      "gear": []
+    },
+    {
+      "id": "AM04",
+      "topic": "Writing",
+      "title": "Seventh chords",
+      "claim": "He recommended major and minor sevenths as an entry point for different emotional chord colours.",
+      "source_id": "S07",
+      "location": "Reply to airwrecka1 music-theory question",
+      "evidence": "first-hand",
+      "era": "Pre-release Currents / 2015",
+      "gear": []
+    },
+    {
+      "id": "AM05",
+      "topic": "Guitar",
+      "title": "Favourite pedals",
+      "claim": "He named Holy Grail reverb as a favourite and praised an unnamed purple vibrato.",
+      "source_id": "S07",
+      "location": "Favourite pedal question",
+      "evidence": "first-hand",
+      "era": "Pre-release Currents / 2015",
+      "gear": [
+        "Electro-Harmonix Holy Grail"
+      ]
+    },
+    {
+      "id": "RS01",
+      "topic": "Guitar",
+      "title": "Looser strings",
+      "claim": "He lowered all the strings for a looser feel; no exact interval was specified.",
+      "source_id": "S08",
+      "location": "Alternative tunings and effects pedals?",
+      "evidence": "first-hand",
+      "era": "InnerSpeaker / 2011",
+      "gear": []
+    },
+    {
+      "id": "RS02",
+      "topic": "Guitar",
+      "title": "Distorted ambience",
+      "claim": "Reverb before distortion changes the apparent acoustic space, rather than merely adding ambience after an overdriven guitar.",
+      "source_id": "S08",
+      "location": "Alternative tunings and effects pedals?",
+      "evidence": "first-hand",
+      "era": "InnerSpeaker / 2011",
+      "gear": []
+    },
+    {
+      "id": "RS03",
+      "topic": "Mixing",
+      "title": "Mixing versus production",
+      "claim": "He distinguished Dave Fridmann's influential mixing from his own production.",
+      "source_id": "S08",
+      "location": "Album two question",
+      "evidence": "first-hand",
+      "era": "InnerSpeaker / 2011",
+      "gear": []
+    },
+    {
+      "id": "RS04",
+      "topic": "Writing",
+      "title": "Protect the ending",
+      "claim": "He protected the album's ending by placing a bonus track inside the running order, treating neighbouring songs as a narrative.",
+      "source_id": "S08",
+      "location": "Island Walking question",
+      "evidence": "first-hand",
+      "era": "InnerSpeaker / 2011",
+      "gear": []
+    }
+  ]
+}

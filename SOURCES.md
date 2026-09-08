@@ -1,0 +1,24 @@
+# Sources
+
+- [S01: Tape Op: Tame Impala: Aussie Psyche Explosion](sources/external/s01.md) — Public 16 November 2010 interview section read; later account-only section unread.
+- [S02: Song Exploder 183: It Might Be Time](sources/external/s02.md) — Six-page official transcript read; no audio reviewed.
+- [S03: Guitar World interview](sources/external/s03.md) — Relevant interview questions and answers read.
+- [S04: Sound On Sound: The Psychedelic World of Kevin Parker](sources/external/s04.md) — Publisher-indexed text read; direct retrieval returned 403.
+- [S05: Premier Guitar: Psych Wunderkind Kevin Parker](sources/external/s05.md) — Relevant interview questions and answers read.
+- [S06: KEXP interview about Currents](sources/external/s06.md) — Relevant interview questions and answers read.
+- [S07: Kevin Parker Reddit AMA](sources/external/s07.md) — Selected artist-account replies read; exact calendar day unverified.
+- [S08: Rocksucker interview](sources/external/s08.md) — Relevant interview questions and answers read.
+- [S09: Tape Notes TN:188 metadata and public audio locator](sources/external/s09.md) — Official episode listing and RSS read; audio not reviewed in this source record.
+- [MW0: Mix With The Masters, part 0: Trailer](sources/mix-with-the-masters/mw0.md) — Complete supplied English caption file reviewed; no complete video-frame or audio audit.
+- [MW1: Mix With The Masters, part 1: Demo and guitar synth](sources/mix-with-the-masters/mw1.md) — Complete supplied English caption file reviewed; no complete video-frame or audio audit.
+- [MW2: Mix With The Masters, part 2: Drums and groove](sources/mix-with-the-masters/mw2.md) — Complete supplied English caption file reviewed; no complete video-frame or audio audit.
+- [MW3: Mix With The Masters, part 3: Vocals and effects](sources/mix-with-the-masters/mw3.md) — Complete supplied English caption file reviewed; no complete video-frame or audio audit.
+- [MW4: Mix With The Masters, part 4: Keyboards and arrangement](sources/mix-with-the-masters/mw4.md) — Complete supplied English caption file reviewed; visual verification limited to a brief part-4 opening frame.
+- [MW5: Mix With The Masters, part 5: Mix bus and monitoring](sources/mix-with-the-masters/mw5.md) — Complete supplied English caption file reviewed; no complete video-frame or audio audit.
+- [TN188: Tape Notes 188: Tame Impala — My Old Ways and Loser](sources/tape-notes/tn188.md) — Complete automatic speech transcript reviewed for production content; no full human audio audit.
+- [YT1: Top 10 Production & Writing Insights (public edit)](sources/tape-notes/yt1.md) — Complete available automatic captions reviewed; no video-frame or human audio audit.
+- [YT2: Vocal Chain, Layering & Vocal Production Techniques](sources/tape-notes/yt2.md) — Metadata only; research extraction session encountered membership gate.
+- [YT3: Drum Production on Deadbeat](sources/tape-notes/yt3.md) — Metadata only; research extraction session encountered membership gate.
+- [YT4: Top 10 Production & Writing Insights (member edit)](sources/tape-notes/yt4.md) — Metadata only; research extraction session encountered membership gate.
+- [YT5: Tame Impala Breaks Down Deadbeat (teaser)](sources/tape-notes/yt5.md) — Complete available automatic captions reviewed; no video-frame or human audio audit.
+- [YT6: Unavailable playlist entry (title unknown)](sources/tape-notes/yt6.md) — Video ID identified; ordinary extraction returned Private video.
