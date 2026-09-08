@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Generate the reference and static site from public source records. Python 3.9+."""
 import json, html, re, shutil, hashlib, sys
-from collections import Counter
 from string import Template
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
@@ -95,16 +94,12 @@ for g,cs in sorted(gear.items(),key=lambda x:x[0].lower()):
 (R/'playlists/mix-with-the-masters.md').write_text('Source: '+lookup['MW0']['url']+'\n\n# Mix With The Masters — The Less I Know the Better\n\nInside the Track #159. Trailer plus five parts; timestamps restart in each file.\n\n'+'\n'.join(f'- [{lookup[f"MW{i}"]["title"]}](../{paths[f"MW{i}"]})' for i in range(6))+'\n\nAll six supplied caption files are preserved in a separate private archive. Public records contain original notes and do not distribute the course or its transcripts.\n')
 
 # ---- Website. Every note is server-rendered into static HTML; JS adds filters only. ----
-# Album colour for the era key and note chips. Display grouping derived from the era text, not a production claim.
+# Album colour for small note chips, derived from the cited era text.
 ALBUMS=[('innerspeaker','Innerspeaker','2010'),('lonerism','Lonerism','2012'),('currents','Currents','2015'),('slow-rush','The Slow Rush','2020'),('deadbeat','Deadbeat','2025')]
 def album_of(era):
  low=era.lower()
  hits=[(low.find(name.lower()),key) for key,name,_ in ALBUMS if name.lower() in low]
  return min(hits)[1] if hits else 'other'
-counts=Counter(album_of(c['era']) for c in claims)
-def plural(n,word='note'):return f'{n} {word}' if n==1 else f'{n} {word}s'
-eras=''.join(f'<li class="era"><span class="album album-{k}" aria-hidden="true"></span><span class="era-name">{n}</span><span class="era-meta">{y} · {plural(counts[k])}</span></li>' for k,n,y in ALBUMS)
-eras+=f'<li class="era"><span class="album album-other" aria-hidden="true"></span><span class="era-name">Interviews</span><span class="era-meta">no album named · {plural(counts["other"])}</span></li>'
 articles=[]
 for c in claims:
  s=lookup[c['source_id']];album=album_of(c['era'])
@@ -116,7 +111,7 @@ sourcehtml=''.join(f'<details id="source-{e(s["id"])}"><summary><span class="sid
 digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()[:10]
 assets=dict(css_hash=digest(D/'style.css'),js_hash=digest(D/'app.js'),icon_hash=digest(D/'favicon.svg'),currents_src='art/currents.svg?v='+digest(D/'art/currents.svg'))
 common=dict(portrait_src='art/inside-kevins-mind.png?v='+digest(D/'art/inside-kevins-mind.png'),site=site,repo=repo,prefix=prefix,updated=updated,count=len(claims),nsources=len(sources),arch_svg=art.ARCH,**assets)
-page=Template((R/'site/index.html').read_text()).substitute(common,cover_svg=art.innerspeaker(),dune_svg=art.DUNE,eras=eras,notes=''.join(articles),sources=sourcehtml,
+page=Template((R/'site/index.html').read_text()).substitute(common,cover_svg=art.innerspeaker(),dune_svg=art.DUNE,notes=''.join(articles),sources=sourcehtml,
  source_options=''.join(f'<option value="{s["id"]}">{e(s["id"]+" · "+s["title"])}</option>' for s in sources),
  topic_buttons=''.join(f'<button type="button" data-topic="{t}" aria-pressed="false">{t}</button>' for t in topics))
 (D/'index.html').write_text(page)
@@ -126,4 +121,4 @@ for md in R.rglob('*.md'):
 master=(R/'TAME_IMPALA_AGENTS.md').read_text()
 (D/'TAME_IMPALA_AGENTS.md').write_text(re.sub(r'\]\((?!https?://|#)([^)]+)\)',lambda m:']('+repo+'/blob/main/'+m[1]+')',master))
 shutil.copy2(R/'data/reference.json',D/'reference.json')
-print(f'Built {len(claims)} claims, {len(sources)} sources, {len(gear)} exact gear labels; era key {dict(counts)}')
+print(f'Built {len(claims)} claims, {len(sources)} sources, {len(gear)} exact gear labels')

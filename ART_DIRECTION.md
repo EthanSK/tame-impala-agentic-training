@@ -10,7 +10,7 @@ These are design decisions about the website. They say nothing about how the rec
 |---|---|---|---|
 | Masthead and opening title | Album wordmarks | Extended geometric capitals | Locally served Michroma with system fallbacks |
 | Hero | Inside Tame Impala’s mind; *Innerspeaker* (2010) | Recent-photo likeness, playful pink brain cutaway and a small tilted landscape fragment | Generated portrait anchored across the bottom; `scripts/art.py` → `innerspeaker()` supplies the landscape fragment |
-| Era key and note chips | All five | Each album's dominant colours as a 40 px "mini cover" | CSS gradients only (`.album-*` classes); the same swatch appears as a 12 px chip on every note |
+| Note chips | All five | Each album's dominant colours | Small 12 px CSS swatches beside the cited era on each note |
 | Search and filters | *Lonerism* (2012) | Sun-bleached garden seen through iron bars, light leak in the top corner, pale circular label | CSS gradients for the photo strip and bars; the peach circle holds the live result count; pressed topic buttons use the park-sign green |
 | Production notes | *Deadbeat* (2025) | White insert, heavy black print running off the sheet, monochrome grain | White paper with an SVG-noise grain overlay; the "Production notes" title is intentionally clipped at the page edge |
 | Agent section | *Currents* (2015) | Pale violet streamlines on near-black, a chrome sphere bending them, a single red-to-orange streak | `scripts/art.py` → `currents()`: lines are warped around the sphere by a radial field and a trailing wobble; written to `docs/art/currents.svg` |
@@ -36,7 +36,7 @@ Notes whose era text names an album get that album's swatch; notes from intervie
 
 ## Type
 
-- **Display: Michroma** (SIL Open Font License, vendored at `docs/fonts/Michroma-Regular.ttf` with `docs/fonts/OFL-Michroma.txt`), used only for the sleeve-corner wordmarks, section eyebrows and the era key. It is an extended geometric face and a close web adaptation of the feel of the album wordmarks, not a verified match of the original typeface. Local fallbacks: Eurostile, Microgramma, Bank Gothic, then Helvetica Neue / Arial with the same tracking.
+- **Display: Michroma** (SIL Open Font License, vendored at `docs/fonts/Michroma-Regular.ttf` with `docs/fonts/OFL-Michroma.txt`), used for the masthead, opening title and section eyebrows. It is an extended geometric face and a close web adaptation of the feel of the album wordmarks, not a verified match of the original typeface. Local fallbacks: Eurostile, Microgramma, Bank Gothic, then Helvetica Neue / Arial with the same tracking.
 - **Body and headlines: Archivo** (SIL Open Font License, vendored at `docs/fonts/Archivo-Variable.ttf` with `docs/fonts/OFL-Archivo.txt`), variable weight. The 900 weight carries the Deadbeat-style headlines. Local fallbacks: Helvetica Neue, Helvetica, Arial.
 - **Data: the system monospace stack** for claim IDs, timestamps, era lines and gear lists.
 
@@ -56,7 +56,8 @@ Album artwork, wordmarks and trademarks remain the property of their rights hold
 
 ## Working rules for future passes
 
-- Keep the long research text on white or sand with dark ink. Spend visual risk in the hero, the era key and the section backgrounds, not in the note list.
+- Use album eras as visual inspiration for the UI. The opening moves from the portrait straight to the production notes; do not add a front-and-centre notes-by-era overview.
+- Keep the long research text on white or sand with dark ink. Spend visual risk in the hero and the section backgrounds, not in the note list.
 - Generated SVG illustrations must build deterministically from `python3 scripts/build.py`. Change the seed or parameters in `scripts/art.py`, never hand-edit generated SVG in `docs/`.
 - Asset links carry a content hash (`style.css?v=…`, `app.js?v=…`, `art/currents.svg?v=…`) so readers see new styles after a deploy. `scripts/check.py` verifies the hashes match the files.
 - Motion is limited to button hover; it stops under `prefers-reduced-motion`. Never autoplay audio or video.
