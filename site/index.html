@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Inside Tame Impala’s Mind — Production Notes</title>
-<meta name="description" content="$count source-linked notes on Kevin Parker's production, gear, plugins and songwriting. Search by topic and follow the original evidence.">
+<title>Inside Tame Impala’s Mind — Production Techniques</title>
+<meta name="description" content="Explore Kevin Parker's production techniques and apply them with your agent. $count source-linked notes, grouped by method.">
 <meta name="theme-color" content="#14a9b4">
-<meta property="og:title" content="Inside Tame Impala’s Mind — Production Notes">
-<meta property="og:description" content="Source-linked production notes for agents and musicians, with the uncertainty kept in.">
+<meta property="og:title" content="Inside Tame Impala’s Mind — Production Techniques">
+<meta property="og:description" content="Source-linked production techniques to use with your agent, with the uncertainty kept in.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="${site}art/inside-kevins-mind.png">
 <meta property="og:image:alt" content="A playful fan collage of Kevin Parker with a colourful brain cutaway.">
@@ -18,17 +18,17 @@
 <script src="app.js?v=$js_hash" defer></script>
 </head>
 <body>
-<a class="skip" href="#reference">Skip to production notes</a>
+<a class="skip" href="#reference">Skip to production techniques</a>
 <header class="masthead">
   <a class="wordmark" href="./">Tame Impala <span>Production / Agentic training</span></a>
-  <nav aria-label="Main navigation"><a href="#reference">Notes</a><a href="#agents">Agents</a><a href="#sources">Sources</a><a href="$repo">GitHub ↗</a></nav>
+  <nav aria-label="Main navigation"><a href="#reference">Techniques</a><a href="#agents">Agents</a><a href="#sources">Sources</a><a href="$repo">GitHub ↗</a></nav>
 </header>
 <main>
 <section class="mind-hero" aria-labelledby="title">
   <div class="mind-layout">
     <h1 id="title" class="mind-title"><span class="mind-overline">Inside</span>Tame Impala’s <em>mind</em></h1>
     <div class="mind-copy">
-      <p class="mind-summary">Explore the drums, synths, vocals and decisions behind the records.</p>
+      <p class="mind-summary">Explore the production techniques behind the records, then take them into your own session with an agent.</p>
       <p class="mind-count">$count notes · $nsources source records</p>
       <div class="mind-actions"><a class="primary" href="TAME_IMPALA_AGENTS.md" download aria-label="Download TAME_IMPALA_AGENTS.md">TAME_IMPALA_AGENTS.md ↓</a><a class="secondary" href="#reference">Find a technique ↓</a></div>
     </div>
@@ -37,21 +37,39 @@
   <div class="mind-landscape" aria-hidden="true">$cover_svg</div>
   <p class="mind-credit">Unofficial fan project · <a href="$repo/blob/main/ART_DIRECTION.md#portrait">Portrait credits</a></p>
 </section>
+<section class="agent-section" id="agents" aria-labelledby="agents-title">
+  <div class="currents" aria-hidden="true"><img src="$currents_src" alt="" width="1200" height="600" loading="lazy" decoding="async"></div>
+  <div class="agent-inner">
+    <div class="agent-heading"><h2 id="agents-title">Ask your agent about this</h2><p>Give your agent these techniques and it can help you apply them with the gear you already have.</p></div>
+    <ol class="agent-steps">
+      <li><p>Download TAME_IMPALA_AGENTS.md and attach it to your own agent.</p><a href="TAME_IMPALA_AGENTS.md" download>Download TAME_IMPALA_AGENTS.md ↓</a></li>
+      <li><p>Copy the prompt below, paste it to your agent, then ask how to get a sound.</p><button class="primary" id="copy" type="button">Copy agent prompt</button><span id="copy-status" role="status"></span></li>
+    </ol>
+    <details class="agent-instructions" id="agent-instructions"><summary>Agent prompt</summary>
+      <label class="visually-hidden" for="agent-prompt">Agent prompt</label>
+      <textarea id="agent-prompt" readonly rows="7">Read the attached TAME_IMPALA_AGENTS.md. If you have web access and it is not attached, retrieve https://ethansk.github.io/tame-impala-agentic-training/TAME_IMPALA_AGENTS.md instead. Then help me produce. Focus on the production techniques in these notes, not the equipment list. Ask me which DAW I use, what instruments and plugins I have, and the sound I&#x27;m going for, then work out how to get that technique with what I actually have. Cite the note ID, original source and timestamp or section for every factual production claim. Preserve the song, era and uncertainty. Say clearly which parts come from the sources and which are your own suggested experiments. Never invent exact settings, presets or signal chains that the sources do not state. Keep any instructions I already gave you; add this to them.</textarea>
+      <p class="downloads"><a href="reference.json" download>Download reference.json ↓</a><a href="$repo/blob/main/AGENTS.md">Repository instructions ↗</a></p>
+    </details>
+    <p class="agent-examples">Then ask it things like: <q>How do I get drums to sit like Let It Happen with the plugins I have?</q> <q>What did he do to his vocals, and how would I do that in Ableton?</q></p>
+    <aside class="companion" aria-label="Additional production reference"><a href="BEST_PRODUCTION_2025_AGENTS.md" download>Best production advice of 2025 ↓</a><span>$companion_count more technique notes from the Tape Notes compilation, with speaker uncertainty kept explicit.</span></aside>
+  </div>
+</section>
 <section class="library" id="reference" aria-labelledby="library-title">
-  <h2 id="library-title" class="cut-title">Production notes</h2>
-  <p class="library-intro">Find the drums, doubles, synths and decisions behind the records. Every note keeps its source, era and uncertainty.</p>
+  <h2 id="library-title" class="cut-title">Production techniques</h2>
+  <p class="library-intro">Grouped by what you are trying to do, with the source, era and uncertainty kept on every note.</p>
   <div class="controls">
     <div class="gate">
       <div class="gate-label"><span class="gate-band">Tame Impala</span><span id="count" role="status" aria-live="polite"><strong id="count-number">$count</strong> <span id="count-label">notes</span></span></div>
     </div>
     <div class="filters">
       <div class="search-row">
-        <label class="search-label" for="search">Search<input id="search" type="search" placeholder="Search notes, gear, techniques" autocomplete="off"></label>
+        <label class="search-label" for="search">Search<input id="search" type="search" placeholder="Search notes, techniques, equipment" autocomplete="off"></label>
+        <label for="topic-filter">Topic<select id="topic-filter"><option value="">All topics</option>$topic_options</select></label>
         <label for="source-filter">Source<select id="source-filter"><option value="">All sources</option>$source_options</select></label>
         <label for="evidence-filter">Evidence<select id="evidence-filter"><option value="">All evidence</option><option value="first-hand">First-hand</option><option value="qualified-recollection">Recollection</option><option value="publisher-report">Publisher report</option></select></label>
       </div>
-      <div class="topics" role="group" aria-label="Production topic"><button type="button" data-topic="" aria-pressed="true">All topics</button>$topic_buttons</div>
-      <div class="results-bar"><button id="clear" type="button">Clear filters</button></div>
+      <div class="topics" role="group" aria-label="Production technique"><button type="button" data-technique="" aria-pressed="true">All techniques</button>$technique_buttons</div>
+      <div class="results-bar"><span>Practical techniques first</span><button id="clear" type="button">Clear filters</button></div>
     </div>
   </div>
   <details class="evidence-guide">
@@ -60,20 +78,8 @@
     <p>Course timestamps restart in each part. Podcast times follow an ad-supported 81:23 copy and can shift with inserted ads. Three member clips lack extracted content; one playlist entry is private. <a href="$repo/blob/main/COVERAGE.md">Read the coverage record ↗</a></p>
   </details>
   <div id="notes">$notes</div>
-  <p id="empty" hidden>No notes found matching your search</p>
+  <p id="empty" hidden>No techniques found matching your search</p>
   <noscript><p class="noscript">All notes are available above. Use your browser's Find command to search without JavaScript.</p></noscript>
-</section>
-<section class="agent-section" id="agents" aria-labelledby="agents-title">
-  <div class="currents" aria-hidden="true"><img src="$currents_src" alt="" width="1200" height="600" loading="lazy" decoding="async"></div>
-  <div class="agent-inner">
-    <p class="eyebrow">For your next session</p>
-    <h2 id="agents-title">Give your agent the sources</h2>
-    <p>Download the master document or the JSON, then ask about a sound, a song or a piece of gear. Every answer can cite a claim ID, its source and a timestamp.</p>
-    <p class="downloads"><a href="TAME_IMPALA_AGENTS.md" download>Download TAME_IMPALA_AGENTS.md ↓</a><a href="reference.json" download>Download reference.json ↓</a></p>
-    <label for="agent-prompt">Agent prompt</label>
-    <textarea id="agent-prompt" readonly rows="7">Use this repository as a source reference. Read TAME_IMPALA_AGENTS.md, data/reference.json and COVERAGE.md. For every factual production claim, cite the claim ID, original source and timestamp or section. Preserve era, uncertain recollections and publisher attribution. Clearly label your own suggested experiments. Never invent settings or claim unread videos were reviewed.</textarea>
-    <div class="copy-row"><button class="primary" id="copy" type="button">Copy agent prompt</button><span id="copy-status" role="status"></span></div>
-  </div>
 </section>
 <section class="sources" id="sources" aria-labelledby="sources-title">
   <div class="sources-head">

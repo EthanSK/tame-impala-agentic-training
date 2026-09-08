@@ -22,3 +22,7 @@
 - [YT4: Top 10 Production & Writing Insights (member edit)](sources/tape-notes/yt4.md) — Metadata only; research extraction session encountered membership gate.
 - [YT5: Tame Impala Breaks Down Deadbeat (teaser)](sources/tape-notes/yt5.md) — Complete available automatic captions reviewed; no video-frame or human audio audit.
 - [YT6: Unavailable playlist entry (title unknown)](sources/tape-notes/yt6.md) — Video ID identified; ordinary extraction returned Private video.
+
+## Separate companion
+
+- [BP25: Best Production Advice of 2025](sources/best-production-2025/bp25.md) — compilation technique notes; other producers remain separate from Parker’s claims.

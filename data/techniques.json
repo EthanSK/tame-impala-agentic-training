@@ -1,0 +1,619 @@
+{
+  "families": [
+    {
+      "id": "capture",
+      "title": "Capture & commit",
+      "description": "Record ideas and performances, choose microphone placement and monitoring, and decide what to print or retain."
+    },
+    {
+      "id": "groove",
+      "title": "Build a groove",
+      "description": "Shape rhythmic feel through playing, loop editing, percussion placement and the interaction of bass and drums."
+    },
+    {
+      "id": "sound",
+      "title": "Shape a sound",
+      "description": "Change tone through instrument setup, synthesis, filtering, distortion and signal order."
+    },
+    {
+      "id": "space",
+      "title": "Create space",
+      "description": "Use ambience, vocal doubles, panning and effects routing to create depth, width and movement."
+    },
+    {
+      "id": "dynamics",
+      "title": "Control dynamics",
+      "description": "Shape envelopes, compression and limiting while preserving the intended impact."
+    },
+    {
+      "id": "decisions",
+      "title": "Choose & arrange",
+      "description": "Develop ideas, choose layers and sections, test alternatives and judge a mix in context."
+    }
+  ],
+  "priority_definitions": {
+    "1": "Directly actionable, specific production method; exact settings are not required when the action itself is clear.",
+    "2": "Supporting practice, creative principle or useful production observation.",
+    "3": "Gear identification, unresolved attribution, working conditions or historical context without a sufficiently established method."
+  },
+  "mapping": {
+    "TO01": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "TO02": {
+      "technique": "dynamics",
+      "priority": 1
+    },
+    "TO03": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "TO04": {
+      "technique": "capture",
+      "priority": 3
+    },
+    "TO05": {
+      "technique": "capture",
+      "priority": 2
+    },
+    "TO06": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "TO07": {
+      "technique": "capture",
+      "priority": 2
+    },
+    "TO08": {
+      "technique": "dynamics",
+      "priority": 2
+    },
+    "SE01": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "SE02": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "SE03": {
+      "technique": "sound",
+      "priority": 2
+    },
+    "SE04": {
+      "technique": "capture",
+      "priority": 2
+    },
+    "SE05": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "SE06": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "SE07": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "SE08": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "GW01": {
+      "technique": "sound",
+      "priority": 3
+    },
+    "GW02": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "GW03": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "GW04": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "GW05": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "GW06": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "GW07": {
+      "technique": "sound",
+      "priority": 2
+    },
+    "GW08": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "SOS01": {
+      "technique": "dynamics",
+      "priority": 3
+    },
+    "SOS02": {
+      "technique": "sound",
+      "priority": 3
+    },
+    "SOS03": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "SOS04": {
+      "technique": "sound",
+      "priority": 3
+    },
+    "SOS05": {
+      "technique": "capture",
+      "priority": 2
+    },
+    "SOS06": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "SOS07": {
+      "technique": "capture",
+      "priority": 3
+    },
+    "SOS08": {
+      "technique": "dynamics",
+      "priority": 3
+    },
+    "SOS09": {
+      "technique": "dynamics",
+      "priority": 2
+    },
+    "PG01": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "PG02": {
+      "technique": "space",
+      "priority": 1
+    },
+    "PG03": {
+      "technique": "sound",
+      "priority": 3
+    },
+    "PG04": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "PG05": {
+      "technique": "sound",
+      "priority": 3
+    },
+    "KX01": {
+      "technique": "space",
+      "priority": 2
+    },
+    "KX02": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "KX03": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "AM01": {
+      "technique": "sound",
+      "priority": 2
+    },
+    "AM02": {
+      "technique": "sound",
+      "priority": 2
+    },
+    "AM03": {
+      "technique": "space",
+      "priority": 1
+    },
+    "AM04": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "AM05": {
+      "technique": "space",
+      "priority": 3
+    },
+    "RS01": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "RS02": {
+      "technique": "space",
+      "priority": 1
+    },
+    "RS03": {
+      "technique": "decisions",
+      "priority": 3
+    },
+    "RS04": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "MW1-01": {
+      "technique": "capture",
+      "priority": 2
+    },
+    "MW1-02": {
+      "technique": "decisions",
+      "priority": 3
+    },
+    "MW1-03": {
+      "technique": "sound",
+      "priority": 2
+    },
+    "MW1-04": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "MW1-05": {
+      "technique": "sound",
+      "priority": 3
+    },
+    "MW1-06": {
+      "technique": "capture",
+      "priority": 2
+    },
+    "MW1-07": {
+      "technique": "capture",
+      "priority": 2
+    },
+    "MW1-08": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "MW1-09": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "MW1-10": {
+      "technique": "sound",
+      "priority": 3
+    },
+    "MW2-01": {
+      "technique": "capture",
+      "priority": 2
+    },
+    "MW2-02": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "MW2-03": {
+      "technique": "capture",
+      "priority": 3
+    },
+    "MW2-04": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "MW2-05": {
+      "technique": "dynamics",
+      "priority": 2
+    },
+    "MW2-06": {
+      "technique": "sound",
+      "priority": 3
+    },
+    "MW2-07": {
+      "technique": "capture",
+      "priority": 2
+    },
+    "MW2-08": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "MW2-09": {
+      "technique": "groove",
+      "priority": 2
+    },
+    "MW2-10": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "MW2-11": {
+      "technique": "groove",
+      "priority": 2
+    },
+    "MW3-01": {
+      "technique": "capture",
+      "priority": 3
+    },
+    "MW3-02": {
+      "technique": "dynamics",
+      "priority": 3
+    },
+    "MW3-03": {
+      "technique": "space",
+      "priority": 2
+    },
+    "MW3-04": {
+      "technique": "space",
+      "priority": 3
+    },
+    "MW3-05": {
+      "technique": "space",
+      "priority": 3
+    },
+    "MW3-06": {
+      "technique": "space",
+      "priority": 1
+    },
+    "MW3-07": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "MW3-08": {
+      "technique": "space",
+      "priority": 1
+    },
+    "MW4-01": {
+      "technique": "sound",
+      "priority": 3
+    },
+    "MW4-02": {
+      "technique": "sound",
+      "priority": 3
+    },
+    "MW4-03": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "MW4-04": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "MW5-01": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "MW5-02": {
+      "technique": "dynamics",
+      "priority": 2
+    },
+    "MW5-03": {
+      "technique": "dynamics",
+      "priority": 3
+    },
+    "MW5-04": {
+      "technique": "decisions",
+      "priority": 3
+    },
+    "MW5-05": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "MW5-06": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "TN188-01": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "TN188-02": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "TN188-03": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "TN188-04": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "TN188-05": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "TN188-06": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "TN188-07": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "TN188-08": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "TN188-09": {
+      "technique": "capture",
+      "priority": 2
+    },
+    "TN188-10": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "TN188-11": {
+      "technique": "dynamics",
+      "priority": 1
+    },
+    "TN188-12": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "TN188-13": {
+      "technique": "space",
+      "priority": 1
+    },
+    "TN188-14": {
+      "technique": "space",
+      "priority": 1
+    },
+    "TN188-15": {
+      "technique": "space",
+      "priority": 2
+    },
+    "TN188-16": {
+      "technique": "sound",
+      "priority": 2
+    },
+    "TN188-17": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "TN188-18": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "TN188-19": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "TN188-20": {
+      "technique": "dynamics",
+      "priority": 2
+    },
+    "TN188-21": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "TN188-22": {
+      "technique": "capture",
+      "priority": 2
+    },
+    "TN188-23": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "TN188-24": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "TN188-25": {
+      "technique": "decisions",
+      "priority": 1
+    }
+  },
+  "notes": [
+    {
+      "claim_ids": [],
+      "note": "Editorial classification only: merge by claim ID without rewriting claims, sources, era, gear or evidence. Priority measures practical usefulness, not confidence. Existing qualifications remain mandatory at every priority."
+    },
+    {
+      "claim_ids": [
+        "TO01",
+        "TO02",
+        "MW2-05",
+        "MW2-11"
+      ],
+      "note": "Snare-side microphone placement belongs to capture; compressor envelope controls belong to dynamics; interacting kick/snare feel belongs to groove. MW2-05 is supporting practice because it establishes envelope importance without a specific adjustment."
+    },
+    {
+      "claim_ids": [
+        "SE02",
+        "GW05",
+        "PG04",
+        "TN188-24"
+      ],
+      "note": "These concern choosing tools to change creative habits or reduce friction, so decisions is more useful than a gear-oriented sound category."
+    },
+    {
+      "claim_ids": [
+        "SOS06",
+        "SE05",
+        "AM01",
+        "AM02",
+        "TN188-16"
+      ],
+      "note": "Processing whose stated purpose is tonal coloration belongs to sound, including EQ before compression. Dynamics is reserved for envelope, impact and limiting. A named distortion plugin without an established method remains supporting practice or gear context."
+    },
+    {
+      "claim_ids": [
+        "PG02",
+        "AM03",
+        "RS02",
+        "AM05"
+      ],
+      "note": "Reverb before distortion spans sound and space; choose space because the distinctive result is transformed ambience. Favourite-pedal identification stays priority 3."
+    },
+    {
+      "claim_ids": [
+        "GW03",
+        "SE04",
+        "MW1-01",
+        "MW1-06"
+      ],
+      "note": "The specific first-take loop operation is groove priority 1. Retaining demos and imperfections without a specific editing method is capture priority 2."
+    },
+    {
+      "claim_ids": [
+        "MW1-08",
+        "MW2-09",
+        "MW2-08"
+      ],
+      "note": "Layering and trimming are established actions. The phase-alignment account establishes a difficulty but no solved alignment method; MW2-09 therefore stays priority 2."
+    },
+    {
+      "claim_ids": [
+        "MW2-07"
+      ],
+      "note": "Recall consequences belong to capture. Do not promote the editorial recommendation to print stems into a method attributed directly to Parker."
+    },
+    {
+      "claim_ids": [
+        "MW3-03",
+        "MW3-08",
+        "TN188-12",
+        "TN188-13"
+      ],
+      "note": "Double tracking used for shimmer or width belongs to space. Contrasting a single hook against doubled verses is a section-arrangement decision. Whisper width retains its filtering and compression details."
+    },
+    {
+      "claim_ids": [
+        "MW3-05",
+        "TN188-20"
+      ],
+      "note": "Each spans multiple families: tentative vocal reverb/compressor identification is filed under space as gear context; Fridmann's broader processing lessons are filed under dynamics as supporting practice. Neither supplies a definitive recipe."
+    },
+    {
+      "claim_ids": [
+        "SOS08",
+        "MW5-02",
+        "MW5-03"
+      ],
+      "note": "Bus-processing claims belong to dynamics. The two disputed compressor accounts remain priority 3; the qualified broader processing order is supporting practice, not a verified fixed chain."
+    },
+    {
+      "claim_ids": [
+        "MW5-04",
+        "MW5-05",
+        "TN188-03"
+      ],
+      "note": "Monitoring belongs to decisions because it supports judgment. Bedroom conditions are context; checking another room or bringing a reference into the session are actionable methods."
+    },
+    {
+      "claim_ids": [
+        "TN188-02",
+        "TN188-18"
+      ],
+      "note": "Re-recording stereo piano to preserve an intimate perspective is capture. The stool sound's relationship to the opening is arrangement, despite being room sound."
+    },
+    {
+      "claim_ids": [
+        "SOS03",
+        "TN188-04",
+        "TN188-17"
+      ],
+      "note": "The synchronized machine jam is groove; routing an 808 through an amp is sound; contrasting a freely played lead with sequenced repetition is decisions. Instrument names do not determine the family."
+    },
+    {
+      "claim_ids": [
+        "TN188-11",
+        "TN188-21",
+        "GW02",
+        "TN188-23"
+      ],
+      "note": "These remain priority 1 because the practical action is specific even though precise compressor settings, tape model, a modulation detail or retrospective context may be unknown. Do not remove those uncertainties."
+    }
+  ]
+}

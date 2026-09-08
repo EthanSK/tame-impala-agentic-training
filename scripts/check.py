@@ -17,6 +17,39 @@ for s in a['sources']:
  assert f'id="source-{s["id"]}"' in index
 for name,src in [('reference.json','data/reference.json')]:
  assert (R/'docs'/name).read_bytes()==(R/src).read_bytes()
+# Method priority never alters the original factual records or their evidence.
+originals={c['id']:c for name in ['external.json','session-sources.json'] for c in json.loads((R/'data'/name).read_text())['claims']}
+assert set(originals)=={c['id'] for c in a['claims']}
+families={f['id'] for f in a['techniques']}
+assert len(families)==6
+assert [c['priority'] for c in a['claims']]==sorted(c['priority'] for c in a['claims'])
+for c in a['claims']:
+ assert all(c[k]==v for k,v in originals[c['id']].items()),c['id']
+ assert c['technique'] in families and c['priority'] in (1,2,3)
+ assert f'data-technique="{c["technique"]}"' in index
+assert index.index('id="agents"')<index.index('id="reference"')
+assert 'id="topic-filter"' in index and 'data-technique=""' in index
+assert 'Explore the production techniques' in index and 'Explore the drums' not in index
+# The compilation remains a separately attributed, complete chronological extraction.
+from companion import seconds
+best=json.loads((R/'data/best-production-2025.json').read_text())
+assert (R/'docs/best-production-2025.json').read_bytes()==(R/'data/best-production-2025.json').read_bytes()
+assert best['source']['url']=='https://www.youtube.com/watch?v=jfJtTBzIt70'
+assert len({n['id'] for n in best['notes']})==len(best['notes'])
+assert not ({n['id'] for n in best['notes']} & set(originals))
+previous=21
+guide=(R/'BEST_PRODUCTION_2025_AGENTS.md').read_text()
+record=(R/'sources/best-production-2025/bp25.md').read_text()
+for n in best['notes']:
+ assert seconds(n['start'])==previous,n['id']
+ previous=seconds(n['end'])
+ assert seconds(n['start'])<previous<=best['source']['duration_seconds']
+ assert n['technique'] in families and n['points'] and n['qualification']
+ assert n['attribution'] in ['matched-episode-transcript','context-inference','unassigned']
+ if n['attribution']=='matched-episode-transcript':assert n.get('episode_url') and n['artist']!='Speaker not yet verified'
+ if n['attribution']=='unassigned':assert n['artist']=='Speaker not yet verified'
+ assert f'id="{n["id"].lower()}"' in guide and n['id'] in record
+assert previous==7294
 for p in R.rglob('*'):
  if not p.is_file() or '.git' in p.parts or '__pycache__' in p.parts:continue
  assert p.suffix.lower() not in ['.mp3','.mp4','.wav','.vtt','.srt'],p
@@ -51,4 +84,7 @@ for p in list((R/'docs/art').glob('*.svg'))+[R/'docs/favicon.svg']:
 assert 'whether' not in (R/'site/index.html').read_text().lower()
 expected=re.sub(r'\]\((?!https?://|#)([^)]+)\)',lambda m:'](https://github.com/EthanSK/tame-impala-agentic-training/blob/main/'+m[1]+')',(R/'TAME_IMPALA_AGENTS.md').read_text())
 assert (R/'docs/TAME_IMPALA_AGENTS.md').read_text()==expected
-print(f'PASS: {len(a["claims"])} claims, {len(a["sources"])} linked source files, generated parity, hashed assets, local Markdown destinations and public-content scan')
+expected_best=re.sub(r'\]\((?!https?://|#)([^)]+)\)',lambda m:'](https://github.com/EthanSK/tame-impala-agentic-training/blob/main/'+m[1]+')',guide)
+assert (R/'docs/BEST_PRODUCTION_2025_AGENTS.md').read_text()==expected_best
+assert 'href="BEST_PRODUCTION_2025_AGENTS.md" download' in index
+print(f'PASS: {len(a["claims"])} unchanged factual claims, six technique groups, {len(best["notes"])} separately attributed compilation notes, generated parity, hashed assets, local links and public-content scan')

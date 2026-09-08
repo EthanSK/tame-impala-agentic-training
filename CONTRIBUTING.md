@@ -6,7 +6,11 @@ Pull requests are accepted. Add a first-person interview, official transcript, t
 
 Include the original source link, publication date if known, song/era, exact timestamp or printed section, and a concise original paraphrase. State what you inspected: text, automatic captions, audio, video frames or publisher metadata. Keep uncertainty and corrections; publisher equipment lists do not establish signal order.
 
-Existing primary-source records live in `data/external.json`; the course and full podcast records live in `data/session-sources.json`. `scripts/build.py` currently holds playlist coverage metadata. Update the relevant input, keeping stable claim IDs, and run:
+Existing primary-source records live in `data/external.json`; the course and full podcast records live in `data/session-sources.json`. `scripts/build.py` currently holds playlist coverage metadata. Update the relevant input, keeping stable claim IDs.
+
+For a new Parker claim, also add its method family and practical priority to `data/techniques.json`. Prefer a title that names the production technique or decision. Keep every factual qualification; priority is editorial usefulness, not confidence. The separate best-of compilation lives in `data/best-production-2025.json` and uses BP25 note IDs. Its speaker attributions and timestamps must not be merged into Parker's claims.
+
+Regenerate and check the outputs:
 
 ```sh
 python3 scripts/build.py

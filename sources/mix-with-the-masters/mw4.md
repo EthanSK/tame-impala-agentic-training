@@ -11,22 +11,6 @@ Timestamps are local to this part. Captions contain recognition errors. Recollec
 
 ## Production notes
 
-### MW4-01: Kronos supplies the later section
-**Synths · Currents / The Less I Know the Better · first-hand**
-Location: 00:03–00:57
-
-He identifies Korg Kronos as the main keyboard for the section after roughly the first minute and says it became a recurring instrument from Currents onward.
-
-Gear: Korg Kronos
-
-### MW4-02: Keep the JV-1080 uncertainty
-**Synths · Currents / The Less I Know the Better · qualified-recollection**
-Location: 00:57–01:43
-
-He mentions a Roland JV-1080 or similar module but does not confidently identify every part; he thinks the Rhodes-style sound was probably Kronos.
-
-Gear: Roland JV-1080, Korg Kronos
-
 ### MW4-03: Layer without elaborate transitions
 **Synths · Currents / The Less I Know the Better · first-hand**
 Location: 01:43–03:40
@@ -42,6 +26,22 @@ Location: 03:40–04:30
 Completing the later section gave a beloved demo a satisfying destination. His account values both quick invention and patience in finishing.
 
 Gear: No specific model established
+
+### MW4-01: Kronos supplies the later section
+**Synths · Currents / The Less I Know the Better · first-hand**
+Location: 00:03–00:57
+
+He identifies Korg Kronos as the main keyboard for the section after roughly the first minute and says it became a recurring instrument from Currents onward.
+
+Gear: Korg Kronos
+
+### MW4-02: Keep the JV-1080 uncertainty
+**Synths · Currents / The Less I Know the Better · qualified-recollection**
+Location: 00:57–01:43
+
+He mentions a Roland JV-1080 or similar module but does not confidently identify every part; he thinks the Rhodes-style sound was probably Kronos.
+
+Gear: Roland JV-1080, Korg Kronos
 
 ## Transcript status
 

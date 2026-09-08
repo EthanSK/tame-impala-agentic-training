@@ -7,6 +7,7 @@ R=Path(__file__).resolve().parents[1]
 D=R/'docs'; D.mkdir(exist_ok=True)
 sys.path.insert(0,str(R/'scripts'))
 import art
+import companion
 repo='https://github.com/EthanSK/tame-impala-agentic-training'
 site='https://ethansk.github.io/tame-impala-agentic-training/'
 prefix='/tame-impala-agentic-training/'
@@ -16,6 +17,16 @@ def location_html(value):
  return f'<a href="{e(value)}">Artist reply ↗</a>' if value.startswith('https://') else e(value)
 a=json.loads((R/'data/external.json').read_text());b=json.loads((R/'data/session-sources.json').read_text())
 sources=a['sources']+b['sources']; claims=a['claims']+b['claims']
+techniques=json.loads((R/'data/techniques.json').read_text())
+families=techniques['families']; family_lookup={f['id']:f for f in families}
+assert set(techniques['mapping'])=={c['id'] for c in claims}
+for c in claims:
+ c.update(techniques['mapping'][c['id']])
+ assert c['technique'] in family_lookup and c['priority'] in (1,2,3)
+# Practical methods come first; topic and era remain independent source context.
+family_order={f['id']:i for i,f in enumerate(families)}
+claims.sort(key=lambda c:(c['priority'],family_order[c['technique']]))
+companion_count=companion.build(R,families)
 clips=[('YT1','r8lKPPm1sYo','Top 10 Production & Writing Insights (public edit)','Complete available automatic captions reviewed; no video-frame or human audio audit.','Cross-checks TN188: full drum takes 00:25; 808/DRM1 02:45; capture ideas 05:23; effects 09:28; producer judgment 11:14; vocal width 12:41. These repeat the interview, not six independent sources.'),('YT2','1WMxwm3Tu70','Vocal Chain, Layering & Vocal Production Techniques','Metadata only; research extraction session encountered membership gate.','Authorized browser playback access was observed, but no caption export was available through that controller. Content is not claimed reviewed.'),('YT3','nwqOT7jwt4A','Drum Production on Deadbeat','Metadata only; research extraction session encountered membership gate.','Caption availability in an authorized session remains unverified. Do not infer details from the title.'),('YT4','o02n6ogEvcY','Top 10 Production & Writing Insights (member edit)','Metadata only; research extraction session encountered membership gate.','13:00 playlist duration differs from the public edit. Their equivalence is unverified.'),('YT5','e65xhY6Qvqg','Tame Impala Breaks Down Deadbeat (teaser)','Complete available automatic captions reviewed; no video-frame or human audio audit.','Repeats drum palette at 00:14 and stereo whispers at 00:43. No distinct tip counted; isolated compression/EQ excerpt does not establish a chain.'),('YT6','Pld6EOIF7xg','Unavailable playlist entry (title unknown)','Video ID identified; ordinary extraction returned Private video.','Content, duration and relation to the interview unknown.')]
 for id,vid,title,coverage,notes in clips:
  sources.append(dict(id=id,title=title,url='https://www.youtube.com/watch?v='+vid,date='2026-09-03' if id in ['YT1','YT5'] else None,kind='video',coverage=coverage,notes=notes))
@@ -44,11 +55,14 @@ for s in sources:
 # Remove stale external presentation copies only if not referenced, all were generated in this task.
 for p in (R/'sources/external').glob('*.md'):
  if str(p.relative_to(R)) not in paths.values(): p.unlink()
-model=dict(schema_version=1,updated='2026-09-08',sources=sources,claims=claims)
+model=dict(schema_version=2,updated='2026-09-08',techniques=families,priority_definitions=techniques['priority_definitions'],sources=sources,claims=claims)
 (R/'data/reference.json').write_text(json.dumps(model,ensure_ascii=False,indent=2)+'\n')
 topics=['Writing','Drums','Bass','Guitar','Synths','Vocals','Mixing','Workflow']
 intro=['# Tame Impala Production — agent reference (TAME_IMPALA_AGENTS.md)','',f'{len(claims)} source-linked production notes · {len(sources)} source records · Updated {updated}','',
-'This is the canonical master document of the tame-impala-agentic-training repository: an unofficial, growing reference to Kevin Parker’s documented production choices, written so an AI agent or a musician can answer from the evidence rather than from memory. Every note carries a stable claim ID, its original source, a timestamp or section, the song or era it describes and an evidence label. Start with a musical problem, follow the source, then test an idea in your own session. A gear mention is not a universal recipe. Answering rules live in [AGENTS.md](AGENTS.md); read/unread boundaries live in [COVERAGE.md](COVERAGE.md).','',
+'This is the canonical production-technique reference of the tame-impala-agentic-training repository. Use it with an agent to solve a musical problem: choose a documented method, understand the decision behind it, and try an adaptation with the tools you have. Every note keeps its stable claim ID, original source, timestamp or section, song/era and evidence label. Technique groups and practical priority are editorial organization, not confidence ratings. Gear is supporting context, not a requirement to buy the same equipment. Answering rules live in [AGENTS.md](AGENTS.md); read/unread boundaries live in [COVERAGE.md](COVERAGE.md).','',
+'## Use this with your agent','',
+'Attach this file and describe what you want to change in your production, your DAW and the tools available. Ask the agent to identify a relevant technique, cite the claim and its source, and suggest one small experiment. It should explain what to listen for and keep its proposed settings separate from Parker’s documented actions. Keep your existing project instructions; this is an additional reference, not a replacement for them.','',
+'> Help me apply a documented production technique with the tools I have. Cite the claim ID, original source and timestamp or section; preserve the era and every qualification. Explain the method before naming equipment. Clearly label your suggested experiments and substitutions. Never invent settings, presets or unreviewed source content.','',
 '## Read the evidence correctly','',
 '- **First-hand:** Parker’s statement in an interview, including caption/ASR-derived accounts. This label describes who spoke, not a certified transcript or independent replication.',
 '- **Qualified recollection:** Parker is uncertain, corrects himself, or reconstructs an old setup. Preserve the qualification.',
@@ -57,7 +71,7 @@ intro=['# Tame Impala Production — agent reference (TAME_IMPALA_AGENTS.md)',''
 '- Supplied course captions and public automatic transcripts were text-reviewed; complete video-frame and human audio audits were not performed.',
 '- Three member clips lack extracted content; one playlist video is private. Read [COVERAGE.md](COVERAGE.md) before claiming complete video coverage.','',
 '## Find your way','',
-'[Gear and plugins](GEAR.md) · [All sources](SOURCES.md) · [Playlists](playlists/README.md) · [Machine-readable JSON](data/reference.json) · [Agent instructions](AGENTS.md)','',
+'[All sources](SOURCES.md) · [Playlists](playlists/README.md) · [Machine-readable JSON](data/reference.json) · [Agent instructions](AGENTS.md) · [Gear index](GEAR.md) · [Best Production 2025 companion](BEST_PRODUCTION_2025_AGENTS.md)','',
 '## Working principles — editorial synthesis','',
 'These prompts are our interpretation of the cited accounts, not additional Kevin Parker quotations.','',
 '1. Capture an idea before polishing your ability to perform it (TN188-01; MW1-01).',
@@ -72,13 +86,16 @@ intro=['# Tame Impala Production — agent reference (TAME_IMPALA_AGENTS.md)',''
 '- MW5 tentatively mentions an SSL bus compressor; Sound On Sound publisher narration mentions Manley. The accounts do not establish one combined chain.',
 '- Deadbeat’s microphone discussion corrects SM57 to SM7; a U47-style clone has no securely established manufacturer here.',
 '- Tape Notes sponsors are not evidence of Kevin’s equipment. Exact plugin settings, amp models and several old patch names remain unknown.','']
-for topic in topics:
- intro += [f'## {topic}','']
- for c in [c for c in claims if c['topic']==topic]:
+intro += ['## Choose a production technique','','Each group puts specific methods before supporting practices and historical or equipment context. Priority describes usefulness for a session; it never removes a source qualification.','']
+for family in families:
+ intro += [f'- [{family["title"]}](#{family["id"]}) — {family["description"]}']
+intro += ['']
+for family in families:
+ intro += [f'<a id="{family["id"]}"></a>',f'## {family["title"]}','']
+ for c in [c for c in claims if c['technique']==family['id']]:
   s=lookup[c['source_id']]
-  intro += [f'### {c["id"]} · {c["title"]}',c['claim'],'',f'- **Context:** {c["era"]}',f'- **Evidence:** {c["evidence"]} · [{s["title"]}]({s["url"]}) · {c["location"]}',f'- **Gear:** {", ".join(c["gear"]) or "No specific model established"}',f'[Source record]({paths[s["id"]]})','']
+  intro += [f'### {c["id"]} · {c["title"]}',c['claim'],'',f'- **Topic:** {c["topic"]}',f'- **Context:** {c["era"]}',f'- **Evidence:** {c["evidence"]} · [{s["title"]}]({s["url"]}) · {c["location"]}',f'- **Gear context:** {", ".join(c["gear"]) or "No specific model established"}',f'[Source record]({paths[s["id"]]})','']
 (R/'TAME_IMPALA_AGENTS.md').write_text('\n'.join(intro)+'\n')
-(R/'LEARNINGS.md').write_text('# Master learnings\n\nThe canonical master is [TAME_IMPALA_AGENTS.md](TAME_IMPALA_AGENTS.md). All structured production claims live in [data/reference.json](data/reference.json); edit the input records described in [CONTRIBUTING.md](CONTRIBUTING.md) and regenerate.\n')
 gear={}
 for c in claims:
  for g in c['gear']:gear.setdefault(g,[]).append(c)
@@ -90,6 +107,8 @@ for g,cs in sorted(gear.items(),key=lambda x:x[0].lower()):
 (R/'GEAR.md').write_text('\n'.join(geartext)+'\n')
 (R/'SOURCES.md').write_text('# Sources\n\n'+ '\n'.join(f'- [{s["id"]}: {s["title"]}]({paths[s["id"]]}) — {s["coverage"]}' for s in sources)+'\n')
 (R/'playlists/README.md').write_text('# Playlists and source groups\n\n- [Tape Notes Tame Impala playlist](tape-notes.md) — all six entries, including coverage gaps.\n- [Mix With The Masters](mix-with-the-masters.md) — trailer and five course parts.\n- [Primary interviews](primary-interviews.md) — interviews, AMA and official transcript.\n\nSource membership does not prove duplicate or independent content. Public edits often overlap the full podcast.\n')
+with (R/'SOURCES.md').open('a') as f:f.write('\n## Separate companion\n\n- [BP25: Best Production Advice of 2025](sources/best-production-2025/bp25.md) — compilation technique notes; other producers remain separate from Parker’s claims.\n')
+with (R/'playlists/README.md').open('a') as f:f.write('\n- [Best Production Advice of 2025](best-production-2025.md) — the supplied Tape Notes compilation, kept as a separate companion.\n')
 (R/'playlists/tape-notes.md').write_text('Source: https://www.youtube.com/playlist?list=PLCy7kFImYx34\n\n# Tape Notes — Tame Impala\n\nAll six playlist entries inventoried on 8 September 2026.\n\n'+'\n'.join(f'{i+1}. [{t[2]}](../{paths[t[0]]}) — {t[3]}' for i,t in enumerate(clips))+'\n\n[Full public TN188 episode notes](../sources/tape-notes/tn188.md) supply the detailed interview context; they do not establish that unreviewed member edits contain nothing additional.\n')
 (R/'playlists/mix-with-the-masters.md').write_text('Source: '+lookup['MW0']['url']+'\n\n# Mix With The Masters — The Less I Know the Better\n\nInside the Track #159. Trailer plus five parts; timestamps restart in each file.\n\n'+'\n'.join(f'- [{lookup[f"MW{i}"]["title"]}](../{paths[f"MW{i}"]})' for i in range(6))+'\n\nAll six supplied caption files are preserved in a separate private archive. Public records contain original notes and do not distribute the course or its transcripts.\n')
 
@@ -103,22 +122,25 @@ def album_of(era):
 articles=[]
 for c in claims:
  s=lookup[c['source_id']];album=album_of(c['era'])
- articles.append(f'<article class="note" id="{e(c["id"])}" data-topic="{e(c["topic"])}" data-source="{e(s["id"])}" data-evidence="{e(c["evidence"])}" data-album="{album}"><div class="note-code"><a href="#{e(c["id"])}">{e(c["id"])}</a><span class="note-topic">{e(c["topic"])}</span></div><div class="note-body"><p class="note-era"><span class="era-chip album album-{album}" aria-hidden="true"></span>{e(c["era"])}</p><h3>{e(c["title"])}</h3><p class="claim">{e(c["claim"])}</p><p class="gear">{e(" / ".join(c["gear"]))}</p><footer><span class="evidence" data-evidence="{e(c["evidence"])}">{e(c["evidence"].replace("-"," "))}</span><a href="{e(s["url"])}">{e(s["title"])} ↗</a><span class="timestamp">{location_html(c["location"])}</span></footer></div></article>')
+ articles.append(f'<article class="note" id="{e(c["id"])}" data-technique="{e(c["technique"])}" data-priority="{c["priority"]}" data-topic="{e(c["topic"])}" data-source="{e(s["id"])}" data-evidence="{e(c["evidence"])}" data-album="{album}"><div class="note-code"><a href="#{e(c["id"])}">{e(c["id"])}</a><span class="note-method">{e(family_lookup[c["technique"]]["title"])}</span><span class="note-topic">{e(c["topic"])}</span></div><div class="note-body"><h3>{e(c["title"])}</h3><p class="claim">{e(c["claim"])}</p><p class="note-era"><span class="era-chip album album-{album}" aria-hidden="true"></span>{e(c["era"])}</p><p class="gear">{e(" / ".join(c["gear"]))}</p><footer><span class="evidence" data-evidence="{e(c["evidence"])}">{e(c["evidence"].replace("-"," "))}</span><a href="{e(s["url"])}">{e(s["title"])} ↗</a><span class="timestamp">{location_html(c["location"])}</span></footer></div></article>')
 sourcehtml=''.join(f'<details id="source-{e(s["id"])}"><summary><span class="sid">{e(s["id"])}</span><span>{e(s["title"])}</span></summary><p>{e(s["coverage"])}</p><p>{e(s["notes"])}</p><p class="source-links"><a href="{e(s["url"])}">Open source ↗</a> · <a href="{repo}/blob/main/{paths[s["id"]]}">Source notes</a></p></details>' for s in sources)
 # Generated illustration. Hashes in asset links make browsers fetch new styles after a deploy.
 (D/'art').mkdir(exist_ok=True)
 (D/'art/currents.svg').write_text(art.currents()+'\n')
 digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()[:10]
 assets=dict(css_hash=digest(D/'style.css'),js_hash=digest(D/'app.js'),icon_hash=digest(D/'favicon.svg'),currents_src='art/currents.svg?v='+digest(D/'art/currents.svg'))
-common=dict(portrait_src='art/inside-kevins-mind.png?v='+digest(D/'art/inside-kevins-mind.png'),site=site,repo=repo,prefix=prefix,updated=updated,count=len(claims),nsources=len(sources),arch_svg=art.ARCH,**assets)
+common=dict(portrait_src='art/inside-kevins-mind.png?v='+digest(D/'art/inside-kevins-mind.png'),site=site,repo=repo,prefix=prefix,updated=updated,count=len(claims),companion_count=companion_count,nsources=len(sources),arch_svg=art.ARCH,**assets)
 page=Template((R/'site/index.html').read_text()).substitute(common,cover_svg=art.innerspeaker(),dune_svg=art.DUNE,notes=''.join(articles),sources=sourcehtml,
  source_options=''.join(f'<option value="{s["id"]}">{e(s["id"]+" · "+s["title"])}</option>' for s in sources),
- topic_buttons=''.join(f'<button type="button" data-topic="{t}" aria-pressed="false">{t}</button>' for t in topics))
+ topic_options=''.join(f'<option value="{t}">{t}</option>' for t in topics),
+ technique_buttons=''.join(f'<button type="button" data-technique="{f["id"]}" aria-pressed="false">{e(f["title"])}</button>' for f in families))
 (D/'index.html').write_text(page)
 (D/'404.html').write_text(Template((R/'site/404.html').read_text()).substitute(common))
 for md in R.rglob('*.md'):
  md.write_text('\n'.join(line.rstrip() for line in md.read_text().splitlines()).rstrip()+'\n')
-master=(R/'TAME_IMPALA_AGENTS.md').read_text()
-(D/'TAME_IMPALA_AGENTS.md').write_text(re.sub(r'\]\((?!https?://|#)([^)]+)\)',lambda m:']('+repo+'/blob/main/'+m[1]+')',master))
+for name in ['TAME_IMPALA_AGENTS.md','BEST_PRODUCTION_2025_AGENTS.md']:
+ master=(R/name).read_text()
+ (D/name).write_text(re.sub(r'\]\((?!https?://|#)([^)]+)\)',lambda m:']('+repo+'/blob/main/'+m[1]+')',master))
 shutil.copy2(R/'data/reference.json',D/'reference.json')
+shutil.copy2(R/'data/best-production-2025.json',D/'best-production-2025.json')
 print(f'Built {len(claims)} claims, {len(sources)} sources, {len(gear)} exact gear labels')

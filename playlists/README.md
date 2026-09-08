@@ -5,3 +5,5 @@
 - [Primary interviews](primary-interviews.md) — interviews, AMA and official transcript.
 
 Source membership does not prove duplicate or independent content. Public edits often overlap the full podcast.
+
+- [Best Production Advice of 2025](best-production-2025.md) — the supplied Tape Notes compilation, kept as a separate companion.

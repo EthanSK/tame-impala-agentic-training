@@ -1,0 +1,1394 @@
+{
+  "schema_version": 1,
+  "source": {
+    "id": "BP25",
+    "title": "Best Production Advice of 2025 ft Jamie XX, Air, Finneas, Lorde, Hayley Williams, Porter Robinson",
+    "publisher": "Tape Notes Podcast",
+    "url": "https://www.youtube.com/watch?v=jfJtTBzIt70",
+    "published_at": "2026-01-01T10:00:54-08:00",
+    "duration_seconds": 7307,
+    "reviewed_on": "2026-09-08",
+    "coverage": "Complete available English automatic caption text reviewed, from 00:00 through the last caption at 2:01:34. Video duration 2:01:47. No complete human listening or frame audit. Intro montage is not counted as an independent technique.",
+    "transcript": "Full third-party captions are not redistributed. These are original paraphrases with separately labelled editorial applications.",
+    "attribution_policy": "Compilation captions do not label speakers. Episode-transcript matches support named attributions where available; contextual inferences and unassigned passages remain explicit. Episode pages are supporting pointers, not claims that every full episode was reviewed.",
+    "supporting_metadata": [
+      {
+        "title": "Tape Notes TN164 episode notes — Pomplamoose",
+        "url": "https://www.podchaser.com/podcasts/tape-notes-528889/episodes/tn164-pomplamoose-265970783",
+        "scope": "Syndicated publisher description and gear list, including JU-06A; not a full transcript audit."
+      },
+      {
+        "title": "Tape Notes TN169 episode notes — Parcels",
+        "url": "https://podfollow.com/tape-notes/episode/f0504bc4dc8439f04ac5882e817dba0a127a36db/view",
+        "scope": "Syndicated publisher description names Jules and Patrick and the discussed songs; individual speaker cuts remain contextual."
+      }
+    ]
+  },
+  "notes": [
+    {
+      "id": "BP25-01",
+      "start": "00:21",
+      "end": "02:47",
+      "technique": "sound",
+      "title": "Re-record a sampled vocal through a rotating speaker",
+      "points": [
+        "Nicolas Godin describes sampling the Sexy Boy chorus into an Akai S1000 and feeding its output through a combo pedal into a Leslie cabinet.",
+        "He triggered the sampled chorus while recording the processed result; the discovery came from trying an available studio routing option."
+      ],
+      "gear": [
+        "Akai S1000",
+        "Leslie cabinet",
+        "Combo interface pedal"
+      ],
+      "qualification": "The pedal and cabinet models are not established. This vocal effect is distinct from the talk-box technique later in the compilation.",
+      "artist": "Air — Nicolas Godin",
+      "episode": "tn156-air",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn156-air"
+    },
+    {
+      "id": "BP25-02",
+      "start": "02:47",
+      "end": "03:55",
+      "technique": "decisions",
+      "title": "Give each instrument a different musical idea",
+      "points": [
+        "FINNEAS tries to avoid repeating one rhythmic idea across every instrument he plays; counterpoint gives the parts different jobs.",
+        "Playing with other musicians and writing with Ashe introduces ideas that would not emerge from one person alone."
+      ],
+      "gear": [
+        "Yamaha CP80"
+      ],
+      "qualification": "The original producer behind the remembered advice is not identified.",
+      "artist": "The Favors — FINNEAS & Ashe",
+      "episode": "tn165-the-favours-finneas-ashe",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn165-the-favours-finneas-ashe"
+    },
+    {
+      "id": "BP25-03",
+      "start": "03:55",
+      "end": "06:46",
+      "technique": "groove",
+      "title": "Change the perceived tempo while retaining the original parts",
+      "points": [
+        "Jamie xx built Breather to move a DJ set from 160 to 120 BPM. A repeated synth part stays at its original timing while the new pulse changes how its rhythm is perceived.",
+        "Drums and synths from both tempo grids overlap during the transition; the basic Logic bass supports the earlier pulse.",
+        "A complete stop before the new section worked better for him than preserving the mathematically continuous transition."
+      ],
+      "gear": [
+        "Logic stock bass instrument"
+      ],
+      "qualification": "The exact bass instrument is not named in this excerpt. The tempo relationship belongs to this arrangement.",
+      "artist": "Jamie xx",
+      "episode": "tn157-jamie-xx",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn157-jamie-xx"
+    },
+    {
+      "id": "BP25-04",
+      "start": "06:46",
+      "end": "07:54",
+      "technique": "sound",
+      "title": "Preserve the recognizable character of a sound",
+      "points": [
+        "Danny L Harle values drum sounds with a strong, exaggerated identity and warns that processing can remove the character that makes a source recognizable.",
+        "He praises the RX5 sound, then explicitly says this particular track uses drums he made himself."
+      ],
+      "gear": [
+        "RX5 drum machine"
+      ],
+      "qualification": "RX5 is a preference here, not confirmed equipment used on the demonstrated track.",
+      "artist": "Olly Alexander & Danny L Harle",
+      "episode": "tn152-olly-alexander-danny-l-harle",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn152-olly-alexander-danny-l-harle"
+    },
+    {
+      "id": "BP25-05",
+      "start": "07:54",
+      "end": "11:07",
+      "technique": "capture",
+      "title": "Build a personal sample library before arranging",
+      "points": [
+        "Maribou State record long experimental sessions with Jack Sibley, routing instruments through pedals, amplifiers and further processing, then resampling the results.",
+        "Room microphones, objects, quiet piano touches and raised gain contribute tactile noise; the musical source material remains their own.",
+        "They add small textures while developing arrangements, then remove details that do not justify their place after repeated listening."
+      ],
+      "gear": [
+        "Juno synth, model unspecified",
+        "Pedals and guitar amplifiers"
+      ],
+      "qualification": "Their large channel counts describe a process, not a target number of tracks.",
+      "artist": "Maribou State",
+      "episode": "tn151-maribou-state",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn151-maribou-state"
+    },
+    {
+      "id": "BP25-06",
+      "start": "11:07",
+      "end": "13:00",
+      "technique": "sound",
+      "title": "Let a patch suggest the phrase and harmony",
+      "points": [
+        "The speaker uses UVI Falcon and a vintage sampled-synth collection; a bright tail suggests a disco cadence and chord movement.",
+        "Emulator-style piano, chime and drum sounds help establish a coherent palette."
+      ],
+      "gear": [
+        "UVI Falcon",
+        "UVI Vintage Vault",
+        "E-mu Emulator II-derived sounds"
+      ],
+      "qualification": "Collection spelling is normalized; the exact library, patches and hardware provenance of each sound remain unverified.",
+      "artist": "Sam Gellaitry — contextual attribution",
+      "episode": "tn168-sam-gellaitry",
+      "attribution": "context-inference",
+      "episode_url": "https://tapenotes.co.uk/project/tn168-sam-gellaitry"
+    },
+    {
+      "id": "BP25-07",
+      "start": "13:00",
+      "end": "14:45",
+      "technique": "space",
+      "title": "Move vocal repeats away from the centre",
+      "points": [
+        "The speaker compares centred delay with Repeater’s Spread mode B and prefers the spread version because the repeats compete less with the lead vocal’s words.",
+        "The useful decision is to judge the delay against lyric intelligibility, rather than only enjoying it in isolation."
+      ],
+      "gear": [
+        "Repeater — Spread mode B"
+      ],
+      "qualification": "Speaker identity and the described frequency-distribution mechanism are not independently confirmed; this is a report of the demonstrated preference.",
+      "artist": "Speaker not yet verified",
+      "episode": "",
+      "attribution": "unassigned"
+    },
+    {
+      "id": "BP25-08",
+      "start": "14:45",
+      "end": "15:58",
+      "technique": "decisions",
+      "title": "Use a sampled instrument to communicate a part to a player",
+      "points": [
+        "FINNEAS programs a fiddle reference to communicate the musical part to a live player.",
+        "He still wants the real performance and recalls possibly retaining some of the programmed layer quietly underneath."
+      ],
+      "gear": [
+        "Kontakt",
+        "The Fiddle"
+      ],
+      "qualification": "The library developer is not established; retaining the programmed layer is a qualified recollection.",
+      "artist": "The Favors — FINNEAS & Ashe",
+      "episode": "tn165-the-favours-finneas-ashe",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn165-the-favours-finneas-ashe"
+    },
+    {
+      "id": "BP25-09",
+      "start": "15:58",
+      "end": "18:54",
+      "technique": "space",
+      "title": "Create vocal depth by contrasting dry and distant layers",
+      "points": [
+        "The speaker uses a little Megaverb on Nataly’s lead, then emphasizes selected chorus words with left/right doubles, compression, harmonics processing and a long reverb.",
+        "A 7.4-second tail is mentioned for those accent layers; microphone emulation adds an older, rougher texture.",
+        "Backing vocals originally intended to sketch strings remain in the arrangement, while separate dry, close phrases contrast with the distant layers."
+      ],
+      "gear": [
+        "Goodhertz Megaverb",
+        "Saturn",
+        "Microphone emulator, model unstated in this excerpt"
+      ],
+      "qualification": "The 7.4-second setting belongs to a particular accent, not the entire vocal. The later King’s Microphones mention does not prove every emulator instance is identical.",
+      "artist": "Pomplamoose — attribution inferred from Nataly references",
+      "episode": "",
+      "attribution": "context-inference"
+    },
+    {
+      "id": "BP25-10",
+      "start": "18:54",
+      "end": "21:12",
+      "technique": "sound",
+      "title": "Make a lead behave like an unstable scream",
+      "points": [
+        "Porter Robinson starts with u-he Diva and adds pitch modulation to make the lead feel unstable.",
+        "He boosts around 1 kHz before distortion, then describes a reverb with a late swell to intensify the firework-like effect.",
+        "His computer-based workflow supports his concentration; the sound is built through processing rather than a requirement to buy hardware."
+      ],
+      "gear": [
+        "u-he Diva",
+        "Pitch LFO",
+        "EQ around 1 kHz",
+        "Distortion",
+        "Reverb name unclear in captions"
+      ],
+      "qualification": "The starting preset is recalled tentatively. The scream comparison is a creative description, not an acoustic rule or a fixed EQ amount.",
+      "artist": "Porter Robinson",
+      "episode": "tn153-porter-robinson",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn153-porter-robinson"
+    },
+    {
+      "id": "BP25-11",
+      "start": "21:12",
+      "end": "22:42",
+      "technique": "sound",
+      "title": "Turn environmental noise into a pitched musical layer",
+      "points": [
+        "Jim-E Stack records rain outside the studio and emphasizes a narrow frequency around 390 Hz, described as G4, using Pro-Q.",
+        "Further thinning and processing make the rain into a sustained musical layer, with another rain part providing harmony.",
+        "The recording preserves a memory of the place where the music was made."
+      ],
+      "gear": [
+        "FabFilter Pro-Q"
+      ],
+      "qualification": "The later processing name is unclear in the captions; do not infer a plugin from the word velocity.",
+      "artist": "Lorde & Jim-E Stack",
+      "episode": "tn158-lorde-jim-e-stack",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn158-lorde-jim-e-stack"
+    },
+    {
+      "id": "BP25-12",
+      "start": "22:42",
+      "end": "24:11",
+      "technique": "decisions",
+      "title": "Keep a sparse build engaging with small events",
+      "points": [
+        "The speaker adds tiny foley events, including a sword sound, panning, edits and brief changes in dynamics.",
+        "These moments hold attention while leaving enough space before the fuller section arrives."
+      ],
+      "gear": [
+        "Foley and found sounds"
+      ],
+      "qualification": "Speaker identity is not verified from this caption passage.",
+      "artist": "Speaker not yet verified",
+      "episode": "",
+      "attribution": "unassigned"
+    },
+    {
+      "id": "BP25-13",
+      "start": "24:11",
+      "end": "28:20",
+      "technique": "dynamics",
+      "title": "Write and perform into the processing that defines the record",
+      "points": [
+        "The speaker places a familiar heavy multiband/mastering setup on the session early and balances quiet incoming tracks into it.",
+        "The processed monitor sound makes recording feel close to performing the finished song and influences vocal confidence.",
+        "A reverb send above the multiband is mentioned without a complete routing explanation."
+      ],
+      "gear": [
+        "Multiband compressor, model unspecified",
+        "Reverb send"
+      ],
+      "qualification": "This is an individual workflow with unusually large gain changes, not a universal mastering recipe; the preset and complete routing are unavailable.",
+      "artist": "Sam Gellaitry — contextual attribution",
+      "episode": "tn168-sam-gellaitry",
+      "attribution": "context-inference",
+      "episode_url": "https://tapenotes.co.uk/project/tn168-sam-gellaitry"
+    },
+    {
+      "id": "BP25-14",
+      "start": "28:20",
+      "end": "29:49",
+      "technique": "capture",
+      "title": "Bury an expressive room performance inside the arrangement",
+      "points": [
+        "Djo and Adam Thein discuss scream recordings made with drummer Wes to create uneasiness.",
+        "Movement through the live room changes the recorded level and distance; the intense isolated material is much less obvious inside the full track."
+      ],
+      "gear": [
+        "Room microphones"
+      ],
+      "qualification": "The excerpt does not specify microphone models or a processing chain.",
+      "artist": "Djo & Adam Thein",
+      "episode": "tn160-djo-adam-thein",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn160-djo-adam-thein"
+    },
+    {
+      "id": "BP25-15",
+      "start": "29:49",
+      "end": "32:16",
+      "technique": "decisions",
+      "title": "Let unfinished and playful ideas survive long enough to develop",
+      "points": [
+        "Hayley Williams describes learning to tolerate tentative ideas in unfamiliar writing sessions.",
+        "Working with Daniel James, Steph and David Byrne reinforced that a joke or aimless experiment can become the useful starting point for a song."
+      ],
+      "gear": [],
+      "qualification": "This is her account of collaboration and confidence, not a rule that every idea must be retained.",
+      "artist": "Hayley Williams",
+      "episode": "tn166-hayley-williams-daniel-james",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn166-hayley-williams-daniel-james"
+    },
+    {
+      "id": "BP25-16",
+      "start": "32:16",
+      "end": "35:33",
+      "technique": "dynamics",
+      "title": "Use room balance and local automation to shape the drums",
+      "points": [
+        "FINNEAS describes choosing between close, room and hall microphones to move the same performance between intimate and large perspectives.",
+        "Release automation drawn during mixing stops compressed room sound from swallowing a fill.",
+        "He also describes targeted level changes and manual sibilance fixes; a single static EQ/compressor setting does not solve every moment."
+      ],
+      "gear": [
+        "Close, room and hall microphones",
+        "Compressor release automation"
+      ],
+      "qualification": "The automation is credited to Aaron in the session, not solely to FINNEAS.",
+      "artist": "The Favors — FINNEAS & Ashe",
+      "episode": "tn165-the-favours-finneas-ashe",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn165-the-favours-finneas-ashe"
+    },
+    {
+      "id": "BP25-17",
+      "start": "35:33",
+      "end": "36:20",
+      "technique": "decisions",
+      "title": "Let an established lead make room for a counter-melody",
+      "points": [
+        "Porter Robinson changes the existing lead into a siren-like part before adding a counter-melody, and moves an idea from the intro to the outro."
+      ],
+      "gear": [],
+      "qualification": "The counter-melody is an arrangement choice; patch settings are not specified in this excerpt.",
+      "artist": "Porter Robinson",
+      "episode": "tn153-porter-robinson",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn153-porter-robinson"
+    },
+    {
+      "id": "BP25-18",
+      "start": "36:20",
+      "end": "37:14",
+      "technique": "decisions",
+      "title": "Choose presets by their contribution to the finished song",
+      "points": [
+        "The next speaker accepts presets when they serve the finished result and values arrangements that sound simple."
+      ],
+      "gear": [],
+      "qualification": "This is a separate speaker from the preceding counter-melody demonstration; do not attribute both excerpts to one person.",
+      "artist": "Speaker not yet verified",
+      "episode": "",
+      "attribution": "unassigned"
+    },
+    {
+      "id": "BP25-19",
+      "start": "37:14",
+      "end": "38:57",
+      "technique": "capture",
+      "title": "Keep the energy of a rough vocal take",
+      "points": [
+        "The speaker keeps Danielle’s handheld backing-vocal performance, including room playback and noise, rather than rebuilding it in a cleaner setup.",
+        "An Eventide harmonizer’s pitch movement sounds unstable in isolation but contributes urgency in the track."
+      ],
+      "gear": [
+        "Eventide harmonizer, model unspecified"
+      ],
+      "qualification": "Attribution to the HAIM/Rostam session is inferred from Danielle and the song context; exact processor settings are not given.",
+      "artist": "HAIM & Rostam — contextual attribution",
+      "episode": "tn170-haim-rostam-batmanglij",
+      "attribution": "context-inference",
+      "episode_url": "https://tapenotes.co.uk/project/tn170-haim-rostam-batmanglij"
+    },
+    {
+      "id": "BP25-20",
+      "start": "38:57",
+      "end": "41:52",
+      "technique": "decisions",
+      "title": "Use instrumentation to tell a different story from the lyric",
+      "points": [
+        "A piano-based duet is revoiced as chordal bass so the opening feels more restrained, with piano arriving like increasing daylight.",
+        "The speaker values contrast between a painful lyric and music that still contains hope, rather than reinforcing the same emotional cue twice."
+      ],
+      "gear": [
+        "Piano",
+        "Chordal bass"
+      ],
+      "qualification": "Kae Tempest/Fraser T Smith attribution is contextual; the specific song and bass voicing are not verified.",
+      "artist": "Kae Tempest & Fraser T Smith — contextual attribution",
+      "episode": "tn167-kae-tempest-fraser-t-smith",
+      "attribution": "context-inference",
+      "episode_url": "https://tapenotes.co.uk/project/tn167-kae-tempest-fraser-t-smith"
+    },
+    {
+      "id": "BP25-21",
+      "start": "41:52",
+      "end": "43:18",
+      "technique": "sound",
+      "title": "Draw an unstable melody through a resonant synth patch",
+      "points": [
+        "RÜFÜS DU SOL describe setting up a single-note MS-20 patch with high resonance for Ty and manually drawing automation.",
+        "Imperfect note landings and the unusual movement were part of the appeal, rather than defects to eliminate."
+      ],
+      "gear": [
+        "MS-20 patch"
+      ],
+      "qualification": "The account calls it resonance automation; this excerpt alone does not fully establish which controls determine the resulting pitch.",
+      "artist": "RÜFÜS DU SOL — James Hunt",
+      "episode": "tn150-rufus-du-sol",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn150-rufus-du-sol"
+    },
+    {
+      "id": "BP25-22",
+      "start": "43:18",
+      "end": "44:51",
+      "technique": "sound",
+      "title": "Play a bass line with filter cutoff automation",
+      "points": [
+        "Jamie xx raises the resonance on a Logic synth and creates bass movement by automating cutoff, using a tuner to locate pitches.",
+        "Large sweeps generate laser-like transitions that would be awkward to achieve through ordinary keyboard notes."
+      ],
+      "gear": [
+        "Logic synth, model unspecified",
+        "Tuner"
+      ],
+      "qualification": "The sample and line are acknowledged as slightly out of tune; do not invent a quantized patch or exact synth model.",
+      "artist": "Jamie xx",
+      "episode": "tn157-jamie-xx",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn157-jamie-xx"
+    },
+    {
+      "id": "BP25-23",
+      "start": "44:51",
+      "end": "46:09",
+      "technique": "decisions",
+      "title": "Arrange backing vocals before committing the lead",
+      "points": [
+        "FINNEAS records a guide lead, builds harmonies and doubles, then returns to the final lead while hearing that energy.",
+        "A backing-vocal idea inspires call-and-response in the outro, so the lead benefits from the arrangement being present during performance."
+      ],
+      "gear": [],
+      "qualification": "This is a session sequence, not a requirement to record every vocal in this order.",
+      "artist": "The Favors — FINNEAS & Ashe",
+      "episode": "tn165-the-favours-finneas-ashe",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn165-the-favours-finneas-ashe"
+    },
+    {
+      "id": "BP25-24",
+      "start": "46:09",
+      "end": "46:56",
+      "technique": "sound",
+      "title": "Change vocal character through pitch and simple processing",
+      "points": [
+        "Jim-E Stack describes vocal character coming partly from an earlier key and subsequent pitch change, alongside AMS processing.",
+        "Devil-Loc supplies crunch; R-Vox is valued as a quick compressor with little parameter adjustment."
+      ],
+      "gear": [
+        "Soundtoys Devil-Loc",
+        "AMS processor, model unspecified",
+        "R-Vox"
+      ],
+      "qualification": "The excerpt does not establish a complete chain or precise key-shift amount.",
+      "artist": "Lorde & Jim-E Stack",
+      "episode": "tn158-lorde-jim-e-stack",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn158-lorde-jim-e-stack"
+    },
+    {
+      "id": "BP25-25",
+      "start": "46:56",
+      "end": "48:20",
+      "technique": "space",
+      "title": "Use an extremely short feedback delay as a texture layer",
+      "points": [
+        "The speaker demonstrates a tape-delay setup showing zero milliseconds, a wet contribution and feedback below sustained self-oscillation.",
+        "Feedback filtering changes the tonal emphasis and the layered result adds an artificial, mechanical stereo character."
+      ],
+      "gear": [
+        "Tape delay, model unspecified"
+      ],
+      "qualification": "Exact routing and implementation are not fully established; zero milliseconds is the displayed setting, not proof of zero processing latency.",
+      "artist": "Olly Alexander & Danny L Harle",
+      "episode": "tn152-olly-alexander-danny-l-harle",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn152-olly-alexander-danny-l-harle"
+    },
+    {
+      "id": "BP25-26",
+      "start": "48:20",
+      "end": "50:19",
+      "technique": "groove",
+      "title": "Find the groove first, then replace its sounds",
+      "points": [
+        "The speaker uses an existing drum break or loop as a quick feel reference before rebuilding the pattern with one-shots.",
+        "A parallel hi-hat through a noise-mode vocoder, with adjusted release, adds subtle movement beside the original hat.",
+        "Small clap, rim and other layers add variation without changing the basic groove."
+      ],
+      "gear": [
+        "Vocoder in noise mode",
+        "One-shot drum samples"
+      ],
+      "qualification": "The speaker is unsure which initial loop was used on this particular track; this is also a description of a recurring method.",
+      "artist": "Speaker not yet verified",
+      "episode": "",
+      "attribution": "unassigned"
+    },
+    {
+      "id": "BP25-27",
+      "start": "50:19",
+      "end": "51:20",
+      "technique": "space",
+      "title": "Make delayed repeats differ from a static digital source",
+      "points": [
+        "Porter Robinson prefers EchoBoy’s slight modulation and tonal differences when working with very repeatable digital sounds.",
+        "Changing the repeats helps avoid the effect behaving merely like a louder coincident copy of the original note."
+      ],
+      "gear": [
+        "Soundtoys EchoBoy"
+      ],
+      "qualification": "The loudness explanation is conditional on timing and similarity; it is not a universal claim about all digital delays.",
+      "artist": "Porter Robinson",
+      "episode": "tn153-porter-robinson",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn153-porter-robinson"
+    },
+    {
+      "id": "BP25-28",
+      "start": "51:20",
+      "end": "52:46",
+      "technique": "space",
+      "title": "Print and reverse a long effect tail",
+      "points": [
+        "The speaker demonstrates EchoBoy’s Galaxy preset as a long, reverb-like effect and suggests bouncing the result in place and reversing it for a transition.",
+        "EchoBoy’s default sound and Effectrix also receive brief positive mentions."
+      ],
+      "gear": [
+        "Soundtoys EchoBoy — Galaxy",
+        "Effectrix"
+      ],
+      "qualification": "EchoBoy is used in a reverb-like way here; the effect is not thereby a dedicated reverb plugin.",
+      "artist": "Rudimental",
+      "episode": "tn161-rudimental",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn161-rudimental"
+    },
+    {
+      "id": "BP25-29",
+      "start": "52:46",
+      "end": "55:22",
+      "technique": "sound",
+      "title": "Combine heavily colored live drums with cleaner samples",
+      "points": [
+        "The speaker processes live drums with transient shaping, distortion, harmonic processing and microphone emulation, then layers cleaner drum samples around them.",
+        "Additional snares, shakers and hats come from different sessions, including additions much later in the production."
+      ],
+      "gear": [
+        "Smack Attack",
+        "Soundtoys Decapitator",
+        "FabFilter Saturn",
+        "King’s Microphones"
+      ],
+      "qualification": "The listed processes are mentioned on the drum treatment, but the excerpt does not conclusively enumerate every routing stage.",
+      "artist": "Pomplamoose — contextual attribution",
+      "episode": "",
+      "attribution": "context-inference"
+    },
+    {
+      "id": "BP25-30",
+      "start": "55:22",
+      "end": "56:05",
+      "technique": "groove",
+      "title": "Edit a drum performance by ear when automatic timing fails",
+      "points": [
+        "FINNEAS describes manually comping and editing drums after finding that a quick quantize operation did not give the desired result.",
+        "The time-consuming local edits were worthwhile for those performances."
+      ],
+      "gear": [],
+      "qualification": "This account does not imply that quantization is always inferior.",
+      "artist": "FINNEAS",
+      "episode": "tn165-the-favours-finneas-ashe",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn165-the-favours-finneas-ashe"
+    },
+    {
+      "id": "BP25-31",
+      "start": "56:05",
+      "end": "58:08",
+      "technique": "capture",
+      "title": "Record the act of browsing samples as a performance",
+      "points": [
+        "Jamie xx records himself moving rhythmically through XO’s sample map using Audio Hijack.",
+        "The changing sample selections create a short, quiet hi-hat-like passage with continual variation."
+      ],
+      "gear": [
+        "XLN Audio XO",
+        "Audio Hijack",
+        "Logic"
+      ],
+      "qualification": "The producer could not confirm that no samples repeat. The unusual capture route belongs to his setup, not a claim that every version requires it.",
+      "artist": "Jamie xx",
+      "episode": "tn157-jamie-xx",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn157-jamie-xx"
+    },
+    {
+      "id": "BP25-32",
+      "start": "58:08",
+      "end": "59:16",
+      "technique": "sound",
+      "title": "Shape a part with broad tonal moves and filter motion",
+      "points": [
+        "Jim-E Stack describes Culture Vulture doing much of the initial tonal work, with Decapitator’s E setting adding further bite.",
+        "A little flanging, broad three-band 550 EQ moves, FilterFreak automation and reverb further shape the part."
+      ],
+      "gear": [
+        "Culture Vulture",
+        "Soundtoys Decapitator — E",
+        "Flanger, model unspecified",
+        "550 EQ",
+        "Soundtoys FilterFreak"
+      ],
+      "qualification": "Exact 550 variant, gain amounts and complete routing are not established.",
+      "artist": "Lorde & Jim-E Stack",
+      "episode": "tn158-lorde-jim-e-stack",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn158-lorde-jim-e-stack"
+    },
+    {
+      "id": "BP25-33",
+      "start": "59:16",
+      "end": "1:01:21",
+      "technique": "capture",
+      "title": "Generate processed percussion, print it, then cut it to the groove",
+      "points": [
+        "RÜFÜS DU SOL feed rim material from Impulse into EchoBoy, record the evolving result, and work with the committed audio.",
+        "Warping, distortion, pitch reduction and swing turn the rims into a more tonal and textured part.",
+        "Programmed and live shakers, offbeat hats and a Think-break reference help establish the beat’s particular feel."
+      ],
+      "gear": [
+        "Ableton Impulse",
+        "Soundtoys EchoBoy",
+        "Distortion",
+        "Think break"
+      ],
+      "qualification": "Named sample references are source context, not permission to redistribute their audio.",
+      "artist": "RÜFÜS DU SOL — James Hunt",
+      "episode": "tn150-rufus-du-sol",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn150-rufus-du-sol"
+    },
+    {
+      "id": "BP25-34",
+      "start": "1:01:21",
+      "end": "1:02:59",
+      "technique": "sound",
+      "title": "Transform a plain synth with another signal’s movement",
+      "points": [
+        "Jamie xx uses MORPH SC to combine a plain chord sound with another signal, creating changing, organic-seeming artifacts.",
+        "He then describes passing the result through a Space Echo for spring reverb."
+      ],
+      "gear": [
+        "Zynaptiq MORPH SC",
+        "Space Echo"
+      ],
+      "qualification": "He cannot identify the triggering track beyond its session label; do not supply the missing input or assume a complete vocoder chain.",
+      "artist": "Jamie xx",
+      "episode": "tn157-jamie-xx",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn157-jamie-xx"
+    },
+    {
+      "id": "BP25-35",
+      "start": "1:02:59",
+      "end": "1:05:26",
+      "technique": "sound",
+      "title": "Rebuild a rhythmic vocal texture with gating, pitch and formants",
+      "points": [
+        "Porter Robinson demonstrates a longer 32-step trance-gate pattern, an octave shift and formant adjustment in FL Studio.",
+        "He mentions Manipulator as his usual pitch tool but approximates the effect with the available stretch mode and a roughly +3-semitone formant sweet spot for his voice.",
+        "Reverb and possible multiband high-frequency emphasis are part of the reconstruction."
+      ],
+      "gear": [
+        "Kilohearts Trance Gate",
+        "Manipulator",
+        "FL Studio Stretch Pro",
+        "Reverb and multiband compression"
+      ],
+      "qualification": "This is explicitly an approximate reconstruction on a different computer with missing plugins, not the recovered final chain; the reverb name is unclear in the captions.",
+      "artist": "Porter Robinson",
+      "episode": "tn153-porter-robinson",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn153-porter-robinson"
+    },
+    {
+      "id": "BP25-36",
+      "start": "1:05:26",
+      "end": "1:08:48",
+      "technique": "capture",
+      "title": "Preserve a demo’s room character inside a later recording",
+      "points": [
+        "The HAIM/Rostam discussion describes triggering a snare sampled from a home demo alongside drums recorded at Valentine.",
+        "Replaying the later drums into the original room and recording that room recaptures an atmosphere Danielle missed; one section retains the older drums.",
+        "A spaced pair of KU-3A ribbon microphones supplies width, while the room and the player’s balance remain audible contributors."
+      ],
+      "gear": [
+        "KU-3A ribbon microphones",
+        "Snare sample trigger",
+        "Room re-amping"
+      ],
+      "qualification": "Mic spacing is revised from six-to-eight feet to roughly four-to-eight feet. The claim that one room is better is a preference for this production.",
+      "artist": "HAIM & Rostam — contextual attribution",
+      "episode": "tn170-haim-rostam-batmanglij",
+      "attribution": "context-inference",
+      "episode_url": "https://tapenotes.co.uk/project/tn170-haim-rostam-batmanglij"
+    },
+    {
+      "id": "BP25-37",
+      "start": "1:08:48",
+      "end": "1:10:54",
+      "technique": "groove",
+      "title": "Use sampler glide to bend drum attacks",
+      "points": [
+        "Jamie xx adds glide while playing drum sounds in Logic’s sampler so transitions between kick, clap and hat introduce pitch movement.",
+        "Distortion and Thermal extend the sound, but he provides processed and unprocessed stems when mixing because the combined processing can become excessive.",
+        "He corrects himself: Thermal was removed from the kick in the described mix."
+      ],
+      "gear": [
+        "Logic drum sampler",
+        "Output Thermal"
+      ],
+      "qualification": "Keep the final correction; do not list Thermal on that final kick merely because it was tried.",
+      "artist": "Jamie xx",
+      "episode": "tn157-jamie-xx",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn157-jamie-xx"
+    },
+    {
+      "id": "BP25-38",
+      "start": "1:10:54",
+      "end": "1:11:58",
+      "technique": "space",
+      "title": "Layer a pad with voices and strings",
+      "points": [
+        "The speaker uses Slate + Ash AURAS for a pad and layers it with people talking and strings.",
+        "CYCLES is also mentioned as another granular tool from the same maker."
+      ],
+      "gear": [
+        "Slate + Ash AURAS",
+        "Slate + Ash CYCLES",
+        "Kontakt"
+      ],
+      "qualification": "AURAS is the demonstrated patch source; CYCLES is a separate mention. Speaker identity is not yet verified.",
+      "artist": "Speaker not yet verified",
+      "episode": "",
+      "attribution": "unassigned"
+    },
+    {
+      "id": "BP25-39",
+      "start": "1:11:58",
+      "end": "1:13:05",
+      "technique": "sound",
+      "title": "Generate unfamiliar chords from a simple single-note pattern",
+      "points": [
+        "Jamie xx changes the pitches of ES2’s three oscillators against a simple MIDI pattern.",
+        "The oscillator relationships suggest chords he would be less likely to choose by playing a keyboard normally."
+      ],
+      "gear": [
+        "Logic ES2"
+      ],
+      "qualification": "No fixed oscillator tuning or chord sequence is specified.",
+      "artist": "Jamie xx",
+      "episode": "tn157-jamie-xx",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn157-jamie-xx"
+    },
+    {
+      "id": "BP25-40",
+      "start": "1:13:05",
+      "end": "1:13:30",
+      "technique": "sound",
+      "title": "Use a strong preset palette to establish a bass direction",
+      "points": [
+        "Rudimental’s Piers describes using VPS Avenger extensively after discovering its forceful presets and a 1990s-themed pack."
+      ],
+      "gear": [
+        "VPS Avenger",
+        "1990s expansion, exact title unverified"
+      ],
+      "qualification": "This is a preference and a palette reference; the exact preset is not supplied.",
+      "artist": "Rudimental — Piers",
+      "episode": "tn161-rudimental",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn161-rudimental"
+    },
+    {
+      "id": "BP25-41",
+      "start": "1:13:30",
+      "end": "1:15:19",
+      "technique": "decisions",
+      "title": "Treat a backing-vocal hook as an instrumental riff",
+      "points": [
+        "CMAT wants a self-performed vocal hook to function like a guitar or horn riff, distinct from the main vocal.",
+        "Oli Deakin describes darkening and wobbling the sound with a Leslie-style emulation so the reference becomes a different texture."
+      ],
+      "gear": [
+        "Leslie-style emulation in Pro Tools, exact plugin unverified"
+      ],
+      "qualification": "The processor identification is tentative.",
+      "artist": "CMAT & Oli Deakin",
+      "episode": "2528",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/2528"
+    },
+    {
+      "id": "BP25-42",
+      "start": "1:15:19",
+      "end": "1:18:48",
+      "technique": "space",
+      "title": "Build a choir from changing positions and performance layers",
+      "points": [
+        "The Parcels discussion describes a lead vocal, group takes around a stereo microphone pair and a final layer of close ad-libs.",
+        "Moving closer, stepping back and changing positions between takes changes the room perspective of the doubles.",
+        "Quiet, loose ad-libs recorded near the end of the process add energy behind the more organized vocal parts."
+      ],
+      "gear": [
+        "U67 on the described lead",
+        "Two U87s for group vocals"
+      ],
+      "qualification": "Four singers around the microphones describes a group take, not the total band membership; individual speaker attribution is not confirmed.",
+      "artist": "Parcels — contextual attribution",
+      "episode": "",
+      "attribution": "context-inference"
+    },
+    {
+      "id": "BP25-43",
+      "start": "1:18:48",
+      "end": "1:19:36",
+      "technique": "sound",
+      "title": "Add harmonic texture to brass",
+      "points": [
+        "The speaker describes running the horn line through a hardware Thermionic Culture Vulture to make the brass fuller, warmer and slightly distorted."
+      ],
+      "gear": [
+        "Thermionic Culture Vulture"
+      ],
+      "qualification": "The exact settings are not stated.",
+      "artist": "Rudimental — Piers",
+      "episode": "tn161-rudimental",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn161-rudimental"
+    },
+    {
+      "id": "BP25-44",
+      "start": "1:19:36",
+      "end": "1:20:28",
+      "technique": "sound",
+      "title": "Emphasize an instrument’s mechanical attack",
+      "points": [
+        "The speaker enhances the click of a Hammond B3 with FabFilter Saturn 2’s Smudge processing.",
+        "The treatment stretches the grainy attack into an audible part of the organ’s character."
+      ],
+      "gear": [
+        "Hammond B3",
+        "FabFilter Saturn 2 — Smudge"
+      ],
+      "qualification": "The value and full routing are not stated.",
+      "artist": "Pomplamoose — contextual attribution",
+      "episode": "",
+      "attribution": "context-inference"
+    },
+    {
+      "id": "BP25-45",
+      "start": "1:20:28",
+      "end": "1:21:44",
+      "technique": "sound",
+      "title": "Turn a competing musical part into supporting texture",
+      "points": [
+        "Daniel James describes a chorus idea becoming too busy once Hayley’s vocal melody arrived, then transforming it with Portal.",
+        "A separate string sample is pitched into the song’s key and processed with Portal so it can sit quietly as an extra texture."
+      ],
+      "gear": [
+        "Output Portal"
+      ],
+      "qualification": "The exact preset and first instrument are not established.",
+      "artist": "Hayley Williams & Daniel James",
+      "episode": "tn166-hayley-williams-daniel-james",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn166-hayley-williams-daniel-james"
+    },
+    {
+      "id": "BP25-46",
+      "start": "1:21:44",
+      "end": "1:23:48",
+      "technique": "sound",
+      "title": "Combine detailed string samples with voice and synth layers",
+      "points": [
+        "The speaker describes using EastWest/Quantum Leap material and Bohemian Violin for expressive orchestral parts.",
+        "Voices add another layer above the strings, with a synth underneath for thickness."
+      ],
+      "gear": [
+        "EastWest / Quantum Leap, library unspecified",
+        "Bohemian Violin"
+      ],
+      "qualification": "The remarks about another artist’s historical use are second-hand and are not verified here.",
+      "artist": "Sam Gellaitry — contextual attribution",
+      "episode": "tn168-sam-gellaitry",
+      "attribution": "context-inference",
+      "episode_url": "https://tapenotes.co.uk/project/tn168-sam-gellaitry"
+    },
+    {
+      "id": "BP25-47",
+      "start": "1:23:48",
+      "end": "1:24:13",
+      "technique": "sound",
+      "title": "Use a repeatable bass treatment while controlling boom",
+      "points": [
+        "Rudimental’s Piers describes returning to an Eden bass treatment in UAD, particularly a Vintage R&B preset, while adjusting excessive low-end bloom."
+      ],
+      "gear": [
+        "UAD Eden bass treatment",
+        "Vintage R&B preset"
+      ],
+      "qualification": "Exact product version and parameter values are not established by the excerpt.",
+      "artist": "Rudimental — Piers",
+      "episode": "tn161-rudimental",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn161-rudimental"
+    },
+    {
+      "id": "BP25-48",
+      "start": "1:24:13",
+      "end": "1:26:31",
+      "technique": "sound",
+      "title": "Give granular fragments a harmonic and physical setting",
+      "points": [
+        "The speaker puts a harp loop in Ableton’s Granulator, aligns source material with the song’s key and plays it as a new harmonic texture.",
+        "Other in-key layers and supporting chords give the fragments musical form.",
+        "Rain and a field recording from Kenya, including birds and people, provide an audible sense of place."
+      ],
+      "gear": [
+        "Ableton Granulator, version unspecified",
+        "Zoom recorder, model unspecified"
+      ],
+      "qualification": "Speaker identity and the sample’s exact origin are unverified.",
+      "artist": "Speaker not yet verified",
+      "episode": "",
+      "attribution": "unassigned"
+    },
+    {
+      "id": "BP25-49",
+      "start": "1:26:31",
+      "end": "1:30:34",
+      "technique": "sound",
+      "title": "Adjust a vocal treatment to the singer and the recording",
+      "points": [
+        "FINNEAS describes channel EQ, a low-mix Decapitator treatment, analog compression and de-essing on the Favors vocals, with later mixing additions belonging to Aaron’s work.",
+        "Ashe and FINNEAS use handheld Earthworks SR314 microphones without pop filters; the setup supports singing with the band in the room.",
+        "Different amounts of saturation respond to their different voices and microphone technique; Lustrous Plates and EchoBoy provide effect sends."
+      ],
+      "gear": [
+        "Earthworks SR314",
+        "Soundtoys Decapitator",
+        "Analog compressor, brand unknown",
+        "De-esser",
+        "Lustrous Plates",
+        "Soundtoys EchoBoy"
+      ],
+      "qualification": "He is uncertain about the analog compressor and some later mix settings. Do not infer microphone type from the casual comparison with condenser mics, or claim this is Alex Turner’s studio chain.",
+      "artist": "The Favors — FINNEAS & Ashe",
+      "episode": "tn165-the-favours-finneas-ashe",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn165-the-favours-finneas-ashe"
+    },
+    {
+      "id": "BP25-50",
+      "start": "1:30:34",
+      "end": "1:31:46",
+      "technique": "space",
+      "title": "Blend real vocal doubles with a sampled drone",
+      "points": [
+        "A stack of Danielle’s vocals doubles an Emulator II part, blending real voices with a sustained sampled texture.",
+        "The four vocal parts are distributed left/right and receive a small hall and AMS chorus treatment."
+      ],
+      "gear": [
+        "E-mu Emulator II",
+        "AMS chorus, exact unit unspecified",
+        "Small hall reverb"
+      ],
+      "qualification": "The excerpt does not specify exact pan positions or a complete processor order.",
+      "artist": "HAIM & Rostam — contextual attribution",
+      "episode": "tn170-haim-rostam-batmanglij",
+      "attribution": "context-inference",
+      "episode_url": "https://tapenotes.co.uk/project/tn170-haim-rostam-batmanglij"
+    },
+    {
+      "id": "BP25-51",
+      "start": "1:31:46",
+      "end": "1:33:08",
+      "technique": "capture",
+      "title": "Let the recording chain support a forceful vocal performance",
+      "points": [
+        "Daniel James describes a U67 into a 500-series 1073 and then an 1176 as the usual chain for the two records under discussion.",
+        "A little aggression from the compressor suits the rawer performance; a few vocals were recorded elsewhere with other setups."
+      ],
+      "gear": [
+        "U67",
+        "500-series 1073",
+        "1176"
+      ],
+      "qualification": "The speaker corrects the preamp number to 1073; component manufacturers, exact revisions and settings are not established.",
+      "artist": "Hayley Williams & Daniel James",
+      "episode": "tn166-hayley-williams-daniel-james",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn166-hayley-williams-daniel-james"
+    },
+    {
+      "id": "BP25-52",
+      "start": "1:33:08",
+      "end": "1:34:44",
+      "technique": "space",
+      "title": "Restore intelligibility with a natural vocal over a vocoder",
+      "points": [
+        "The speaker layers a quieter natural vocal with the vocoded performance so articulation remains clear while the vocoder keeps the dominant character."
+      ],
+      "gear": [
+        "Vocoder pedal transcribed as digit talker"
+      ],
+      "qualification": "The likely product spelling and the asserted Daft Punk connection require separate verification; do not repeat them as established history.",
+      "artist": "Sam Gellaitry — contextual attribution",
+      "episode": "tn168-sam-gellaitry",
+      "attribution": "context-inference",
+      "episode_url": "https://tapenotes.co.uk/project/tn168-sam-gellaitry"
+    },
+    {
+      "id": "BP25-53",
+      "start": "1:34:44",
+      "end": "1:36:05",
+      "technique": "capture",
+      "title": "Shape the monitored vocal tone to support the performance",
+      "points": [
+        "The speaker describes an SM58 into a 1073 and an RME interface, removing low-end boom and adding top end before singing.",
+        "The tonal balance makes high notes feel more comfortable in the performed sound."
+      ],
+      "gear": [
+        "SM58",
+        "1073 preamp",
+        "RME Fireface, tentatively UFX II",
+        "RME Babyface for portability"
+      ],
+      "qualification": "Interface model is explicitly uncertain; the EQ amounts are not given.",
+      "artist": "Sam Gellaitry — contextual attribution",
+      "episode": "tn168-sam-gellaitry",
+      "attribution": "context-inference",
+      "episode_url": "https://tapenotes.co.uk/project/tn168-sam-gellaitry"
+    },
+    {
+      "id": "BP25-54",
+      "start": "1:36:05",
+      "end": "1:37:03",
+      "technique": "sound",
+      "title": "Use a synthesizer as an effects processor",
+      "points": [
+        "Maribou State use the Moog Matriarch for chords and arpeggios, but also run external sounds, including vocals, through its filter, drive and stereo delay.",
+        "They describe this record’s interest shifting toward processing; CADAC is also mentioned."
+      ],
+      "gear": [
+        "Moog Matriarch",
+        "CADAC, model unspecified"
+      ],
+      "qualification": "The stated broad album use is a recollection, and CADAC is not enough to identify a particular console or module.",
+      "artist": "Maribou State",
+      "episode": "tn151-maribou-state",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn151-maribou-state"
+    },
+    {
+      "id": "BP25-55",
+      "start": "1:37:03",
+      "end": "1:38:35",
+      "technique": "sound",
+      "title": "Re-record synths through a mouth or an amplifier",
+      "points": [
+        "Nicolas Godin explains feeding a synth into a talk box, shaping the tube’s sound with his mouth and recording the result with a microphone.",
+        "Organ-like pads can acquire a wah-like motion through the talk box.",
+        "He also describes recording cheap organ and other sources through the one Peavey Classic 50 amplifier available in the bedroom setup for added texture."
+      ],
+      "gear": [
+        "Minimoog",
+        "Talk box",
+        "Peavey Classic 50"
+      ],
+      "qualification": "Talk box, Leslie processing and vocoder are separate methods; do not merge them because the results can sound related.",
+      "artist": "Air — Nicolas Godin",
+      "episode": "tn156-air",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn156-air"
+    },
+    {
+      "id": "BP25-56",
+      "start": "1:38:35",
+      "end": "1:40:08",
+      "technique": "sound",
+      "title": "Use small tuning and pan differences to animate chords",
+      "points": [
+        "Jamie xx values the slight tuning differences across the Oberheim Eight Voice’s oscillators and the different stereo positions of its notes.",
+        "He records many ideas when a patch is working because recreating it after powering down can be difficult.",
+        "The demonstrated texture is described as largely the synth with reverb; programming it can take days."
+      ],
+      "gear": [
+        "Oberheim Eight Voice",
+        "Reverb, model unspecified"
+      ],
+      "qualification": "The claims describe his instrument and workflow, not a guarantee about every unit.",
+      "artist": "Jamie xx",
+      "episode": "tn157-jamie-xx",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn157-jamie-xx"
+    },
+    {
+      "id": "BP25-57",
+      "start": "1:40:08",
+      "end": "1:42:12",
+      "technique": "decisions",
+      "title": "Let a physically exciting sound complicate a serious song",
+      "points": [
+        "Lorde and Jim-E Stack describe a Polysix line bringing a bodily, playful energy into emotionally serious material.",
+        "That tension becomes part of the album’s sound, and the Polysix becomes a recurring instrument."
+      ],
+      "gear": [
+        "Korg Polysix"
+      ],
+      "qualification": "The broad album-use statement does not establish the patch or full treatment of every track.",
+      "artist": "Lorde & Jim-E Stack",
+      "episode": "tn158-lorde-jim-e-stack",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn158-lorde-jim-e-stack"
+    },
+    {
+      "id": "BP25-58",
+      "start": "1:42:12",
+      "end": "1:44:08",
+      "technique": "sound",
+      "title": "Explore an overlooked sound bank without prejudging its taste",
+      "points": [
+        "Djo and Adam Thein describe patching in the E-mu Planet Phatt after initially joking about it.",
+        "Presets become reversed sound effects, jet-like noises and a guitar sound in the track; the sampled guitar later needs to be interpreted for live playing."
+      ],
+      "gear": [
+        "E-mu Planet Phatt"
+      ],
+      "qualification": "The production year of the unit is recalled tentatively. A door-lock sound is corrected as separate during the discussion.",
+      "artist": "Djo & Adam Thein",
+      "episode": "tn160-djo-adam-thein",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn160-djo-adam-thein"
+    },
+    {
+      "id": "BP25-59",
+      "start": "1:44:08",
+      "end": "1:46:05",
+      "technique": "decisions",
+      "title": "Solve the musical idea before treating gear as the solution",
+      "points": [
+        "Spencer Stewart and Laufey prioritize the player, note choice and performance over upgrading the vocal chain.",
+        "A move from TLM103 to U67 is described, while usable phone-recorded material illustrates that an imperfect capture can still serve the music."
+      ],
+      "gear": [
+        "Neumann TLM103",
+        "U67",
+        "SM7 as a hypothetical alternative",
+        "Phone voice memo"
+      ],
+      "qualification": "The SM7 is an example of what could have worked, not the stated microphone on the album.",
+      "artist": "Laufey & Spencer Stewart",
+      "episode": "tn162-laufey-spencer-stewart",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn162-laufey-spencer-stewart"
+    },
+    {
+      "id": "BP25-60",
+      "start": "1:46:05",
+      "end": "1:47:46",
+      "technique": "decisions",
+      "title": "Choose a usable instrument as well as a desirable sound",
+      "points": [
+        "The speaker prefers a small Roland Juno emulation for its sound, immediacy and consistency, despite owning an original Juno.",
+        "Keeping it on the desk makes it easy to reach during work."
+      ],
+      "gear": [
+        "Roland JU-06A",
+        "Juno-60",
+        "Juno-106"
+      ],
+      "qualification": "The caption repeatedly distorts the model name; JU-06A is supported by the publisher’s episode gear listing. This is a preference, not proof of equivalence.",
+      "artist": "Pomplamoose — contextual attribution",
+      "episode": "",
+      "attribution": "context-inference"
+    },
+    {
+      "id": "BP25-61",
+      "start": "1:47:46",
+      "end": "1:48:59",
+      "technique": "capture",
+      "title": "Choose vocal monitoring and mic handling for the singer’s energy",
+      "points": [
+        "The HAIM/Rostam discussion describes using an RE20 handheld while recording vocals, sometimes with speakers playing in the room.",
+        "Danielle values being able to perform in that room sound as well as listening through headphones."
+      ],
+      "gear": [
+        "Electro-Voice RE20"
+      ],
+      "qualification": "The speaker’s reference to a top-end boost is not independently verified as a product feature. Do not repeat that as a hardware specification.",
+      "artist": "HAIM & Rostam — contextual attribution",
+      "episode": "tn170-haim-rostam-batmanglij",
+      "attribution": "context-inference",
+      "episode_url": "https://tapenotes.co.uk/project/tn170-haim-rostam-batmanglij"
+    },
+    {
+      "id": "BP25-62",
+      "start": "1:48:59",
+      "end": "1:50:13",
+      "technique": "groove",
+      "title": "Resample imperfect loops into a more varied drum texture",
+      "points": [
+        "The speaker uses Life to generate rhythmically aligned chops from longer source material and works across multiple bounced sessions.",
+        "Printed audio reduces processing load and allows further resampling; small irregular loops help the combined drums feel less rigid."
+      ],
+      "gear": [
+        "Life, developer not stated in excerpt"
+      ],
+      "qualification": "The speaker first doubts that Life was used on this track, then tentatively identifies a layer; retain that uncertainty.",
+      "artist": "Speaker not yet verified",
+      "episode": "",
+      "attribution": "unassigned"
+    },
+    {
+      "id": "BP25-63",
+      "start": "1:50:13",
+      "end": "1:52:05",
+      "technique": "capture",
+      "title": "Develop a recognizable palette from a limited recording setup",
+      "points": [
+        "Nicolas Godin recalls relying on one AKG C414 microphone, one amplifier and an Ensoniq DP/4 effects unit.",
+        "The DP/4 supplies reverbs, tempo delays, amp coloration and doubling-like pad treatments, while Rhodes, string-synth textures, bass and electronic sound design form the musical palette.",
+        "Recording through the same small setup contributes to a consistent character."
+      ],
+      "gear": [
+        "AKG C414",
+        "Ensoniq DP/4",
+        "Rhodes",
+        "String synth, exact model unclear in excerpt",
+        "Bass"
+      ],
+      "qualification": "The historical price comparison is not retained as financial information. Do not infer one exact DP/4 preset for every sound.",
+      "artist": "Air — Nicolas Godin",
+      "episode": "tn156-air",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn156-air"
+    },
+    {
+      "id": "BP25-64",
+      "start": "1:52:05",
+      "end": "1:53:20",
+      "technique": "space",
+      "title": "Monitor vocal doubling and slapback while singing",
+      "points": [
+        "The speaker uses a parallel Fruity Flanger effect and EchoBoy’s Classic Tape Slap treatment for a chorus-like doubling and a short slap.",
+        "Hearing these effects during the take changes the confidence, cadence and notes the singer attempts."
+      ],
+      "gear": [
+        "FL Studio Fruity Flanger",
+        "Soundtoys EchoBoy — Classic Tape Slap"
+      ],
+      "qualification": "The short delay is described as unsynced; the exact time and send levels are not supplied.",
+      "artist": "Sam Gellaitry — contextual attribution",
+      "episode": "tn168-sam-gellaitry",
+      "attribution": "context-inference",
+      "episode_url": "https://tapenotes.co.uk/project/tn168-sam-gellaitry"
+    },
+    {
+      "id": "BP25-65",
+      "start": "1:53:20",
+      "end": "1:56:18",
+      "technique": "sound",
+      "title": "Make a small group sound like different singers",
+      "points": [
+        "Maribou State change the backing track’s pitch or speed, record a voice to that version, then return the new recording to the song’s original pitch or speed.",
+        "Different offsets change vocal formants; stacking these versions creates a choir-like variety from a small number of people.",
+        "Blackoak is described as slowed to 80 BPM for one repitched vocal process, while a different layer uses Beats mode for a slightly glitching result."
+      ],
+      "gear": [
+        "Ableton Beats mode",
+        "Ableton Re-Pitch mode"
+      ],
+      "qualification": "Two-, three- and five-semitone examples occur in different demonstrations; do not collapse them into one fixed setting or confuse pitch-only and speed-linked processes.",
+      "artist": "Maribou State",
+      "episode": "tn151-maribou-state",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn151-maribou-state"
+    },
+    {
+      "id": "BP25-66",
+      "start": "1:56:18",
+      "end": "1:57:12",
+      "technique": "groove",
+      "title": "Use a cross-rhythm to make a groove feel unsettled",
+      "points": [
+        "Spencer Stewart describes a three-against-four clave pattern against the main four-beat drums.",
+        "The friction invites movement while retaining uneasiness that fits the song’s emotional situation."
+      ],
+      "gear": [
+        "Clave percussion"
+      ],
+      "qualification": "The three/four wording is the speaker’s description; this does not imply the entire song changes time signature.",
+      "artist": "Laufey & Spencer Stewart",
+      "episode": "tn162-laufey-spencer-stewart",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn162-laufey-spencer-stewart"
+    },
+    {
+      "id": "BP25-67",
+      "start": "1:57:12",
+      "end": "1:59:42",
+      "technique": "capture",
+      "title": "Keep a full drum take and a continuous room perspective",
+      "points": [
+        "CMAT and Oli Deakin describe retaining one full performance with a few small edits instead of building the song from a short loop.",
+        "Overheads and a stereo AEA ribbon microphone add explosive room character; the room mic also stays available for other instruments and vocals.",
+        "The reflective studio and compressed room signal contribute much of the perceived scale.",
+        "They tune the toms so each strike and decay hands the motion to the next drum, creating a rolling pattern."
+      ],
+      "gear": [
+        "AEA stereo ribbon microphone, model unspecified",
+        "Overheads",
+        "Room compression"
+      ],
+      "qualification": "Microphone model and compressor settings are not given.",
+      "artist": "CMAT & Oli Deakin",
+      "episode": "2528",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/2528"
+    },
+    {
+      "id": "BP25-68",
+      "start": "1:59:42",
+      "end": "2:01:34",
+      "technique": "groove",
+      "title": "Keep the pulse simple while making the texture detailed",
+      "points": [
+        "RÜFÜS DU SOL combine a kick, low toms, a vinyl-like hat sample and live hats to give a simple pulse more texture.",
+        "Saturating white noise with an 808-style kick adds another textured layer.",
+        "A simpler eighth-note pattern leaves room for the moving bass line; busier sixteenth-note hats were tried and set aside for this track."
+      ],
+      "gear": [
+        "808-style kick",
+        "White noise",
+        "Toms",
+        "Sampled and live hi-hats"
+      ],
+      "qualification": "These are the stated arrangement decisions; exact tuning, samples and saturation settings are not supplied.",
+      "artist": "RÜFÜS DU SOL — James Hunt",
+      "episode": "tn150-rufus-du-sol",
+      "attribution": "matched-episode-transcript",
+      "episode_url": "https://tapenotes.co.uk/project/tn150-rufus-du-sol"
+    }
+  ]
+}

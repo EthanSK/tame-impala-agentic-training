@@ -2,6 +2,12 @@
 
 Checked 8 September 2026. This is a growing reference, not a claim to contain every production fact Kevin Parker has ever discussed.
 
+## Separate Best Production 2025 companion
+
+The supplied [Tape Notes compilation](https://www.youtube.com/watch?v=jfJtTBzIt70) has 68 original technique notes in [BEST_PRODUCTION_2025_AGENTS.md](BEST_PRODUCTION_2025_AGENTS.md). The complete available English automatic captions were reviewed as text, through the last caption at 2:01:34 of a 2:01:47 video. The opening montage repeats later excerpts. No full human listening or frame audit was performed.
+
+Matching passages in named episode transcripts support 45 notes; 16 remain contextually attributed and 7 have an unverified speaker. Even a transcript match does not certify model names or settings. Episode pages supply relevant attribution context only, not full-episode coverage. The video was published on 1 January 2026 under the publisher's “2025” title. All times in this companion refer to the compilation, and the other producers' claims stay separate from Parker's reference.
+
 ## Collection status
 
 | Collection | What was inspected | What is not established |

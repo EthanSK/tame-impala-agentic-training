@@ -45,11 +45,11 @@ Every item below has a cited context. Similar names and uncertain identification
 
 ## dbx 165
 
-- **SOS01 / 2020 interview:** Favoured compressor. [S04](sources/external/s04.md) · New York Times · first-hand
+- **TN188-11 / Deadbeat / My Old Ways, Loser and related songs:** Track through the familiar compressor. [TN188](sources/tape-notes/tn188.md) · 36:17–37:00 · first-hand
 - **AM01 / Pre-release Currents / 2015:** Available overdrive. [S07](sources/external/s07.md) · https://www.reddit.com/r/IAmA/comments/34clpm/comment/cqtk6uf/ · first-hand
 - **MW2-05 / Currents / The Less I Know the Better:** Compression supplies the knock. [MW2](sources/mix-with-the-masters/mw2.md) · 03:03–04:26 · first-hand
 - **MW2-06 / Currents / The Less I Know the Better:** Do not invent the distortion stage. [MW2](sources/mix-with-the-masters/mw2.md) · 04:26–04:48 · qualified-recollection
-- **TN188-11 / Deadbeat / My Old Ways, Loser and related songs:** Track through the familiar compressor. [TN188](sources/tape-notes/tn188.md) · 36:17–37:00 · first-hand
+- **SOS01 / 2020 interview:** Favoured compressor. [S04](sources/external/s04.md) · New York Times · first-hand
 
 ## Distressor
 
@@ -101,8 +101,8 @@ Every item below has a cited context. Similar names and uncertain identification
 ## Neve 1073
 
 - **AM02 / Pre-release Currents / 2015:** Preamp crunch. [S07](sources/external/s07.md) · https://www.reddit.com/r/IAmA/comments/34clpm/comment/cqtk6uf/ · first-hand
-- **MW5-01 / Currents / The Less I Know the Better:** The summing experiment was abandoned. [MW5](sources/mix-with-the-masters/mw5.md) · 00:22–02:05 · first-hand
 - **MW5-02 / Currents / The Less I Know the Better:** Distinguish summing from stereo processing. [MW5](sources/mix-with-the-masters/mw5.md) · 02:10–03:22 · qualified-recollection
+- **MW5-01 / Currents / The Less I Know the Better:** The summing experiment was abandoned. [MW5](sources/mix-with-the-masters/mw5.md) · 00:22–02:05 · first-hand
 
 ## Neve 1073 DPA
 
@@ -127,11 +127,11 @@ Every item below has a cited context. Similar names and uncertain identification
 
 ## Roland GR-55
 
-- **GW01 / Currents / The Less I Know the Better (recalled 2022):** Guitar synthesis. [S03](sources/external/s03.md) · Question beginning On The Less I Know The Better · first-hand
-- **GW02 / Currents / The Less I Know the Better (recalled 2022):** Modeled bass. [S03](sources/external/s03.md) · The Less I Know the Better recording question · qualified-recollection
 - **GW03 / Currents / The Less I Know the Better (recalled 2022):** First-take riff. [S03](sources/external/s03.md) · The Less I Know the Better recording question · first-hand
-- **MW1-03 / Currents / The Less I Know the Better:** Guitar controller opens unfamiliar sounds. [MW1](sources/mix-with-the-masters/mw1.md) · 03:23–05:36 · qualified-recollection
+- **GW02 / Currents / The Less I Know the Better (recalled 2022):** Modeled bass. [S03](sources/external/s03.md) · The Less I Know the Better recording question · qualified-recollection
 - **MW1-04 / Currents / The Less I Know the Better:** The famous bass begins as guitar. [MW1](sources/mix-with-the-masters/mw1.md) · 03:41–05:36 · first-hand
+- **MW1-03 / Currents / The Less I Know the Better:** Guitar controller opens unfamiliar sounds. [MW1](sources/mix-with-the-masters/mw1.md) · 03:23–05:36 · qualified-recollection
+- **GW01 / Currents / The Less I Know the Better (recalled 2022):** Guitar synthesis. [S03](sources/external/s03.md) · Question beginning On The Less I Know The Better · first-hand
 
 ## Roland JV-1080
 
@@ -140,8 +140,8 @@ Every item below has a cited context. Similar names and uncertain identification
 
 ## Roland SH-1
 
-- **SOS04 / The Slow Rush / 2020:** Characterful bass. [S04](sources/external/s04.md) · Current Events · first-hand
 - **TN188-17 / Deadbeat / My Old Ways, Loser and related songs:** A primitive lead among electronic repetition. [TN188](sources/tape-notes/tn188.md) · 43:39–45:25 · qualified-recollection
+- **SOS04 / The Slow Rush / 2020:** Characterful bass. [S04](sources/external/s04.md) · Current Events · first-hand
 
 ## Roland TR-707
 
@@ -187,8 +187,8 @@ Every item below has a cited context. Similar names and uncertain identification
 
 ## Shure SM7 family
 
-- **MW3-01 / Currents / The Less I Know the Better:** Keep the microphone recollection qualified. [MW3](sources/mix-with-the-masters/mw3.md) · 00:07–00:34 · qualified-recollection
 - **TN188-09 / Deadbeat / My Old Ways, Loser and related songs:** Comfort determines the microphone. [TN188](sources/tape-notes/tn188.md) · 33:59–35:03 · first-hand
+- **MW3-01 / Currents / The Less I Know the Better:** Keep the microphone recollection qualified. [MW3](sources/mix-with-the-masters/mw3.md) · 00:07–00:34 · qualified-recollection
 
 ## Shure SM7B
 
@@ -204,8 +204,8 @@ Every item below has a cited context. Similar names and uncertain identification
 
 ## SPL Vitalizer
 
-- **SOS08 / Currents / 2015 (reported 2020):** Disputed bus hardware. [S04](sources/external/s04.md) · Mixing · publisher-report
 - **MW5-02 / Currents / The Less I Know the Better:** Distinguish summing from stereo processing. [MW5](sources/mix-with-the-masters/mw5.md) · 02:10–03:22 · qualified-recollection
+- **SOS08 / Currents / 2015 (reported 2020):** Disputed bus hardware. [S04](sources/external/s04.md) · Mixing · publisher-report
 
 ## SSL 500-series bus compressor (uncertain)
 

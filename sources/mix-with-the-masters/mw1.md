@@ -11,29 +11,13 @@ Timestamps are local to this part. Captions contain recognition errors. Recollec
 
 ## Production notes
 
-### MW1-01: Keep the first spark
-**Writing · Currents / The Less I Know the Better · first-hand**
-Location: 00:33–03:16
+### MW1-08: Reinforce the acoustic loop
+**Drums · Currents / The Less I Know the Better · first-hand**
+Location: 08:31–08:52
 
-A short spontaneous demo became the foundation of the record; Parker kept its first section rather than replacing every rough detail.
+An 808 kick and Sequential Circuits Drumtraks were added later to the original drum recording.
 
-Gear: No specific model established
-
-### MW1-02: A song can outgrow its initial destination
-**Workflow · Currents / The Less I Know the Better · first-hand**
-Location: 01:05–03:16
-
-He initially considered the idea unsuitable for Tame Impala and offered it to Mark Ronson, who encouraged him to keep it.
-
-Gear: No specific model established
-
-### MW1-03: Guitar controller opens unfamiliar sounds
-**Guitar · Currents / The Less I Know the Better · qualified-recollection**
-Location: 03:23–05:36
-
-The opening instrumental demo used a Strat with a taped-on synth pickup and a Roland guitar synthesizer; he tentatively recalls the GR-55 model.
-
-Gear: Fender Stratocaster, Roland GR-55
+Gear: Roland TR-808, Sequential Circuits Drumtraks
 
 ### MW1-04: The famous bass begins as guitar
 **Bass · Currents / The Less I Know the Better · first-hand**
@@ -43,13 +27,13 @@ The riff uses a modeled P-bass sound played on guitar and shifted into the bass 
 
 Gear: Roland GR-55
 
-### MW1-05: Overdrive recollection is tentative
-**Bass · Currents / The Less I Know the Better · qualified-recollection**
-Location: 05:36–06:40
+### MW1-01: Keep the first spark
+**Writing · Currents / The Less I Know the Better · first-hand**
+Location: 00:33–03:16
 
-He thinks Ableton Overdrive shaped the synthesized bass and demonstrates something similar; the original exact preset and stereo treatment are not recovered.
+A short spontaneous demo became the foundation of the record; Parker kept its first section rather than replacing every rough detail.
 
-Gear: Ableton Overdrive
+Gear: No specific model established
 
 ### MW1-06: Leave useful mistakes in
 **Workflow · Currents / The Less I Know the Better · first-hand**
@@ -67,13 +51,13 @@ He reused a drum recording made weeks earlier and thinks it was recorded outside
 
 Gear: No specific model established
 
-### MW1-08: Reinforce the acoustic loop
-**Drums · Currents / The Less I Know the Better · first-hand**
-Location: 08:31–08:52
+### MW1-03: Guitar controller opens unfamiliar sounds
+**Guitar · Currents / The Less I Know the Better · qualified-recollection**
+Location: 03:23–05:36
 
-An 808 kick and Sequential Circuits Drumtraks were added later to the original drum recording.
+The opening instrumental demo used a Strat with a taped-on synth pickup and a Roland guitar synthesizer; he tentatively recalls the GR-55 model.
 
-Gear: Roland TR-808, Sequential Circuits Drumtraks
+Gear: Fender Stratocaster, Roland GR-55
 
 ### MW1-09: Return later with a different palette
 **Writing · Currents / The Less I Know the Better · first-hand**
@@ -83,6 +67,14 @@ The later section was developed much later in another studio, using keyboards th
 
 Gear: No specific model established
 
+### MW1-05: Overdrive recollection is tentative
+**Bass · Currents / The Less I Know the Better · qualified-recollection**
+Location: 05:36–06:40
+
+He thinks Ableton Overdrive shaped the synthesized bass and demonstrates something similar; the original exact preset and stereo treatment are not recovered.
+
+Gear: Ableton Overdrive
+
 ### MW1-10: Preserve the Greco correction
 **Bass · Currents / The Less I Know the Better · first-hand**
 Location: 10:11–10:30
@@ -90,6 +82,14 @@ Location: 10:11–10:30
 For a later bass part he first says Hofner, then corrects himself to Greco. Do not turn the initial slip into a definitive Hofner attribution.
 
 Gear: Greco bass
+
+### MW1-02: A song can outgrow its initial destination
+**Workflow · Currents / The Less I Know the Better · first-hand**
+Location: 01:05–03:16
+
+He initially considered the idea unsuitable for Tame Impala and offered it to Mark Ronson, who encouraged him to keep it.
+
+Gear: No specific model established
 
 ## Transcript status
 
