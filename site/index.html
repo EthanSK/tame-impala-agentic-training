@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inside Tame Impala’s Mind — Production Notes</title>
+<meta name="description" content="$count source-linked notes on Kevin Parker's production, gear, plugins and songwriting. Search by topic and follow the original evidence.">
+<meta name="theme-color" content="#14a9b4">
+<meta property="og:title" content="Inside Tame Impala’s Mind — Production Notes">
+<meta property="og:description" content="Source-linked production notes for agents and musicians, with the uncertainty kept in.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="${site}art/inside-kevins-mind.png">
+<meta property="og:image:alt" content="A playful fan collage of Kevin Parker with a colourful brain cutaway.">
+<meta property="og:url" content="$site">
+<link rel="canonical" href="$site">
+<link rel="icon" href="favicon.svg?v=$icon_hash" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=$css_hash">
+<script src="app.js?v=$js_hash" defer></script>
+</head>
+<body>
+<a class="skip" href="#reference">Skip to production notes</a>
+<header class="masthead">
+  <a class="wordmark" href="./">Tame Impala <span>Production / Agentic training</span></a>
+  <nav aria-label="Main navigation"><a href="#reference">Notes</a><a href="#agents">Agents</a><a href="#sources">Sources</a><a href="$repo">GitHub ↗</a></nav>
+</header>
+<main>
+<section class="mind-hero" aria-labelledby="title">
+  <div class="mind-layout">
+    <h1 id="title" class="mind-title"><span class="mind-overline">Inside</span>Tame Impala’s <em>mind</em></h1>
+    <div class="mind-copy">
+      <p class="mind-summary">Explore the drums, synths, vocals and decisions behind the records.</p>
+      <p class="mind-count">$count notes · $nsources source records</p>
+      <div class="mind-actions"><a class="primary" href="TAME_IMPALA_AGENTS.md" download aria-label="Download TAME_IMPALA_AGENTS.md">TAME_IMPALA_AGENTS.md ↓</a><a class="secondary" href="#reference">Find a technique ↓</a></div>
+    </div>
+  </div>
+  <div class="mind-portrait"><img src="$portrait_src" width="1942" height="809" fetchpriority="high" alt="A playful fan collage of Kevin Parker with his hair lifted like a lid, revealing a pink, turquoise and violet brain."></div>
+  <div class="mind-landscape" aria-hidden="true">$cover_svg</div>
+  <p class="mind-credit">Unofficial fan project · <a href="$repo/blob/main/ART_DIRECTION.md#portrait">Portrait credits</a></p>
+</section>
+<section class="eras" aria-labelledby="eras-title">
+  <h2 id="eras-title" class="eras-title">Notes by era</h2>
+  <ul class="era-list">$eras</ul>
+  <p class="eras-note">Colour follows the album named in each note's era line. Notes from interviews that name no album are grey.</p>
+</section>
+<section class="library" id="reference" aria-labelledby="library-title">
+  <h2 id="library-title" class="cut-title">Production notes</h2>
+  <p class="library-intro">Find the drums, doubles, synths and decisions behind the records. Every note keeps its source, era and uncertainty.</p>
+  <div class="controls">
+    <div class="gate">
+      <div class="gate-label"><span class="gate-band">Tame Impala</span><span id="count" role="status" aria-live="polite"><strong id="count-number">$count</strong> <span id="count-label">notes</span></span></div>
+    </div>
+    <div class="filters">
+      <div class="search-row">
+        <label class="search-label" for="search">Search<input id="search" type="search" placeholder="Search notes, gear, techniques" autocomplete="off"></label>
+        <label for="source-filter">Source<select id="source-filter"><option value="">All sources</option>$source_options</select></label>
+        <label for="evidence-filter">Evidence<select id="evidence-filter"><option value="">All evidence</option><option value="first-hand">First-hand</option><option value="qualified-recollection">Recollection</option><option value="publisher-report">Publisher report</option></select></label>
+      </div>
+      <div class="topics" role="group" aria-label="Production topic"><button type="button" data-topic="" aria-pressed="true">All topics</button>$topic_buttons</div>
+      <div class="results-bar"><button id="clear" type="button">Clear filters</button></div>
+    </div>
+  </div>
+  <details class="evidence-guide">
+    <summary>How strong is the evidence?</summary>
+    <p><strong>First-hand</strong> means Parker said it in an interview, including automatic-caption and speech-recognition accounts. <strong>Recollection</strong> preserves uncertainty. <strong>Publisher report</strong> identifies information supplied by the publication. These are not certified transcripts or independently reproduced settings.</p>
+    <p>Course timestamps restart in each part. Podcast times follow an ad-supported 81:23 copy and can shift with inserted ads. Three member clips lack extracted content; one playlist entry is private. <a href="$repo/blob/main/COVERAGE.md">Read the coverage record ↗</a></p>
+  </details>
+  <div id="notes">$notes</div>
+  <p id="empty" hidden>No notes found matching your search</p>
+  <noscript><p class="noscript">All notes are available above. Use your browser's Find command to search without JavaScript.</p></noscript>
+</section>
+<section class="agent-section" id="agents" aria-labelledby="agents-title">
+  <div class="currents" aria-hidden="true"><img src="$currents_src" alt="" width="1200" height="600" loading="lazy" decoding="async"></div>
+  <div class="agent-inner">
+    <p class="eyebrow">For your next session</p>
+    <h2 id="agents-title">Give your agent the sources</h2>
+    <p>Download the master document or the JSON, then ask about a sound, a song or a piece of gear. Every answer can cite a claim ID, its source and a timestamp.</p>
+    <p class="downloads"><a href="TAME_IMPALA_AGENTS.md" download>Download TAME_IMPALA_AGENTS.md ↓</a><a href="reference.json" download>Download reference.json ↓</a></p>
+    <label for="agent-prompt">Agent prompt</label>
+    <textarea id="agent-prompt" readonly rows="7">Use this repository as a source reference. Read TAME_IMPALA_AGENTS.md, data/reference.json and COVERAGE.md. For every factual production claim, cite the claim ID, original source and timestamp or section. Preserve era, uncertain recollections and publisher attribution. Clearly label your own suggested experiments. Never invent settings or claim unread videos were reviewed.</textarea>
+    <div class="copy-row"><button class="primary" id="copy" type="button">Copy agent prompt</button><span id="copy-status" role="status"></span></div>
+  </div>
+</section>
+<section class="sources" id="sources" aria-labelledby="sources-title">
+  <div class="sources-head">
+    <div class="arch" aria-hidden="true">$arch_svg</div>
+    <div>
+      <p class="eyebrow">$nsources source records</p>
+      <h2 id="sources-title">Go back to the original interview</h2>
+      <p>Open the source, read its notes, or check what still needs reviewing. Three member clips and one private playlist entry are listed with what is missing.</p>
+    </div>
+  </div>
+  <div class="dune" aria-hidden="true">$dune_svg</div>
+  <div class="shelf">$sources</div>
+</section>
+<section class="contribute" id="contribute" aria-labelledby="contribute-title">
+  <div class="sticker" aria-hidden="true"><span>Tame Impala</span><span>Agentic training</span><span>Side A</span></div>
+  <h2 id="contribute-title">Pull requests accepted</h2>
+  <p>Add a source link, a timestamp, a missing clip or a careful correction. Transcription-derived model names and contradictory recollections are the most useful places to look.</p>
+  <a class="primary" href="$repo/blob/main/CONTRIBUTING.md">Read the contributing guide ↗</a>
+</section>
+</main>
+<footer class="site-footer">
+  <p class="footer-mark">Tame Impala Production <span>Agentic training · Updated $updated</span></p>
+  <p>Unofficial fan project, not affiliated with Tame Impala, Kevin Parker or the source publishers. Original notes and original sources, with the uncertainty kept in. The visual design is a collage inspired by the album artwork; see the art direction notes for credits.</p>
+  <nav aria-label="Footer"><a href="$repo">GitHub ↗</a><a href="$repo/blob/main/ART_DIRECTION.md">Art direction and credits</a><a href="$repo/blob/main/COVERAGE.md">Coverage</a><a href="$repo/blob/main/LICENSE">License</a></nav>
+</footer>
+</body>
+</html>

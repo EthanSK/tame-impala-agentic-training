@@ -13,7 +13,7 @@ python3 scripts/build.py
 python3 scripts/check.py
 ```
 
-Commit the input and generated changes together. Preview `docs/` locally when changing the site. A new source should receive its own linked Markdown record and a playlist/source-group entry. Claim topics are Writing, Drums, Bass, Guitar, Synths, Vocals, Mixing and Workflow. Evidence values are `first-hand`, `qualified-recollection` and `publisher-report`; unsupported guesses should stay in coverage notes, not the factual claim collection.
+Commit the input and generated changes together. The website's markup lives in `site/index.html` and `site/404.html` (Python `string.Template` placeholders), its styles in `docs/style.css`, its behaviour in `docs/app.js` and its illustrations in `scripts/art.py`; `ART_DIRECTION.md` explains which album each component borrows from. Run the build after any site change so the asset hashes update, and preview `docs/` locally. A new source should receive its own linked Markdown record and a playlist/source-group entry. Claim topics are Writing, Drums, Bass, Guitar, Synths, Vocals, Mixing and Workflow. Evidence values are `first-hand`, `qualified-recollection` and `publisher-report`; unsupported guesses should stay in coverage notes, not the factual claim collection.
 
 ## Corrections
 
