@@ -13,7 +13,7 @@ These are design decisions about the website. They say nothing about how the rec
 | Note chips | All five | Each album's dominant colours | Small 12 px CSS swatches beside the cited era on each note |
 | Search and filters | *Lonerism* (2012) | Sun-bleached garden seen through iron bars, light leak in the top corner, pale circular label | CSS gradients for the photo strip and bars; the peach circle holds the live result count; pressed topic buttons use the park-sign green |
 | Production techniques | *Deadbeat* (2025) | White insert, heavy black print, monochrome grain | White paper with an SVG-noise grain overlay; the "Production techniques" title wraps to remain readable |
-| Agent section | *Currents* (2015) | Pale violet streamlines on near-black, a chrome sphere bending them, a single red-to-orange streak | `scripts/art.py` → `currents()`: lines are warped around the sphere by a radial field and a trailing wobble; written to `docs/art/currents.svg`. The setup itself is a native `<details>` that starts closed: one heading row with a rotating caret, the download, prompt, copy button, examples and companion inside |
+| Agent section | *Currents* (2015) | Pale violet streamlines on near-black, a chrome sphere bending them, a single red-to-orange streak | `scripts/art.py` → `currents()`: lines are warped around the sphere by a radial field and a trailing wobble; written to `docs/art/currents.svg`. The setup itself is a native `<details>` that starts closed: one heading row with an adjacent rotating caret, the master download and companion inside, and the optional prompt and copy button nested |
 | Sources | *The Slow Rush* (2020) | Vermilion room, arched window opening to turquoise, sand filling the floor, nested doorway | CSS radial background; hand-written arch SVG (`ARCH`) and dune lip (`DUNE`); the source list sits on the sand |
 | Contribute | *Deadbeat* (2025) | Giant black headline cut by the edge, orange vinyl label | Microgramma D Extended Bold, clipped at the page edge on desktop and wrapped on phones; the orange sticker is a CSS circle with a centre hole |
 | Footer | The record | Vinyl grooves | `repeating-radial-gradient` centred off-canvas |
@@ -61,9 +61,9 @@ Album artwork, wordmarks and trademarks remain the property of their rights hold
 - Keep the long research text on white or sand with dark ink. Spend visual risk in the hero and the section backgrounds, not in the note list.
 - Generated SVG illustrations must build deterministically from `python3 scripts/build.py`. Change the seed or parameters in `scripts/art.py`, never hand-edit generated SVG in `docs/`.
 - Asset links carry a content hash (`style.css?v=…`, `app.js?v=…`, `art/currents.svg?v=…`) so readers see new styles after a deploy. `scripts/check.py` verifies the hashes match the files.
-- Motion is limited to button hover and the agent caret turning; both stop under `prefers-reduced-motion`. Never autoplay audio or video.
+- Motion includes disclosure expansion and collapse, button hover and the agent caret turning; these stop under `prefers-reduced-motion`. Never autoplay audio or video.
 - Keep the type pairing exactly as pinned above. New text takes `var(--plain)` or `var(--brand)`; `scripts/check.py` checks the pinned font variables, vendored assets and removal of the previous font roles.
-- The "Ask your agent about this" section starts collapsed. Its closed row is the heading plus a caret only; put no paragraph in the resting state. Opening it must reveal the download, prompt, copy button, examples and companion. Keep this until Ethan changes direction.
+- The "Ask your agents" section starts collapsed. Its closed row is the heading plus a caret only; put no paragraph in the resting state. Opening it shows the master-file instruction and companion, with the optional prompt and copy button in a nested disclosure. Place this section just below the initial viewport, with the portrait anchored at the bottom of the taller hero. Keep this until Ethan changes direction.
 
 
 ## Portrait

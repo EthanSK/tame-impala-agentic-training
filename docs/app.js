@@ -37,6 +37,55 @@ function clearFilters() {
   filter();
 }
 document.querySelector('#clear').addEventListener('click', clearFilters);
+// Keep native details as the no-JavaScript fallback; animate both directions.
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const disclosures = new Map();
+for (const detail of document.querySelectorAll('details')) {
+  const summary = detail.querySelector(':scope > summary');
+  if (!summary) continue;
+  const content = document.createElement('div');
+  content.className = 'disclosure-content';
+  while (summary.nextSibling) content.append(summary.nextSibling);
+  detail.append(content);
+  const state = {animation: null, expanded: detail.open};
+  const finish = () => {
+    detail.open = state.expanded;
+    state.animation?.cancel();
+    state.animation = null;
+    detail.style.height = '';
+    detail.style.overflow = '';
+    content.inert = false;
+  };
+  const setOpen = expanded => {
+    if (state.expanded === expanded && detail.open === expanded && !state.animation) return;
+    const start = detail.getBoundingClientRect().height;
+    state.animation?.cancel();
+    state.animation = null;
+    state.expanded = expanded;
+    detail.dataset.expanded = String(expanded);
+    detail.style.height = '';
+    detail.open = expanded;
+    if (reducedMotion.matches || !detail.animate) { finish(); return; }
+    const end = detail.getBoundingClientRect().height;
+    detail.open = true;
+    detail.style.overflow = 'hidden';
+    content.inert = !expanded;
+    state.animation = detail.animate([{height: `${start}px`}, {height: `${end}px`}], {
+      duration: 280, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'both'
+    });
+    state.animation.onfinish = finish;
+  };
+  summary.addEventListener('click', event => {
+    if (event.target.closest('a, button, input')) return;
+    event.preventDefault();
+    setOpen(!state.expanded);
+  });
+  disclosures.set(detail, {setOpen, finish});
+}
+reducedMotion.addEventListener('change', () => {
+  if (reducedMotion.matches) disclosures.forEach(controller => controller.finish());
+});
+function openDetails(detail) { disclosures.get(detail)?.setOpen(true); }
 const disclosure = document.querySelector('#agent-disclosure');
 document.querySelector('#copy').addEventListener('click', async () => {
   const field = document.querySelector('#agent-prompt');
@@ -45,8 +94,8 @@ document.querySelector('#copy').addEventListener('click', async () => {
     await navigator.clipboard.writeText(field.value);
     status.textContent = "Agent prompt copied to clipboard";
   } catch {
-    disclosure.open = true;
-    document.querySelector('#agent-instructions').open = true;
+    openDetails(disclosure);
+    openDetails(document.querySelector('#agent-instructions'));
     field.focus(); field.select();
     status.textContent = "Failed to copy. Select the prompt text and copy it manually.";
   }
@@ -54,7 +103,8 @@ document.querySelector('#copy').addEventListener('click', async () => {
 function revealHash() {
   const id = decodeURIComponent(location.hash.slice(1));
   // The agent setup starts collapsed; a link straight to it (nav, README) opens it.
-  if (id === 'agents' || id === 'agent-disclosure' || id === 'agent-instructions' || id === 'agent-prompt') disclosure.open = true;
+  if (id === 'agents' || id === 'agent-disclosure' || id === 'agent-instructions' || id === 'agent-prompt') openDetails(disclosure);
+  if (id === 'agent-prompt' || id === 'agent-instructions') openDetails(document.querySelector('#agent-instructions'));
   const target = document.getElementById(id);
   if (target?.classList.contains('note') && target.hidden) { clearFilters(); target.scrollIntoView(); }
 }
