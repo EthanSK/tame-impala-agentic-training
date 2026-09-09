@@ -1,6 +1,6 @@
 # Tame Impala Production — agent reference (TAME_IMPALA_AGENTS.md)
 
-114 source-linked production notes · 22 source records · Updated 8 September 2026
+169 source-linked production notes · 35 source records · Updated 9 September 2026
 
 This is the canonical production-technique reference of the tame-impala-agentic-training repository. Use it with an agent to solve a musical problem: choose a documented method, understand the decision behind it, and try an adaptation with the tools you have. Every note keeps its stable claim ID, original source, timestamp or section, song/era and evidence label. Technique groups and practical priority are editorial organization, not confidence ratings. Gear is supporting context, not a requirement to buy the same equipment. Answering rules live in [AGENTS.md](AGENTS.md); read/unread boundaries live in [COVERAGE.md](COVERAGE.md).
 
@@ -16,8 +16,8 @@ Attach this file and describe what you want to change in your production, your D
 - **Qualified recollection:** Parker is uncertain, corrects himself, or reconstructs an old setup. Preserve the qualification.
 - **Publisher report:** identification or narration supplied by the publisher, rather than a securely attributed artist statement.
 - Timestamps are local to the stated video part. TN188 times follow an ad-supported 81:23 copy; inserted advertisements can move player offsets.
-- Supplied course captions and public automatic transcripts were text-reviewed; complete video-frame and human audio audits were not performed.
-- Three member clips lack extracted content; one playlist video is private. Read [COVERAGE.md](COVERAGE.md) before claiming complete video coverage.
+- Supplied course captions, podcast transcripts and all six playlist caption tracks were text-reviewed; complete video-frame and human audio audits were not performed.
+- All six playlist clips now have caption-based coverage, including the formerly private drum clip. The wider interview search is bounded, with gated and partially reviewed sources still listed in [COVERAGE.md](COVERAGE.md).
 
 ## Find your way
 
@@ -40,6 +40,8 @@ These prompts are our interpretation of the cited accounts, not additional Kevin
 - Ableton delay names in an old Currents recollection do not prove that the modern Echo device was used on that recording.
 - MW5 tentatively mentions an SSL bus compressor; Sound On Sound publisher narration mentions Manley. The accounts do not establish one combined chain.
 - Deadbeat’s microphone discussion corrects SM57 to SM7; a U47-style clone has no securely established manufacturer here.
+- Let It Happen’s 2015 sampler explanation (EXP05-01) is more explicit than the partial device word in the 2025 automatic caption (ZL25-02); do not identify a vocoder from that fragment.
+- No Reply’s retained piano memo (EXP04-01) and My Old Ways’ re-recorded opening (TN188-02) concern different songs.
 - Tape Notes sponsors are not evidence of Kevin’s equipment. Exact plugin settings, amp models and several old patch names remain unknown.
 
 ## Choose a production technique
@@ -100,6 +102,51 @@ He captured demos wherever ideas occurred, with a home studio providing the main
 - **Evidence:** first-hand · [KEXP interview about Currents](https://www.kexp.org/read/2015/7/8/interview-tame-impalas-kevin-parker-on-his-personal-danceable-new-album-currents/) · Recording on the road?
 - **Gear context:** No specific model established
 [Source record](sources/external/s06.md)
+
+### EXP04-01 · A phone demo can become the master
+No Reply uses his original piano phone memo after he lost a replacement recorded with a stereo microphone.
+
+- **Topic:** Workflow
+- **Context:** Deadbeat
+- **Evidence:** first-hand · [triple j: Deadbeat and simplicity](https://www.abc.net.au/triplej/news/tame-impala-interview-deadbeat-new-album-lucy-smith/105905616) · Closing No Reply piano discussion
+- **Gear context:** No specific model established
+[Source record](sources/external/exp04.md)
+
+### EXP05-01 · Keep the phonetic take
+Let It Happen retains the initial nonsensical sampler-vocal performance because later real lyrics lost its groove. He distinguishes it from a vocoder; exact device unknown.
+
+- **Topic:** Vocals
+- **Context:** Currents
+- **Evidence:** first-hand · [Under the Radar: Cover Story Bonus Q&A](https://www.undertheradarmag.com/interviews/tame_impala_cover_story_bonus_2015/) · Q: You said before that you spend most of your studio time trying to recapture the spirit of your original demo
+- **Gear context:** keyboard sampler (unspecified)
+[Source record](sources/external/exp05.md)
+
+### EXP07-03 · Make tone settings repeatable
+He values the Hagstrom Impala’s switches because a known combination makes later alternate takes easier to match.
+
+- **Topic:** Workflow
+- **Context:** Studio practice described in 2021
+- **Evidence:** first-hand · [Guitar.com: Ten years of InnerSpeaker](https://guitar.com/features/interviews/tame-impala-kevin-parker-10-years-innerspeaker/) · Tamed impala
+- **Gear context:** Hagstrom Impala
+[Source record](sources/external/exp07.md)
+
+### EXP09-01 · Batch the drum session
+He prepared drumless songs, then recorded their drum takes during a limited daytime session at a pub.
+
+- **Topic:** Drums
+- **Context:** Early EP sessions, recalled in 2020
+- **Evidence:** first-hand · [Zane Lowe: The Slow Rush interview](https://www.youtube.com/watch?v=Kr28pGJZ3nY) · 27:13–27:56
+- **Gear context:** No specific model established
+[Source record](sources/external/exp09.md)
+
+### AM06 · Capture the idea with available input
+Without an interface, he recorded the Apocalypse Dreams breakdown lead guitar directly into his MacBook line input to preserve the inspired moment.
+
+- **Topic:** Guitar
+- **Context:** Lonerism, recalled in 2015
+- **Evidence:** first-hand · [Kevin Parker Reddit AMA](https://www.reddit.com/r/IAmA/comments/34clpm/i_am_kevin_parker_from_tame_impala_ask_me_anything/) · https://www.reddit.com/r/IAmA/comments/34clpm/comment/cqtkpgu/
+- **Gear context:** MacBook line input
+[Source record](sources/external/s07.md)
 
 ### MW2-02 · Reduce sympathetic ringing at the kit
 He names a Ludwig Supraphonic 400 snare and Tama kick and describes removing toms to reduce unwanted resonance.
@@ -191,6 +238,15 @@ His Studer 963 routed permanently connected instruments; he did not mix through 
 - **Gear context:** Studer 963
 [Source record](sources/external/s04.md)
 
+### EXP02-03 · Resist automatic cleanup
+On moving from eight-track to computer recording, he resisted correcting every flaw and retained imperfect singing.
+
+- **Topic:** Workflow
+- **Context:** Lonerism
+- **Evidence:** first-hand · [Stereogum: Progress Report: Tame Impala](https://stereogum.com/1115931/progress-report-tame-impala/interviews/progress-report) · Q: Does bringing in all those added elements make the entire process even more complicated?
+- **Gear context:** No specific model established
+[Source record](sources/external/exp02.md)
+
 ### MW1-01 · Keep the first spark
 A short spontaneous demo became the foundation of the record; Parker kept its first section rather than replacing every rough detail.
 
@@ -272,6 +328,24 @@ Lonerism: MD421; Currents: SM7B; The Slow Rush sessions: RE20, then SM7B after l
 - **Gear context:** Sennheiser MD421, Shure SM7B, Electro-Voice RE20
 [Source record](sources/external/s04.md)
 
+### EXP05-03 · Take counters include fragments
+His four-digit vocal-take count could include aborted words or individual lines, not thousands of complete performances.
+
+- **Topic:** Vocals
+- **Context:** Currents
+- **Evidence:** first-hand · [Under the Radar: Cover Story Bonus Q&A](https://www.undertheradarmag.com/interviews/tame_impala_cover_story_bonus_2015/) · Opening question on minute details
+- **Gear context:** No specific model established
+[Source record](sources/external/exp05.md)
+
+### BR20-08 · Discover overdubbing with playback
+As a child, he recorded keyboard over playback of his own drums using two cassette decks.
+
+- **Topic:** Workflow
+- **Context:** Childhood recording, recalled 2020
+- **Evidence:** first-hand · [Broken Record: Tame Impala with Rick Rubin](https://www.pushkin.fm/podcasts/broken-record/tame-impala) · First experiments with recording and multitracking
+- **Gear context:** No specific model established
+[Source record](sources/external/br20.md)
+
 ### MW2-03 · Separate this setup from other bedrooms
 Duvets describe a bedroom method, whereas he recalls this particular take as outdoors. These are alternatives, not one combined recording setup.
 
@@ -320,6 +394,51 @@ Glimmer grew from a synchronized jam; he praised TR-707 through tape and reverb.
 - **Gear context:** Roland TR-707
 [Source record](sources/external/s04.md)
 
+### EXP05-02 · Discover sections by looping
+He developed Let It Happen through solitary looped jams, allowing new elements to suggest the next section.
+
+- **Topic:** Writing
+- **Context:** Currents
+- **Evidence:** first-hand · [Under the Radar: Cover Story Bonus Q&A](https://www.undertheradarmag.com/interviews/tame_impala_cover_story_bonus_2015/) · Q: Do you remember your first idea for that track?
+- **Gear context:** No specific model established
+[Source record](sources/external/exp05.md)
+
+### EXP08-01 · Make repetition disturb expectations
+Let It Happen’s intentional skipping passage was designed to make listeners briefly suspect a playback fault. No editing command or plugin identified.
+
+- **Topic:** Writing
+- **Context:** Currents
+- **Evidence:** first-hand · [Rolling Stone: Mind Tricks and Currents](https://au.rollingstone.com/music/music-news/tame-impalas-mind-tricks-kevin-parker-on-sense-altering-currents-672/) · Q: The single Let It Happen has this digital skip
+- **Gear context:** No specific model established
+[Source record](sources/external/exp08.md)
+
+### EXP09-03 · Hear rhythm across the arrangement
+He treats the interaction of vocal, bass and percussion rhythms as central to the music.
+
+- **Topic:** Drums
+- **Context:** Rhythmic approach described in 2020
+- **Evidence:** first-hand · [Zane Lowe: The Slow Rush interview](https://www.youtube.com/watch?v=Kr28pGJZ3nY) · 21:34–22:01
+- **Gear context:** No specific model established
+[Source record](sources/external/exp09.md)
+
+### BR20-01 · Build structure from a short loop
+For Currents, he built structures from short loops, influenced by hip-hop, R&B and electronic production.
+
+- **Topic:** Writing
+- **Context:** Currents, recalled 2020
+- **Evidence:** first-hand · [Broken Record: Tame Impala with Rick Rubin](https://www.pushkin.fm/podcasts/broken-record/tame-impala) · Comparison of second and third album arrangements
+- **Gear context:** No specific model established
+[Source record](sources/external/br20.md)
+
+### RS05 · Respond to the recorded drummer
+Recording bass over his own drums lets him anticipate and match the fills, creating interaction between separately performed parts.
+
+- **Topic:** Bass
+- **Context:** InnerSpeaker / 2011
+- **Evidence:** first-hand · [Rocksucker interview](https://rocksucker.co.uk/2011/06/interview-tame-impala.html) · Question about imagining a band while recording alone
+- **Gear context:** No specific model established
+[Source record](sources/external/s08.md)
+
 ### MW1-08 · Reinforce the acoustic loop
 An 808 kick and Sequential Circuits Drumtraks were added later to the original drum recording.
 
@@ -364,6 +483,15 @@ Electronic beats need not inherit a drummer’s automatic continuous eighth-note
 - **Evidence:** first-hand · [Tape Notes 188: Tame Impala — My Old Ways and Loser](https://podcasts.apple.com/us/podcast/tn-188-tame-impala/id1249834293?i=1000787528506) · 22:58–24:02
 - **Gear context:** No specific model established
 [Source record](sources/tape-notes/tn188.md)
+
+### YT3-01 · Give the groove an offbeat pulse
+In My Old Ways, he identifies offbeat cabasa and another cabasa part within the electronic beat. The caption gives the song as 110 BPM; no swing amount or timing offset is specified.
+
+- **Topic:** Drums
+- **Context:** Deadbeat / My Old Ways
+- **Evidence:** first-hand · [Drum Production on Deadbeat (member edit)](https://www.youtube.com/watch?v=nwqOT7jwt4A) · 05:47–06:26
+- **Gear context:** Cabasa
+[Source record](sources/tape-notes/yt3.md)
 
 ### MW2-09 · Layering kicks changes phase and feel
 Aligning the added kick with the original drum recording proved troublesome; the discussion concerns timing and phase rather than a fixed recipe.
@@ -431,6 +559,60 @@ He lowered all the strings for a looser feel; no exact interval was specified.
 - **Gear context:** No specific model established
 [Source record](sources/external/s08.md)
 
+### EXP07-01 · Make guitar suggest an organ
+He reduced the attack, rolled back the tone control and used fingers instead of a pick for organ-like guitar parts.
+
+- **Topic:** Guitar
+- **Context:** Innerspeaker-era guitar, recalled in 2021
+- **Evidence:** first-hand · [Guitar.com: Ten years of InnerSpeaker](https://guitar.com/features/interviews/tame-impala-kevin-parker-10-years-innerspeaker/) · Tools at hand
+- **Gear context:** No specific model established
+[Source record](sources/external/exp07.md)
+
+### EXP07-02 · Explore recorder parameters by ear
+The synthetic space-guitar sound emerged from trying recorder presets and changing parameters until a sound appealed. No exact preset or parameter values supplied.
+
+- **Topic:** Guitar
+- **Context:** Early recordings, recalled in 2021
+- **Evidence:** first-hand · [Guitar.com: Ten years of InnerSpeaker](https://guitar.com/features/interviews/tame-impala-kevin-parker-10-years-innerspeaker/) · Tools at hand
+- **Gear context:** No specific model established
+[Source record](sources/external/exp07.md)
+
+### EXP07-04 · Change the register and articulation
+He describes playing funk figures on a cheap Teisco’s upper three strings for a distinctive recorded character.
+
+- **Topic:** Guitar
+- **Context:** Studio practice described in 2021
+- **Evidence:** first-hand · [Guitar.com: Ten years of InnerSpeaker](https://guitar.com/features/interviews/tame-impala-kevin-parker-10-years-innerspeaker/) · Bet on Backer
+- **Gear context:** Teisco (model unspecified)
+[Source record](sources/external/exp07.md)
+
+### ZL25-05 · Use an amp vocal for a spontaneous performance feel
+For Not My World’s spontaneous feel, he sang through a guitar amp. Neither microphone nor amp model is specified.
+
+- **Topic:** Vocals
+- **Context:** Deadbeat / Not My World
+- **Evidence:** first-hand · [Tame Impala: The Deadbeat Interview | Zane Lowe Interview](https://www.youtube.com/watch?v=wXwcPtVrx7g) · 32:58–34:02
+- **Gear context:** Microphone (model unspecified), Guitar amplifier (model unspecified)
+[Source record](sources/external/zl25.md)
+
+### GW09 · Use guitar voicings on keyboard sounds
+Playing a piano patch through guitar synthesis gives familiar guitar chords different voicings from conventional keyboard playing.
+
+- **Topic:** Synths
+- **Context:** Writing practice described in 2022
+- **Evidence:** first-hand · [Guitar World interview](https://www.guitarworld.com/features/tame-impala-kevin-parker) · The Less I Know the Better answer, paragraph beginning Like, you can play a barre chord
+- **Gear context:** Roland GR-55
+[Source record](sources/external/s03.md)
+
+### PG07 · Build patches beyond the presets
+He built GR-55 patches from scratch, then combined them with effects and outboard processing.
+
+- **Topic:** Synths
+- **Context:** Currents / 2015
+- **Evidence:** first-hand · [Premier Guitar: Psych Wunderkind Kevin Parker](https://www.premierguitar.com/artists/guitarists/tame-impala-psych-wunderkind-kevin-parker) · Jazzmaster with Roland synth pickup question
+- **Gear context:** Roland GR-55
+[Source record](sources/external/s05.md)
+
 ### MW1-04 · The famous bass begins as guitar
 The riff uses a modeled P-bass sound played on guitar and shifted into the bass register, then processed. This is not proof that the entire song contains no bass guitar.
 
@@ -494,6 +676,24 @@ He used a pair of Neve 1073s for mixing and valued their crunch.
 - **Gear context:** Neve 1073
 [Source record](sources/external/s07.md)
 
+### EXP01-02 · Compose with the sound
+For Parker, production choices carry emotional meaning and develop alongside songwriting.
+
+- **Topic:** Writing
+- **Context:** Currents
+- **Evidence:** first-hand · [Electronic Beats: Kevin Parker Reflects on Pop Success](https://www.electronicbeats.net/tame-impalas-kevin-parker-reflects-on-pop-success/) · Q: Would you consider production to be surface or content?
+- **Gear context:** No specific model established
+[Source record](sources/external/exp01.md)
+
+### EXP08-02 · Use an imagined playback aesthetic
+Disciples pursued a seventies AM-radio character as its own sound world.
+
+- **Topic:** Writing
+- **Context:** Currents
+- **Evidence:** first-hand · [Rolling Stone: Mind Tricks and Currents](https://au.rollingstone.com/music/music-news/tame-impalas-mind-tricks-kevin-parker-on-sense-altering-currents-672/) · Q: The album moves around a lot; Disciples
+- **Gear context:** No specific model established
+[Source record](sources/external/exp08.md)
+
 ### MW1-03 · Guitar controller opens unfamiliar sounds
 The opening instrumental demo used a Strat with a taped-on synth pickup and a Roland guitar synthesizer; he tentatively recalls the GR-55 model.
 
@@ -540,11 +740,11 @@ He highlighted the SH-1's personality and suitability for unconventional bass us
 [Source record](sources/external/s04.md)
 
 ### PG03 · Rack preamp
-He identified a Seymour Duncan KTG-1 rack preamp as a device he ran instruments through.
+He described running instruments through a Seymour Duncan rack preamp; the publisher supplies the KTG-1 model in brackets.
 
 - **Topic:** Workflow
 - **Context:** Currents / 2015
-- **Evidence:** publisher-report · [Premier Guitar: Psych Wunderkind Kevin Parker](https://www.premierguitar.com/artists/guitarists/tame-impala-psych-wunderkind-kevin-parker) · What's on your pedalboard?
+- **Evidence:** publisher-report · [Premier Guitar: Psych Wunderkind Kevin Parker](https://www.premierguitar.com/artists/guitarists/tame-impala-psych-wunderkind-kevin-parker) · What’s on your pedalboard?
 - **Gear context:** Seymour Duncan KTG-1
 [Source record](sources/external/s05.md)
 
@@ -632,6 +832,15 @@ Reverb before distortion changes the apparent acoustic space, rather than merely
 - **Gear context:** No specific model established
 [Source record](sources/external/s08.md)
 
+### AM07 · Repeat the reverberant space
+He suggests delaying an already reverberant signal because repeating its spatial reflections can alter the listener’s sense of space. A suggested preference, not a verified song-specific chain.
+
+- **Topic:** Mixing
+- **Context:** Effects preference described in 2015
+- **Evidence:** first-hand · [Kevin Parker Reddit AMA](https://www.reddit.com/r/IAmA/comments/34clpm/i_am_kevin_parker_from_tame_impala_ask_me_anything/) · https://www.reddit.com/r/IAmA/comments/34clpm/comment/cqthdc5/
+- **Gear context:** No specific model established
+[Source record](sources/external/s07.md)
+
 ### MW3-06 · Automate the throws
 Delay and reverb throws supplied much of the vocal movement; his retrospective criticism is that the vocals were too low and reverberant.
 
@@ -667,6 +876,15 @@ He describes a separate effects bus on Deadbeat and names Soundtoys EchoBoy for 
 - **Evidence:** first-hand · [Tape Notes 188: Tame Impala — My Old Ways and Loser](https://podcasts.apple.com/us/podcast/tn-188-tame-impala/id1249834293?i=1000787528506) · 39:54–40:55
 - **Gear context:** Soundtoys EchoBoy, Valhalla Room
 [Source record](sources/tape-notes/tn188.md)
+
+### YT2-01 · Build a choir through successive takes
+He builds a cascading vocal stack by recording harmony parts successively and listening to their combined choral effect. His early eight-track recollection illustrates the practice; it does not establish a required track count or current microphone.
+
+- **Topic:** Vocals
+- **Context:** Deadbeat vocal discussion / earlier eight-track practice
+- **Evidence:** first-hand · [Vocal Chain, Layering & Vocal Production Techniques](https://www.youtube.com/watch?v=1WMxwm3Tu70) · 07:36–09:36
+- **Gear context:** No specific model established
+[Source record](sources/tape-notes/yt2.md)
 
 ### KX01 · Forward vocals
 More prominent vocals reflected growing confidence in his singing and melodies; earlier reverb and delay partly concealed shyness.
@@ -854,6 +1072,15 @@ Unfamiliar instruments and exploratory chord shapes can interrupt predictable pl
 - **Gear context:** No specific model established
 [Source record](sources/external/s03.md)
 
+### PG04 · Escape muscle memory
+He imagines a melody, then makes his fingers reproduce it until natural rather than following familiar guitar licks.
+
+- **Topic:** Guitar
+- **Context:** Currents / 2015
+- **Evidence:** first-hand · [Premier Guitar: Psych Wunderkind Kevin Parker](https://www.premierguitar.com/artists/guitarists/tame-impala-psych-wunderkind-kevin-parker) · Who influenced you as a guitarist?, second answer paragraph
+- **Gear context:** No specific model established
+[Source record](sources/external/s05.md)
+
 ### AM04 · Seventh chords
 He recommended major and minor sevenths as an entry point for different emotional chord colours.
 
@@ -871,6 +1098,105 @@ He protected the album's ending by placing a bonus track inside the running orde
 - **Evidence:** first-hand · [Rocksucker interview](https://rocksucker.co.uk/2011/06/interview-tame-impala.html) · Island Walking question
 - **Gear context:** No specific model established
 [Source record](sources/external/s08.md)
+
+### EXP01-01 · Contrast emotional signals
+He pairs emotionally contrasting lyrics and music to create tension beyond a uniformly sad song.
+
+- **Topic:** Writing
+- **Context:** Currents
+- **Evidence:** first-hand · [Electronic Beats: Kevin Parker Reflects on Pop Success](https://www.electronicbeats.net/tame-impalas-kevin-parker-reflects-on-pop-success/) · Q: Production can be such a red herring
+- **Gear context:** No specific model established
+[Source record](sources/external/exp01.md)
+
+### EXP02-01 · Send an intentional rough mix
+He supplied Fridmann rough mixes expressing his intended sound before the mixer rebuilt clarity and impact.
+
+- **Topic:** Mixing
+- **Context:** Lonerism
+- **Evidence:** first-hand · [Stereogum: Progress Report: Tame Impala](https://stereogum.com/1115931/progress-report-tame-impala/interviews/progress-report) · Q: You worked with Dave Fridmann again
+- **Gear context:** No specific model established
+[Source record](sources/external/exp02.md)
+
+### EXP04-02 · Use a collaborator to clarify intent
+Sarah Aarons helped him identify what he wanted and reject distracting choices, including an overlong introduction. The intro example is illustrative, not assigned to a named song.
+
+- **Topic:** Writing
+- **Context:** Deadbeat
+- **Evidence:** first-hand · [triple j: Deadbeat and simplicity](https://www.abc.net.au/triplej/news/tame-impala-interview-deadbeat-new-album-lucy-smith/105905616) · Sarah Aarons discussion, quoted 32-bar-intro example
+- **Gear context:** No specific model established
+[Source record](sources/external/exp04.md)
+
+### EXP06-01 · Reach chords outside familiar fingering
+He used a Casio’s chord buttons with his index fingers to discover combinations outside his habitual guitar shapes.
+
+- **Topic:** Writing
+- **Context:** Lonerism-era recollection / Orchid development
+- **Evidence:** first-hand · [MusicTech: Telepathic Instruments’ Orchid](https://musictech.com/features/interviews/telepathic-instruments-orchid/) · Casio-origin paragraphs
+- **Gear context:** Casio keyboard (unspecified)
+[Source record](sources/external/exp06.md)
+
+### EXP09-02 · Work from a transformed memory
+He sometimes avoids replaying an influence so his imperfect memory can reshape it.
+
+- **Topic:** Writing
+- **Context:** Influence and writing practice described in 2020
+- **Evidence:** first-hand · [Zane Lowe: The Slow Rush interview](https://www.youtube.com/watch?v=Kr28pGJZ3nY) · 22:03–22:48
+- **Gear context:** No specific model established
+[Source record](sources/external/exp09.md)
+
+### EXP09-04 · Join contrasting fragments
+Posthumous Forgiveness combined two existing ideas into sections expressing anger followed by relief.
+
+- **Topic:** Writing
+- **Context:** The Slow Rush: Posthumous Forgiveness (2020)
+- **Evidence:** first-hand · [Zane Lowe: The Slow Rush interview](https://www.youtube.com/watch?v=Kr28pGJZ3nY) · 19:46–20:16
+- **Gear context:** No specific model established
+[Source record](sources/external/exp09.md)
+
+### EXP09-05 · Adapt the recording for the band
+Live arrangements allow players freedom instead of reproducing every edited loop and fleeting studio layer exactly.
+
+- **Topic:** Writing
+- **Context:** Live arrangement practice described in 2020
+- **Evidence:** first-hand · [Zane Lowe: The Slow Rush interview](https://www.youtube.com/watch?v=Kr28pGJZ3nY) · 39:45–40:41
+- **Gear context:** No specific model established
+[Source record](sources/external/exp09.md)
+
+### ZL25-03 · Audition rough ideas beside developed demos
+Alternating piano phone memos with fuller demos in the car suggested My Old Ways’ intimate opening. TN188-02 identifies the released re-recording.
+
+- **Topic:** Writing
+- **Context:** Deadbeat / My Old Ways opening
+- **Evidence:** first-hand · [Tame Impala: The Deadbeat Interview | Zane Lowe Interview](https://www.youtube.com/watch?v=wXwcPtVrx7g) · 14:25–15:04
+- **Gear context:** iPhone voice memos, Piano
+[Source record](sources/external/zl25.md)
+
+### BR20-02 · Imagine another session’s approach
+Breath Deeper’s opening beat came from imagining a Pharrell/Justin Timberlake session after watching Justified studio footage.
+
+- **Topic:** Writing
+- **Context:** The Slow Rush / Breath Deeper
+- **Evidence:** first-hand · [Broken Record: Tame Impala with Rick Rubin](https://www.pushkin.fm/podcasts/broken-record/tame-impala) · Returning to solo work; Justified footage and Breath Deeper
+- **Gear context:** No specific model established
+[Source record](sources/external/br20.md)
+
+### BR20-03 · Use accidental playback as an opening
+An accidentally looped beat became Feels Like We Only Go Backwards’ jolting introduction.
+
+- **Topic:** Writing
+- **Context:** Lonerism / Feels Like We Only Go Backwards
+- **Evidence:** first-hand · [Broken Record: Tame Impala with Rick Rubin](https://www.pushkin.fm/podcasts/broken-record/tame-impala) · Question about distinctive introductions
+- **Gear context:** No specific model established
+[Source record](sources/external/br20.md)
+
+### PG06 · Arrange guitar as an answer
+On Currents, guitars make intermittent appearances and answer other sounds; he adjusted chords and licks to fit the R&B rhythms and synth arrangement.
+
+- **Topic:** Guitar
+- **Context:** Currents / 2015
+- **Evidence:** first-hand · [Premier Guitar: Psych Wunderkind Kevin Parker](https://www.premierguitar.com/artists/guitarists/tame-impala-psych-wunderkind-kevin-parker) · Opening two guitar-arrangement questions
+- **Gear context:** No specific model established
+[Source record](sources/external/s05.md)
 
 ### MW5-05 · Use another trusted listening context
 A trusted mastering friend in a larger room helped check the mix, including low-frequency balance around 100 Hz. The caption does not establish a reliable second monitor model.
@@ -953,6 +1279,15 @@ He advises starting more songs and testing melodies instead of assuming their qu
 - **Gear context:** No specific model established
 [Source record](sources/tape-notes/tn188.md)
 
+### YT3-02 · Give the album a recognizable drum palette
+He contrasts The Slow Rush’s many drum approaches with a more consistent, identifiable Deadbeat palette, using Is This It as an example of recognizable drum identity. This is an album-level constraint, not a fixed signal chain.
+
+- **Topic:** Drums
+- **Context:** Deadbeat / contrast with The Slow Rush
+- **Evidence:** first-hand · [Drum Production on Deadbeat (member edit)](https://www.youtube.com/watch?v=nwqOT7jwt4A) · 02:13–03:43
+- **Gear context:** No specific model established
+[Source record](sources/tape-notes/yt3.md)
+
 ### SE01 · Solo exploration
 Working alone lets him explore without worrying that an unproductive session wastes somebody else's time.
 
@@ -989,15 +1324,6 @@ Enjoyment sustains practice; an expensive or particular guitar is not required t
 - **Gear context:** No specific model established
 [Source record](sources/external/s03.md)
 
-### PG04 · Escape muscle memory
-He tries to escape automatic guitar muscle memory and treats the instrument as a source of other timbres.
-
-- **Topic:** Guitar
-- **Context:** Currents / 2015
-- **Evidence:** first-hand · [Premier Guitar: Psych Wunderkind Kevin Parker](https://www.premierguitar.com/artists/guitarists/tame-impala-psych-wunderkind-kevin-parker) · Guitarist influences answer
-- **Gear context:** No specific model established
-[Source record](sources/external/s05.md)
-
 ### KX03 · Distinct tracks
 A goal was to keep individual tracks distinct from one another.
 
@@ -1006,6 +1332,159 @@ A goal was to keep individual tracks distinct from one another.
 - **Evidence:** first-hand · [KEXP interview about Currents](https://www.kexp.org/read/2015/7/8/interview-tame-impalas-kevin-parker-on-his-personal-danceable-new-album-currents/) · Representative of the rhythm of the album?
 - **Gear context:** No specific model established
 [Source record](sources/external/s06.md)
+
+### EXP01-03 · Change the foundation
+On Currents, he explored drum-machine songs and arrangements without a driving guitar riff.
+
+- **Topic:** Writing
+- **Context:** Currents
+- **Evidence:** first-hand · [Electronic Beats: Kevin Parker Reflects on Pop Success](https://www.electronicbeats.net/tame-impalas-kevin-parker-reflects-on-pop-success/) · Q: Could the infrastructure veto such a move?
+- **Gear context:** No specific model established
+[Source record](sources/external/exp01.md)
+
+### EXP02-02 · Develop quickly, revisit later
+An initial concentrated writing session could be followed by a year of adding and removing parts.
+
+- **Topic:** Writing
+- **Context:** Lonerism
+- **Evidence:** first-hand · [Stereogum: Progress Report: Tame Impala](https://stereogum.com/1115931/progress-report-tame-impala/interviews/progress-report) · Q: How does the song-making process usually work?
+- **Gear context:** No specific model established
+[Source record](sources/external/exp02.md)
+
+### EXP03-01 · Write toward a performed persona
+For Not My World, he wanted the impression of unpremeditated singing by someone detached from everyday reality.
+
+- **Topic:** Vocals
+- **Context:** Deadbeat
+- **Evidence:** first-hand · [Coup De Main: Kevin Parker on Deadbeat](https://www.coupdemainmagazine.com/tame-impala/20202) · Q: What was running through your mind while writing Not My World?
+- **Gear context:** No specific model established
+[Source record](sources/external/exp03.md)
+
+### EXP03-02 · Read back for the subject
+Reading back No Reply led him to recognize anxiety as its subject.
+
+- **Topic:** Writing
+- **Context:** Deadbeat
+- **Evidence:** first-hand · [Coup De Main: Kevin Parker on Deadbeat](https://www.coupdemainmagazine.com/tame-impala/20202) · No Reply discussion, preceding Q: Was it therapeutic writing that song?
+- **Gear context:** No specific model established
+[Source record](sources/external/exp03.md)
+
+### EXP04-03 · Limit an abundant studio
+He pursued stripped-back, sometimes distorted sounds and consciously restricted the options offered by his extensive equipment.
+
+- **Topic:** Writing
+- **Context:** Deadbeat
+- **Evidence:** first-hand · [triple j: Deadbeat and simplicity](https://www.abc.net.au/triplej/news/tame-impala-interview-deadbeat-new-album-lucy-smith/105905616) · Opening sound discussion and gear-library discussion
+- **Gear context:** No specific model established
+[Source record](sources/external/exp04.md)
+
+### EXP06-02 · Keep discovery in the process
+He personally avoids ready-made chord packs because exploring the progression is part of his enjoyment of songwriting.
+
+- **Topic:** Writing
+- **Context:** Lonerism-era recollection / Orchid development
+- **Evidence:** first-hand · [MusicTech: Telepathic Instruments’ Orchid](https://musictech.com/features/interviews/telepathic-instruments-orchid/) · Opening chord-pack discussion
+- **Gear context:** No specific model established
+[Source record](sources/external/exp06.md)
+
+### EXP08-03 · Let the song determine its treatment
+For Currents he asked what would help each song flourish, avoiding a predetermined Tame Impala template.
+
+- **Topic:** Writing
+- **Context:** Currents
+- **Evidence:** first-hand · [Rolling Stone: Mind Tricks and Currents](https://au.rollingstone.com/music/music-news/tame-impalas-mind-tricks-kevin-parker-on-sense-altering-currents-672/) · Disciples answer, concluding paragraph
+- **Gear context:** No specific model established
+[Source record](sources/external/exp08.md)
+
+### EXP09-06 · Design the closing time perspective
+One More Hour represents the final hour of the year introduced by One More Year.
+
+- **Topic:** Writing
+- **Context:** The Slow Rush: One More Year / One More Hour (2020)
+- **Evidence:** first-hand · [Zane Lowe: The Slow Rush interview](https://www.youtube.com/watch?v=Kr28pGJZ3nY) · 45:19–45:28
+- **Gear context:** No specific model established
+[Source record](sources/external/exp09.md)
+
+### ZL25-01 · A restricted writing phase can reveal the next direction
+A techno-only writing phase made Parker miss chords; following that impulse brought him back toward a Tame Impala album.
+
+- **Topic:** Writing
+- **Context:** Deadbeat / preceding techno-writing phase, recalled 2025
+- **Evidence:** first-hand · [Tame Impala: The Deadbeat Interview | Zane Lowe Interview](https://www.youtube.com/watch?v=wXwcPtVrx7g) · 01:26–02:22
+- **Gear context:** No specific model established
+[Source record](sources/external/zl25.md)
+
+### ZL25-02 · Improvised syllables can remain in the finished vocal
+Let It Happen retains improvised, nonliteral syllables. The caption’s partial device term is uncertain; EXP05 explicitly identifies a keyboard sampler.
+
+- **Topic:** Vocals
+- **Context:** Currents / Let It Happen, recalled 2025
+- **Evidence:** first-hand · [Tame Impala: The Deadbeat Interview | Zane Lowe Interview](https://www.youtube.com/watch?v=wXwcPtVrx7g) · 11:36–11:45
+- **Gear context:** No specific model established
+[Source record](sources/external/zl25.md)
+
+### ZL25-06 · Recognize when further revisions risk draining a song
+Piece of Heaven took days, while Dracula underwent prolonged revisions; he describes repeated editing as risking a song’s vitality.
+
+- **Topic:** Workflow
+- **Context:** Deadbeat / Piece of Heaven and Dracula
+- **Evidence:** first-hand · [Tame Impala: The Deadbeat Interview | Zane Lowe Interview](https://www.youtube.com/watch?v=wXwcPtVrx7g) · 34:36–35:03
+- **Gear context:** No specific model established
+[Source record](sources/external/zl25.md)
+
+### ZL25-07 · A late demo can still become a complete song
+Afterthought developed from an existing demo during mastering, growing from possible interlude to full song; later mix revisions still followed.
+
+- **Topic:** Writing
+- **Context:** Deadbeat / Afterthought
+- **Evidence:** first-hand · [Tame Impala: The Deadbeat Interview | Zane Lowe Interview](https://www.youtube.com/watch?v=wXwcPtVrx7g) · 36:26–38:40
+- **Gear context:** No specific model established
+[Source record](sources/external/zl25.md)
+
+### ZL25-08 · Preserve collective interplay in electronic live arrangements
+For the planned Deadbeat tour, he wanted collective musical interplay and spontaneity alongside quality. No live routing or synchronization method is specified.
+
+- **Topic:** Workflow
+- **Context:** Deadbeat / live-show preparation discussed in 2025
+- **Evidence:** first-hand · [Tame Impala: The Deadbeat Interview | Zane Lowe Interview](https://www.youtube.com/watch?v=wXwcPtVrx7g) · 45:53–47:39
+- **Gear context:** No specific model established
+[Source record](sources/external/zl25.md)
+
+### BR20-04 · Notice the transition into quiet
+He notices ideas arriving when leaving busy, loud surroundings for quiet; this is an observed personal pattern.
+
+- **Topic:** Writing
+- **Context:** Writing practice described in 2020
+- **Evidence:** first-hand · [Broken Record: Tame Impala with Rick Rubin](https://www.pushkin.fm/podcasts/broken-record/tame-impala) · Discussion of when song ideas arrive
+- **Gear context:** No specific model established
+[Source record](sources/external/br20.md)
+
+### BR20-05 · Let memory continue an influence
+He tentatively connects Backwards to mentally continuing a Beach House song after it stopped playing.
+
+- **Topic:** Writing
+- **Context:** Lonerism / retrospective account in 2020
+- **Evidence:** qualified-recollection · [Broken Record: Tame Impala with Rick Rubin](https://www.pushkin.fm/podcasts/broken-record/tame-impala) · Influence discussion; Walk in the Park and Backwards
+- **Gear context:** No specific model established
+[Source record](sources/external/br20.md)
+
+### BR20-06 · Keep the moment that made you care
+He develops songs that have felt like his best work, then tries to retain that attachment through completion.
+
+- **Topic:** Writing
+- **Context:** Album-making practice described in 2020
+- **Evidence:** first-hand · [Broken Record: Tame Impala with Rick Rubin](https://www.pushkin.fm/podcasts/broken-record/tame-impala) · Album selection and the race to finish a song
+- **Gear context:** No specific model established
+[Source record](sources/external/br20.md)
+
+### BR20-07 · Change tasks while preserving orientation
+He switches among playing, writing, editing and mixing, but admits this can obscure how close a song is to completion.
+
+- **Topic:** Workflow
+- **Context:** Solo workflow described in 2020
+- **Evidence:** first-hand · [Broken Record: Tame Impala with Rick Rubin](https://www.pushkin.fm/podcasts/broken-record/tame-impala) · Question about finishing one song before another
+- **Gear context:** No specific model established
+[Source record](sources/external/br20.md)
 
 ### MW1-09 · Return later with a different palette
 The later section was developed much later in another studio, using keyboards that were then available; the arrangement changes with that palette.
@@ -1070,6 +1549,15 @@ He calls Prophet-5 central to Dracula and recurring sounds across Deadbeat, stre
 - **Gear context:** Sequential Prophet-5
 [Source record](sources/tape-notes/tn188.md)
 
+### YT4-01 · Find privacy for introspective lyrics
+For personal lyrics he wants a comfortable, private setting that allows feelings to surface; he distinguishes this from the social energy of a co-writing room.
+
+- **Topic:** Writing
+- **Context:** Writing practice discussed during Deadbeat interview
+- **Evidence:** first-hand · [Top 10 Production & Writing Insights (member edit)](https://www.youtube.com/watch?v=o02n6ogEvcY) · 06:18–07:14
+- **Gear context:** No specific model established
+[Source record](sources/tape-notes/yt4.md)
+
 ### RS03 · Mixing versus production
 He distinguished Dave Fridmann's influential mixing from his own production.
 
@@ -1078,6 +1566,15 @@ He distinguished Dave Fridmann's influential mixing from his own production.
 - **Evidence:** first-hand · [Rocksucker interview](https://rocksucker.co.uk/2011/06/interview-tame-impala.html) · Album two question
 - **Gear context:** No specific model established
 [Source record](sources/external/s08.md)
+
+### ZL25-04 · Choose a writing setting that prompts ideas
+He seeks writing rooms near the ocean and thinks its white noise prompts ideas; this is his personal response, not a verified mechanism.
+
+- **Topic:** Workflow
+- **Context:** Deadbeat / temporary coastal writing spaces
+- **Evidence:** qualified-recollection · [Tame Impala: The Deadbeat Interview | Zane Lowe Interview](https://www.youtube.com/watch?v=wXwcPtVrx7g) · 21:01–22:47
+- **Gear context:** No specific model established
+[Source record](sources/external/zl25.md)
 
 ### MW1-02 · A song can outgrow its initial destination
 He initially considered the idea unsuitable for Tame Impala and offered it to Mark Ronson, who encouraged him to keep it.

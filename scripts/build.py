@@ -11,7 +11,7 @@ import companion
 repo='https://github.com/EthanSK/tame-impala-agentic-training'
 site='https://ethansk.github.io/tame-impala-agentic-training/'
 prefix='/tame-impala-agentic-training/'
-updated='8 September 2026'
+updated='9 September 2026'
 e=lambda v:html.escape(str(v),quote=True)
 def location_html(value):
  return f'<a href="{e(value)}">Artist reply ↗</a>' if value.startswith('https://') else e(value)
@@ -33,9 +33,8 @@ assert len(website_order)==len(set(website_order))==len(claims)
 assert set(website_order)=={c['id'] for c in claims}
 website_rank={id:rank for rank,id in enumerate(website_order)}
 companion_count=companion.build(R,families)
-clips=[('YT1','r8lKPPm1sYo','Top 10 Production & Writing Insights (public edit)','Complete available automatic captions reviewed; no video-frame or human audio audit.','Cross-checks TN188: full drum takes 00:25; 808/DRM1 02:45; capture ideas 05:23; effects 09:28; producer judgment 11:14; vocal width 12:41. These repeat the interview, not six independent sources.'),('YT2','1WMxwm3Tu70','Vocal Chain, Layering & Vocal Production Techniques','Metadata only; research extraction session encountered membership gate.','Authorized browser playback access was observed, but no caption export was available through that controller. Content is not claimed reviewed.'),('YT3','nwqOT7jwt4A','Drum Production on Deadbeat','Metadata only; research extraction session encountered membership gate.','Caption availability in an authorized session remains unverified. Do not infer details from the title.'),('YT4','o02n6ogEvcY','Top 10 Production & Writing Insights (member edit)','Metadata only; research extraction session encountered membership gate.','13:00 playlist duration differs from the public edit. Their equivalence is unverified.'),('YT5','e65xhY6Qvqg','Tame Impala Breaks Down Deadbeat (teaser)','Complete available automatic captions reviewed; no video-frame or human audio audit.','Repeats drum palette at 00:14 and stereo whispers at 00:43. No distinct tip counted; isolated compression/EQ excerpt does not establish a chain.'),('YT6','Pld6EOIF7xg','Unavailable playlist entry (title unknown)','Video ID identified; ordinary extraction returned Private video.','Content, duration and relation to the interview unknown.')]
-for id,vid,title,coverage,notes in clips:
- sources.append(dict(id=id,title=title,url='https://www.youtube.com/watch?v='+vid,date='2026-09-03' if id in ['YT1','YT5'] else None,kind='video',coverage=coverage,notes=notes))
+clips=json.loads((R/'data/youtube-playlist.json').read_text())['sources']
+sources.extend(clips)
 assert len({s['id'] for s in sources})==len(sources)
 assert len({c['id'] for c in claims})==len(claims)
 lookup={s['id']:s for s in sources}
@@ -56,12 +55,12 @@ for s in sources:
  cs=[c for c in claims if c['source_id']==s['id']]
  if not cs:allnotes+=['No independent production claims extracted from this record. Coverage and pointers are preserved above.','']
  for c in cs:allnotes += [f'### {c["id"]}: {c["title"]}',f'**{c["topic"]} · {c["era"]} · {c["evidence"]}**',f'Location: {c["location"]}','',c['claim'],'',f'Gear: {", ".join(c["gear"]) or "No specific model established"}','']
- allnotes+=['## Transcript status','','Public source notes are original paraphrases. Full third-party transcripts and media are not redistributed. Supplied course captions are retained separately in the private source archive.','', '[Master document](../../TAME_IMPALA_AGENTS.md) · [Coverage](../../COVERAGE.md)']
+ allnotes+=['## Transcript status','','Public source notes are original paraphrases. Full third-party transcripts and media are not redistributed. Caption and transcript research copies are retained separately in the private source archive.','', '[Master document](../../TAME_IMPALA_AGENTS.md) · [Coverage](../../COVERAGE.md)']
  (R/path).parent.mkdir(parents=True,exist_ok=True);(R/path).write_text('\n'.join(allnotes)+'\n')
 # Remove stale external presentation copies only if not referenced, all were generated in this task.
 for p in (R/'sources/external').glob('*.md'):
  if str(p.relative_to(R)) not in paths.values(): p.unlink()
-model=dict(schema_version=2,updated='2026-09-08',techniques=families,priority_definitions=techniques['priority_definitions'],sources=sources,claims=claims)
+model=dict(schema_version=2,updated='2026-09-09',techniques=families,priority_definitions=techniques['priority_definitions'],sources=sources,claims=claims)
 (R/'data/reference.json').write_text(json.dumps(model,ensure_ascii=False,indent=2)+'\n')
 topics=['Writing','Drums','Bass','Guitar','Synths','Vocals','Mixing','Workflow']
 intro=['# Tame Impala Production — agent reference (TAME_IMPALA_AGENTS.md)','',f'{len(claims)} source-linked production notes · {len(sources)} source records · Updated {updated}','',
@@ -74,8 +73,8 @@ intro=['# Tame Impala Production — agent reference (TAME_IMPALA_AGENTS.md)',''
 '- **Qualified recollection:** Parker is uncertain, corrects himself, or reconstructs an old setup. Preserve the qualification.',
 '- **Publisher report:** identification or narration supplied by the publisher, rather than a securely attributed artist statement.',
 '- Timestamps are local to the stated video part. TN188 times follow an ad-supported 81:23 copy; inserted advertisements can move player offsets.',
-'- Supplied course captions and public automatic transcripts were text-reviewed; complete video-frame and human audio audits were not performed.',
-'- Three member clips lack extracted content; one playlist video is private. Read [COVERAGE.md](COVERAGE.md) before claiming complete video coverage.','',
+'- Supplied course captions, podcast transcripts and all six playlist caption tracks were text-reviewed; complete video-frame and human audio audits were not performed.',
+'- All six playlist clips now have caption-based coverage, including the formerly private drum clip. The wider interview search is bounded, with gated and partially reviewed sources still listed in [COVERAGE.md](COVERAGE.md).','',
 '## Find your way','',
 '[All sources](SOURCES.md) · [Playlists](playlists/README.md) · [Machine-readable JSON](data/reference.json) · [Agent instructions](AGENTS.md) · [Gear index](GEAR.md) · [Best Production 2025 companion](BEST_PRODUCTION_2025_AGENTS.md)','',
 '## Working principles — editorial synthesis','',
@@ -91,6 +90,8 @@ intro=['# Tame Impala Production — agent reference (TAME_IMPALA_AGENTS.md)',''
 '- Ableton delay names in an old Currents recollection do not prove that the modern Echo device was used on that recording.',
 '- MW5 tentatively mentions an SSL bus compressor; Sound On Sound publisher narration mentions Manley. The accounts do not establish one combined chain.',
 '- Deadbeat’s microphone discussion corrects SM57 to SM7; a U47-style clone has no securely established manufacturer here.',
+'- Let It Happen’s 2015 sampler explanation (EXP05-01) is more explicit than the partial device word in the 2025 automatic caption (ZL25-02); do not identify a vocoder from that fragment.',
+'- No Reply’s retained piano memo (EXP04-01) and My Old Ways’ re-recorded opening (TN188-02) concern different songs.',
 '- Tape Notes sponsors are not evidence of Kevin’s equipment. Exact plugin settings, amp models and several old patch names remain unknown.','']
 intro += ['## Choose a production technique','','Each group puts specific methods before supporting practices and historical or equipment context. Priority describes usefulness for a session; it never removes a source qualification.','']
 for family in families:
@@ -112,10 +113,11 @@ for g,cs in sorted(gear.items(),key=lambda x:x[0].lower()):
  geartext+=['']
 (R/'GEAR.md').write_text('\n'.join(geartext)+'\n')
 (R/'SOURCES.md').write_text('# Sources\n\n'+ '\n'.join(f'- [{s["id"]}: {s["title"]}]({paths[s["id"]]}) — {s["coverage"]}' for s in sources)+'\n')
-(R/'playlists/README.md').write_text('# Playlists and source groups\n\n- [Tape Notes Tame Impala playlist](tape-notes.md) — all six entries, including coverage gaps.\n- [Mix With The Masters](mix-with-the-masters.md) — trailer and five course parts.\n- [Primary interviews](primary-interviews.md) — interviews, AMA and official transcript.\n\nSource membership does not prove duplicate or independent content. Public edits often overlap the full podcast.\n')
+(R/'playlists/README.md').write_text('# Playlists and source groups\n\n- [Tape Notes Tame Impala playlist](tape-notes.md) — all six caption-reviewed entries and their overlapping edits.\n- [Mix With The Masters](mix-with-the-masters.md) — trailer and five course parts.\n- [Primary interviews](primary-interviews.md) — interviews, AMA and official transcript.\n\nSource membership does not prove duplicate or independent content. Public edits often overlap the full podcast.\n')
 with (R/'SOURCES.md').open('a') as f:f.write('\n## Separate companion\n\n- [BP25: Best Production Advice of 2025](sources/best-production-2025/bp25.md) — compilation technique notes; other producers remain separate from Parker’s claims.\n')
 with (R/'playlists/README.md').open('a') as f:f.write('\n- [Best Production Advice of 2025](best-production-2025.md) — the supplied Tape Notes compilation, kept as a separate companion.\n')
-(R/'playlists/tape-notes.md').write_text('Source: https://www.youtube.com/playlist?list=PLCy7kFImYx34\n\n# Tape Notes — Tame Impala\n\nAll six playlist entries inventoried on 8 September 2026.\n\n'+'\n'.join(f'{i+1}. [{t[2]}](../{paths[t[0]]}) — {t[3]}' for i,t in enumerate(clips))+'\n\n[Full public TN188 episode notes](../sources/tape-notes/tn188.md) supply the detailed interview context; they do not establish that unreviewed member edits contain nothing additional.\n')
+(R/'playlists/tape-notes.md').write_text('Source: https://www.youtube.com/playlist?list=PLCy7kFImYx34\n\n# Tape Notes — Tame Impala\n\nAll six original playlist entries caption-reviewed by 9 September 2026.\n\n'+'\n'.join(f'{i+1}. [{t["title"]}](../{paths[t["id"]]}) — {t["coverage"]}' for i,t in enumerate(clips))+'\n\n[Full public TN188 episode notes](../sources/tape-notes/tn188.md) supply the longer interview context. The public/member edits and teaser repeat parts of that interview; they are not independent corroboration. Per-source records preserve different timestamps and additional details.\n')
+(R/'playlists/primary-interviews.md').write_text('# Primary interviews\n\nReviewed sources and explicit limits; not an exhaustive career bibliography. Full search decisions and unreviewed candidates are in [coverage](../COVERAGE.md) and [the search audit](../data/research-coverage.json).\n\n| Source | Date | Coverage |\n|---|---|---|\n'+'\n'.join(f'| [{s["title"]}](../{paths[s["id"]]}) | {s["date"] or "Unverified"} | {s["coverage"]} |' for s in sources if not s['id'].startswith(('MW','YT')) and s['id']!='TN188')+'\n')
 (R/'playlists/mix-with-the-masters.md').write_text('Source: '+lookup['MW0']['url']+'\n\n# Mix With The Masters — The Less I Know the Better\n\nInside the Track #159. Trailer plus five parts; timestamps restart in each file.\n\n'+'\n'.join(f'- [{lookup[f"MW{i}"]["title"]}](../{paths[f"MW{i}"]})' for i in range(6))+'\n\nAll six supplied caption files are preserved in a separate private archive. Public records contain original notes and do not distribute the course or its transcripts.\n')
 
 # ---- Website. Every note is server-rendered into static HTML; JS adds filters only. ----

@@ -2,7 +2,7 @@
 
 Once AI gets good enough, we can have our own personal Tame Impala producer.
 
-For now, give your agent **114 source-linked notes about Kevin Parker's production techniques** and use them while making music. The reference starts with the production problem and the method, then adapts it to the tools you have. Every note keeps its source, timestamp or section, era and level of certainty.
+For now, give your agent **169 source-linked notes about Kevin Parker's production techniques** and use them while making music. The reference starts with the production problem and the method, then adapts it to the tools you have. Every note keeps its source, timestamp or section, era and level of certainty.
 
 **[Browse the techniques](https://ethansk.github.io/tame-impala-agentic-training/) · [Read TAME_IMPALA_AGENTS.md](TAME_IMPALA_AGENTS.md) · [Best Production 2025 companion](BEST_PRODUCTION_2025_AGENTS.md)**
 
@@ -54,11 +54,11 @@ All available automatic captions were text-reviewed. Of the 68 notes, 45 have ma
 
 ## Coverage, honestly
 
-The notes draw on the complete supplied captions for the Mix With The Masters trailer and five *The Less I Know the Better* course parts, a text-reviewed automatic transcript of the full public Tape Notes 188 podcast, two caption-reviewed public clips, and selected primary interviews. The podcast and edited clips overlap; they are not independent corroborating interviews.
+The notes cover the complete supplied captions for the Mix With The Masters trailer and five *The Less I Know the Better* course parts, a full local transcription of the public Tape Notes 188 podcast, all six original playlist caption tracks, both Zane Lowe interviews, the Broken Record publisher transcript, Song Exploder’s official transcript and additional primary text interviews. The podcast and edited clips overlap; they are not independent corroborating interviews.
 
-Three members-only clips remain unreviewed because the research extraction session could not retrieve their content. This does not establish a lack of access in a reader’s signed-in browser. The sixth playlist entry is private. Full visual inspection of plugin interfaces and a complete human audio audit have not been performed. **[Read the coverage record](COVERAGE.md).**
+The 9 September expansion added 55 notes from the newly reviewed material. Full listening and video-frame audits have not been performed; some text interviews remain partly reviewed or gated, and the search is not an exhaustive career bibliography. **[Read the coverage record](COVERAGE.md)** and [source-search audit](data/research-coverage.json) for exact limits.
 
-Full third-party transcripts, videos, audio, lyrics and course files are not redistributed. Public files are original paraphrased notes and official source links. Supplied captions are retained in a separate private archive. No private archive location or credentials are required to use this public repository.
+Full third-party transcripts, videos, audio, lyrics and course files are not redistributed. Public files are original paraphrased notes and official source links. Caption and transcript research copies are retained in a separate private archive. No private archive location or credentials are required to use this public repository.
 
 ## Structured data
 

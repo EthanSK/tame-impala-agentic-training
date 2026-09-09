@@ -846,6 +846,52 @@
       "evidence": "first-hand",
       "era": "Deadbeat / My Old Ways, Loser and related songs",
       "gear": []
+    },
+    {
+      "id": "YT2-01",
+      "title": "Build a choir through successive takes",
+      "claim": "He builds a cascading vocal stack by recording harmony parts successively and listening to their combined choral effect. His early eight-track recollection illustrates the practice; it does not establish a required track count or current microphone.",
+      "source_id": "YT2",
+      "location": "07:36–09:36",
+      "era": "Deadbeat vocal discussion / earlier eight-track practice",
+      "topic": "Vocals",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "YT3-01",
+      "title": "Give the groove an offbeat pulse",
+      "claim": "In My Old Ways, he identifies offbeat cabasa and another cabasa part within the electronic beat. The caption gives the song as 110 BPM; no swing amount or timing offset is specified.",
+      "source_id": "YT3",
+      "location": "05:47–06:26",
+      "era": "Deadbeat / My Old Ways",
+      "topic": "Drums",
+      "gear": [
+        "Cabasa"
+      ],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "YT3-02",
+      "title": "Give the album a recognizable drum palette",
+      "claim": "He contrasts The Slow Rush’s many drum approaches with a more consistent, identifiable Deadbeat palette, using Is This It as an example of recognizable drum identity. This is an album-level constraint, not a fixed signal chain.",
+      "source_id": "YT3",
+      "location": "02:13–03:43",
+      "era": "Deadbeat / contrast with The Slow Rush",
+      "topic": "Drums",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "YT4-01",
+      "title": "Find privacy for introspective lyrics",
+      "claim": "For personal lyrics he wants a comfortable, private setting that allows feelings to surface; he distinguishes this from the social energy of a co-writing room.",
+      "source_id": "YT4",
+      "location": "06:18–07:14",
+      "era": "Writing practice discussed during Deadbeat interview",
+      "topic": "Writing",
+      "gear": [],
+      "evidence": "first-hand"
     }
   ]
 }

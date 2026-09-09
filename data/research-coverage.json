@@ -1,0 +1,172 @@
+{
+  "checked": "2026-09-09",
+  "scope": "Bounded primary-source expansion, not an exhaustive career bibliography.",
+  "sources_added": [
+    "EXP01",
+    "EXP02",
+    "EXP03",
+    "EXP04",
+    "EXP05",
+    "EXP06",
+    "EXP07",
+    "EXP08",
+    "EXP09",
+    "ZL25",
+    "BR20",
+    "EXP10",
+    "EXP11"
+  ],
+  "candidates": [
+    {
+      "id": "C01",
+      "title": "Broken Record: Tame Impala",
+      "url": "https://www.pushkin.fm/podcasts/broken-record/tame-impala",
+      "date": "2020-04-28",
+      "status": "reviewed",
+      "coverage": "Complete publisher-supplied transcript of the 54:06 episode read; no complete audio audit.",
+      "notes": "Integrated as BR20; current publisher transcript used after old audio link failed."
+    },
+    {
+      "id": "C02",
+      "title": "Tape Op95 later section",
+      "url": "https://tapeop.com/interviews/95/tame-impala",
+      "date": "2013-05",
+      "status": "account_gate",
+      "coverage": "Public2010 portion rechecked; later section still ends at account prompt.",
+      "notes": "Existing source S01; no new claims or redundant source created."
+    },
+    {
+      "id": "C03",
+      "title": "Modern Drummer: Kevin Parker’s Approach to Tame Impala’s Drum Production",
+      "url": "https://www.moderndrummer.com/article/kevin-parkers-approach-to-tame-impalas-drum-production/",
+      "date": "2020-10-01",
+      "status": "subscription_gate",
+      "coverage": "Publisher index and article listing inspected; interview inaccessible.",
+      "notes": "November2020 issue. No claims inferred from fan transcriptions."
+    },
+    {
+      "id": "C04",
+      "title": "Modern Drummer: Tame Impala’s Kevin Parker",
+      "url": "https://www.moderndrummer.com/article/tame-impalas-kevin-parker/",
+      "date": "2020-10-01",
+      "status": "subscription_gate",
+      "coverage": "Publisher listing only; article inaccessible.",
+      "notes": "Same issue as C03; possible related interview sections, not independent corroboration."
+    },
+    {
+      "id": "C05",
+      "title": "Interview: Kevin Parker with Mac DeMarco",
+      "url": "https://www.interviewmagazine.com/music/kevin-parker-in-conversation-with-mac-demarco",
+      "date": "2026-02-19",
+      "status": "reviewed_no_new_studio_method",
+      "coverage": "Complete conversation read.",
+      "notes": "Mostly touring, personal context and live-show experience. No production claim promoted. Source record EXP10."
+    },
+    {
+      "id": "C06",
+      "title": "Under the Radar: main2015 cover story",
+      "url": "https://www.undertheradarmag.com/interviews/tame_impala/",
+      "date": "2015-07-02",
+      "status": "reviewed_related_material",
+      "coverage": "Complete main article read.",
+      "notes": "Same interview as EXP05; most useful explicit method appears in bonus Q&A. Reporter interpretations not converted to Parker claims. Source record EXP11."
+    },
+    {
+      "id": "C07",
+      "title": "Zane Lowe: Deadbeat interview",
+      "url": "https://www.youtube.com/watch?v=wXwcPtVrx7g",
+      "date": "2025-10-15",
+      "status": "reviewed",
+      "coverage": "Complete52:40 public automatic captions reviewed.",
+      "notes": "Integrated as ZL25."
+    },
+    {
+      "id": "C08",
+      "title": "The Creative Independent search",
+      "url": "https://thecreativeindependent.com/",
+      "date": null,
+      "status": "no_verified_parker_interview_found",
+      "coverage": "Targeted primary-domain searches.",
+      "notes": "Relevant result concerned artwork collaborator Robert Beatty, not a Parker production interview."
+    },
+    {
+      "id": "C09",
+      "title": "Red Bull Music Academy search",
+      "url": "https://www.redbullmusicacademy.com/lectures/",
+      "date": null,
+      "status": "no_verified_parker_lecture_found",
+      "coverage": "Targeted archive and primary-domain searches.",
+      "notes": "Unrelated artists and general production lectures excluded."
+    },
+    {
+      "id": "C10",
+      "title": "Reverb: How to Get the Tame Impala Drum Sound",
+      "url": "https://reverb.com/uk/news/video-how-to-get-the-tame-impala-drum-sound",
+      "date": null,
+      "status": "excluded_recreation_not_artist_testimony",
+      "coverage": "Publisher search listing and associated guide inspected.",
+      "notes": "Recreation tutorial; not counted as Kevin explaining his own method."
+    }
+  ],
+  "duplicate_relationships": [
+    {
+      "new": "EXP02-03",
+      "existing": [
+        "MW1-06"
+      ],
+      "relation": "Same broad preservation principle; new Lonerism/computer-recording context."
+    },
+    {
+      "new": "EXP06-01",
+      "existing": [
+        "GW05",
+        "PG04"
+      ],
+      "relation": "Concrete Casio chord-button method extends existing habit-breaking principle."
+    },
+    {
+      "new": "EXP08-03",
+      "existing": [
+        "MW4-04",
+        "TN188-19"
+      ],
+      "relation": "Additional Currents-era articulation; supporting practice, not a distinct universal recipe."
+    }
+  ],
+  "original_source_completion": [
+    {
+      "source_id": "S03",
+      "url": "https://www.guitarworld.com/features/tame-impala-kevin-parker",
+      "coverage": "Complete published introduction and Q&A read through final bedroom-producer advice; embedded media unreviewed.",
+      "complete_available_article_text": true
+    },
+    {
+      "source_id": "S05",
+      "url": "https://www.premierguitar.com/artists/guitarists/tame-impala-psych-wunderkind-kevin-parker",
+      "coverage": "Complete published introduction, Q&A and Synthful Guitar gear sidebar read; embedded performances unreviewed.",
+      "complete_available_article_text": true
+    },
+    {
+      "source_id": "S06",
+      "url": "https://www.kexp.org/read/2015/7/8/interview-tame-impalas-kevin-parker-on-his-personal-danceable-new-album-currents/",
+      "coverage": "Complete published interview read through closing backstage-fridge exchange.",
+      "complete_available_article_text": true
+    },
+    {
+      "source_id": "S08",
+      "url": "https://rocksucker.co.uk/2011/06/interview-tame-impala.html",
+      "coverage": "Complete published introduction and Q&A read through final favourite-albums answer and closing show notice.",
+      "complete_available_article_text": true
+    },
+    {
+      "source_id": "S07",
+      "url": "https://www.reddit.com/r/IAmA/comments/34clpm/i_am_kevin_parker_from_tame_impala_ask_me_anything/",
+      "coverage": "Expanded selection of complete tameimpalamusic replies read, including recording workflow and effects follow-up; comment tree remains incomplete.",
+      "complete_available_article_text": false
+    }
+  ],
+  "clarified_claims": [
+    "PG03",
+    "PG04"
+  ]
+}

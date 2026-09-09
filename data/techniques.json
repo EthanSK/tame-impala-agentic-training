@@ -183,7 +183,7 @@
     },
     "PG04": {
       "technique": "decisions",
-      "priority": 2
+      "priority": 1
     },
     "PG05": {
       "technique": "sound",
@@ -492,6 +492,226 @@
     "TN188-25": {
       "technique": "decisions",
       "priority": 1
+    },
+    "EXP01-01": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "EXP01-02": {
+      "technique": "sound",
+      "priority": 2
+    },
+    "EXP01-03": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "EXP02-01": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "EXP02-02": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "EXP02-03": {
+      "technique": "capture",
+      "priority": 2
+    },
+    "EXP03-01": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "EXP03-02": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "EXP04-01": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "EXP04-02": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "EXP04-03": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "EXP05-01": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "EXP05-02": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "EXP05-03": {
+      "technique": "capture",
+      "priority": 3
+    },
+    "EXP06-01": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "EXP06-02": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "EXP07-01": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "EXP07-02": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "EXP07-03": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "EXP07-04": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "EXP08-01": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "EXP08-02": {
+      "technique": "sound",
+      "priority": 2
+    },
+    "EXP08-03": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "EXP09-01": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "EXP09-02": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "EXP09-03": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "EXP09-04": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "EXP09-05": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "EXP09-06": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "ZL25-01": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "ZL25-02": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "ZL25-03": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "ZL25-04": {
+      "technique": "decisions",
+      "priority": 3
+    },
+    "ZL25-05": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "ZL25-06": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "ZL25-07": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "ZL25-08": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "BR20-01": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "BR20-02": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "BR20-03": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "BR20-04": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "BR20-05": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "BR20-06": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "BR20-07": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "BR20-08": {
+      "technique": "capture",
+      "priority": 3
+    },
+    "YT2-01": {
+      "technique": "space",
+      "priority": 1
+    },
+    "YT3-01": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "YT3-02": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "YT4-01": {
+      "technique": "decisions",
+      "priority": 2
+    },
+    "GW09": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "PG06": {
+      "technique": "decisions",
+      "priority": 1
+    },
+    "PG07": {
+      "technique": "sound",
+      "priority": 1
+    },
+    "RS05": {
+      "technique": "groove",
+      "priority": 1
+    },
+    "AM06": {
+      "technique": "capture",
+      "priority": 1
+    },
+    "AM07": {
+      "technique": "space",
+      "priority": 1
     }
   },
   "notes": [
@@ -625,27 +845,55 @@
     ],
     "order": [
       "TN188-03",
+      "ZL25-03",
+      "EXP02-01",
       "TN188-07",
+      "BR20-01",
+      "EXP05-02",
+      "EXP08-01",
+      "BR20-03",
       "TN188-01",
+      "AM06",
       "SE06",
+      "RS05",
+      "EXP09-03",
       "MW2-11",
       "MW2-10",
+      "YT3-01",
       "MW3-08",
+      "EXP05-01",
+      "ZL25-02",
       "TN188-13",
+      "YT2-01",
       "MW3-06",
       "RS02",
+      "AM07",
       "TN188-05",
       "TN188-06",
       "SE05",
+      "EXP07-01",
+      "EXP07-02",
+      "PG07",
+      "EXP07-04",
       "TN188-12",
       "SE07",
+      "EXP09-04",
+      "EXP01-01",
       "GW04",
       "MW2-01",
       "MW1-06",
+      "EXP02-03",
       "TN188-25",
       "MW5-05",
       "SE02",
       "GW05",
+      "PG04",
+      "EXP09-02",
+      "BR20-05",
+      "BR20-02",
+      "EXP06-01",
+      "GW09",
+      "EXP06-02",
       "MW2-09",
       "MW2-08",
       "GW03",
@@ -660,11 +908,19 @@
       "MW2-02",
       "TO03",
       "TO06",
+      "EXP09-01",
       "MW3-07",
       "TN188-02",
+      "EXP04-01",
       "TN188-10",
+      "ZL25-05",
+      "EXP03-01",
       "SOS06",
       "TN188-04",
+      "YT3-02",
+      "EXP04-03",
+      "EXP01-03",
+      "ZL25-01",
       "MW1-04",
       "GW02",
       "TN188-21",
@@ -675,17 +931,31 @@
       "SOS03",
       "TN188-23",
       "TN188-18",
+      "EXP01-02",
+      "EXP08-02",
       "RS04",
       "AM03",
       "KX02",
       "MW2-04",
       "MW1-01",
+      "EXP07-03",
       "MW2-07",
       "TN188-19",
+      "BR20-06",
+      "EXP08-03",
+      "EXP04-02",
+      "PG06",
       "TN188-20",
       "TN188-09",
       "MW4-04",
+      "ZL25-06",
+      "ZL25-07",
+      "EXP02-02",
       "TO07",
+      "YT4-01",
+      "BR20-04",
+      "ZL25-04",
+      "EXP05-03",
       "SE03",
       "SE04",
       "MW1-07",
@@ -693,15 +963,20 @@
       "MW3-03",
       "GW07",
       "MW5-01",
+      "BR20-07",
       "TO08",
       "MW4-03",
       "MW1-09",
       "MW5-06",
       "SE08",
-      "PG04",
+      "EXP09-05",
+      "ZL25-08",
+      "EXP09-06",
+      "EXP03-02",
       "GW06",
       "KX01",
       "TO05",
+      "BR20-08",
       "SOS05",
       "GW08",
       "SE01",

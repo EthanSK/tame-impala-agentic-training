@@ -1,13 +1,13 @@
-Source: https://www.youtube.com/watch?v=e65xhY6Qvqg
+Source: https://www.undertheradarmag.com/interviews/tame_impala/
 
-# Tame Impala Breaks Down Deadbeat (teaser)
+# Under the Radar: main 2015 cover story
 
-- Source ID: `YT5`
-- Date: 2026-09-03
-- Type: video
-- Coverage: Complete available English automatic captions read; no full human audio or video-frame audit.
+- Source ID: `EXP11`
+- Date: 2015-07-02
+- Type: interview
+- Coverage: Complete main article read.
 
-Complete teaser repeats the drum palette at 00:14 and stereo whispers at 00:43. No distinct tip counted; isolated compression/EQ excerpt does not establish a chain.
+Same interview as EXP05; most useful explicit method appears in bonus Q&A. Reporter interpretations not converted to Parker claims.
 
 ## Production notes
 

@@ -43,6 +43,14 @@ Every item below has a cited context. Similar names and uncertain identification
 
 - **TO08 / Early EP / 2008:** Early limiting. [S01](sources/external/s01.md) · How did the first Tame Impala EP come to be? · first-hand
 
+## Cabasa
+
+- **YT3-01 / Deadbeat / My Old Ways:** Give the groove an offbeat pulse. [YT3](sources/tape-notes/yt3.md) · 05:47–06:26 · first-hand
+
+## Casio keyboard (unspecified)
+
+- **EXP06-01 / Lonerism-era recollection / Orchid development:** Reach chords outside familiar fingering. [EXP06](sources/external/exp06.md) · Casio-origin paragraphs · first-hand
+
 ## dbx 165
 
 - **TN188-11 / Deadbeat / My Old Ways, Loser and related songs:** Track through the familiar compressor. [TN188](sources/tape-notes/tn188.md) · 36:17–37:00 · first-hand
@@ -72,14 +80,30 @@ Every item below has a cited context. Similar names and uncertain identification
 
 - **MW1-10 / Currents / The Less I Know the Better:** Preserve the Greco correction. [MW1](sources/mix-with-the-masters/mw1.md) · 10:11–10:30 · first-hand
 
+## Guitar amplifier (model unspecified)
+
+- **ZL25-05 / Deadbeat / Not My World:** Use an amp vocal for a spontaneous performance feel. [ZL25](sources/external/zl25.md) · 32:58–34:02 · first-hand
+
 ## guitar amplifier (model unspecified)
 
 - **TN188-04 / Deadbeat / My Old Ways, Loser and related songs:** A smaller electronic drum palette. [TN188](sources/tape-notes/tn188.md) · 16:37–19:14 · first-hand
 - **TN188-10 / Deadbeat / My Old Ways, Loser and related songs:** Amp treatment appears on Deadbeat. [TN188](sources/tape-notes/tn188.md) · 34:35–35:03 · qualified-recollection
 
+## Hagstrom Impala
+
+- **EXP07-03 / Studio practice described in 2021:** Make tone settings repeatable. [EXP07](sources/external/exp07.md) · Tamed impala · first-hand
+
 ## Hofner bass
 
 - **PG01 / Currents / 2015:** Shared pedal chain. [S05](sources/external/s05.md) · Bass-tone answer before What's on your pedalboard? · first-hand
+
+## iPhone voice memos
+
+- **ZL25-03 / Deadbeat / My Old Ways opening:** Audition rough ideas beside developed demos. [ZL25](sources/external/zl25.md) · 14:25–15:04 · first-hand
+
+## keyboard sampler (unspecified)
+
+- **EXP05-01 / Currents:** Keep the phonetic take. [EXP05](sources/external/exp05.md) · Q: You said before that you spend most of your studio time trying to recapture the spirit of your original demo · first-hand
 
 ## Korg Kronos
 
@@ -94,9 +118,17 @@ Every item below has a cited context. Similar names and uncertain identification
 
 - **MW3-07 / Currents / The Less I Know the Better:** Monitor for a comfortable performance. [MW3](sources/mix-with-the-masters/mw3.md) · 03:20–03:56 · qualified-recollection
 
+## MacBook line input
+
+- **AM06 / Lonerism, recalled in 2015:** Capture the idea with available input. [S07](sources/external/s07.md) · https://www.reddit.com/r/IAmA/comments/34clpm/comment/cqtkpgu/ · first-hand
+
 ## Manley Variable Mu
 
 - **SOS08 / Currents / 2015 (reported 2020):** Disputed bus hardware. [S04](sources/external/s04.md) · Mixing · publisher-report
+
+## Microphone (model unspecified)
+
+- **ZL25-05 / Deadbeat / Not My World:** Use an amp vocal for a spontaneous performance feel. [ZL25](sources/external/zl25.md) · 32:58–34:02 · first-hand
 
 ## Neve 1073
 
@@ -116,6 +148,10 @@ Every item below has a cited context. Similar names and uncertain identification
 
 - **GW02 / Currents / The Less I Know the Better (recalled 2022):** Modeled bass. [S03](sources/external/s03.md) · The Less I Know the Better recording question · qualified-recollection
 
+## Piano
+
+- **ZL25-03 / Deadbeat / My Old Ways opening:** Audition rough ideas beside developed demos. [ZL25](sources/external/zl25.md) · 14:25–15:04 · first-hand
+
 ## PreSonus preamp (model uncertain)
 
 - **MW2-01 / Currents / The Less I Know the Better:** Performance before a preamp upgrade. [MW2](sources/mix-with-the-masters/mw2.md) · 00:20–00:46 · qualified-recollection
@@ -129,6 +165,8 @@ Every item below has a cited context. Similar names and uncertain identification
 
 - **GW03 / Currents / The Less I Know the Better (recalled 2022):** First-take riff. [S03](sources/external/s03.md) · The Less I Know the Better recording question · first-hand
 - **GW02 / Currents / The Less I Know the Better (recalled 2022):** Modeled bass. [S03](sources/external/s03.md) · The Less I Know the Better recording question · qualified-recollection
+- **GW09 / Writing practice described in 2022:** Use guitar voicings on keyboard sounds. [S03](sources/external/s03.md) · The Less I Know the Better answer, paragraph beginning Like, you can play a barre chord · first-hand
+- **PG07 / Currents / 2015:** Build patches beyond the presets. [S05](sources/external/s05.md) · Jazzmaster with Roland synth pickup question · first-hand
 - **MW1-04 / Currents / The Less I Know the Better:** The famous bass begins as guitar. [MW1](sources/mix-with-the-masters/mw1.md) · 03:41–05:36 · first-hand
 - **MW1-03 / Currents / The Less I Know the Better:** Guitar controller opens unfamiliar sounds. [MW1](sources/mix-with-the-masters/mw1.md) · 03:23–05:36 · qualified-recollection
 - **GW01 / Currents / The Less I Know the Better (recalled 2022):** Guitar synthesis. [S03](sources/external/s03.md) · Question beginning On The Less I Know The Better · first-hand
@@ -174,7 +212,7 @@ Every item below has a cited context. Similar names and uncertain identification
 
 ## Seymour Duncan KTG-1
 
-- **PG03 / Currents / 2015:** Rack preamp. [S05](sources/external/s05.md) · What's on your pedalboard? · publisher-report
+- **PG03 / Currents / 2015:** Rack preamp. [S05](sources/external/s05.md) · What’s on your pedalboard? · publisher-report
 
 ## Shure SE-30 (publisher identification)
 
@@ -226,6 +264,10 @@ Every item below has a cited context. Similar names and uncertain identification
 ## tape machine (model unspecified)
 
 - **TN188-21 / Deadbeat / Loser; Innerspeaker recollection:** Loser used a different recording method. [TN188](sources/tape-notes/tn188.md) · 56:21–59:58; 63:13–63:34 · qualified-recollection
+
+## Teisco (model unspecified)
+
+- **EXP07-04 / Studio practice described in 2021:** Change the register and articulation. [EXP07](sources/external/exp07.md) · Bet on Backer · first-hand
 
 ## U47-style clone (manufacturer unspecified)
 

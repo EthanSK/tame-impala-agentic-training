@@ -3,18 +3,24 @@ Source: https://www.youtube.com/watch?v=o02n6ogEvcY
 # Top 10 Production & Writing Insights (member edit)
 
 - Source ID: `YT4`
-- Date: Unverified
+- Date: 2026-09-03
 - Type: video
-- Coverage: Metadata only; research extraction session encountered membership gate.
+- Coverage: Complete available English automatic captions read; no full human audio or video-frame audit.
 
-13:00 playlist duration differs from the public edit. Their equivalence is unverified.
+Full member edit captions reviewed. Same Top 10 interview sequence as YT1, with a shorter promotional section and different later timestamps. Crosswalk: spontaneous ideas 03:30–04:17; private lyric setting 06:18–07:14; effortless impression 07:16–08:27; effects 08:32 onward. No independent corroboration implied.
 
 ## Production notes
 
-No independent production claims extracted from this record. Coverage and pointers are preserved above.
+### YT4-01: Find privacy for introspective lyrics
+**Writing · Writing practice discussed during Deadbeat interview · first-hand**
+Location: 06:18–07:14
+
+For personal lyrics he wants a comfortable, private setting that allows feelings to surface; he distinguishes this from the social energy of a co-writing room.
+
+Gear: No specific model established
 
 ## Transcript status
 
-Public source notes are original paraphrases. Full third-party transcripts and media are not redistributed. Supplied course captions are retained separately in the private source archive.
+Public source notes are original paraphrases. Full third-party transcripts and media are not redistributed. Caption and transcript research copies are retained separately in the private source archive.
 
 [Master document](../../TAME_IMPALA_AGENTS.md) · [Coverage](../../COVERAGE.md)

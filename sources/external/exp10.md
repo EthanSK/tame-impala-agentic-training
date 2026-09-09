@@ -1,13 +1,13 @@
-Source: https://www.youtube.com/watch?v=e65xhY6Qvqg
+Source: https://www.interviewmagazine.com/music/kevin-parker-in-conversation-with-mac-demarco
 
-# Tame Impala Breaks Down Deadbeat (teaser)
+# Interview: Kevin Parker with Mac DeMarco
 
-- Source ID: `YT5`
-- Date: 2026-09-03
-- Type: video
-- Coverage: Complete available English automatic captions read; no full human audio or video-frame audit.
+- Source ID: `EXP10`
+- Date: 2026-02-19
+- Type: interview
+- Coverage: Complete conversation read.
 
-Complete teaser repeats the drum palette at 00:14 and stereo whispers at 00:43. No distinct tip counted; isolated compression/EQ excerpt does not establish a chain.
+Mostly touring, personal context and live-show experience. No production claim promoted.
 
 ## Production notes
 

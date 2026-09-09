@@ -19,3 +19,7 @@ The additional multi-artist reference is [BEST_PRODUCTION_2025_AGENTS.md](BEST_P
 - Apply title blending on the element that shares the artwork's stacking context; an intervening isolated container prevents the intended interaction. Keep mobile wave contrast lower behind small body text.
 - A checkerboard preview is not proof of transparency. Verify exported RGBA alpha and all four corners, then inspect the actual favicon at 16, 32 and 64 pixels on light and dark backgrounds. Keep the editable SVG contour alongside the exported PNG.
 - Keep this developer record outside generated output; the build must preserve it.
+
+- Access errors are dated observations, not permanent source status. Recheck a previously private playlist ID before treating it as lost; the 9 September caption audit recovered the public drum edit. Keep source metadata in data/youtube-playlist.json so generated pages cannot repeat stale hardcoded gaps.
+- Count reviewed caption cues and preserve the original export alongside readable Markdown. A full caption-text review does not establish a complete human audio/frame audit. Publisher transcripts may collapse all speakers into one label and provide no useful timestamps; cite descriptive sections instead of inventing times.
+- Compare related interview accounts before assigning equipment. An ambiguous later automatic-caption fragment must not override a clear earlier sampler explanation, and similar phone-demo anecdotes can concern different songs.

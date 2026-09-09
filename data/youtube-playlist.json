@@ -1,0 +1,59 @@
+{
+  "checked": "2026-09-09",
+  "sources": [
+    {
+      "id": "YT1",
+      "title": "Top 10 Production & Writing Insights (public edit)",
+      "url": "https://www.youtube.com/watch?v=r8lKPPm1sYo",
+      "date": "2026-09-03",
+      "kind": "video",
+      "coverage": "Complete available English automatic captions read; no full human audio or video-frame audit.",
+      "notes": "Public edit of TN188; crosswalk: complete drum takes 00:25, drum palette 02:45, capture ideas 05:23, effects 09:28, producer judgment 11:14, whisper width 12:41. Its promotional insert shifts later times relative to YT4; repeated material is not independent evidence."
+    },
+    {
+      "id": "YT2",
+      "title": "Vocal Chain, Layering & Vocal Production Techniques",
+      "url": "https://www.youtube.com/watch?v=1WMxwm3Tu70",
+      "date": "2026-09-03",
+      "kind": "video",
+      "coverage": "Complete available English automatic captions read; no full human audio or video-frame audit.",
+      "notes": "Full member captions reviewed. TN188 overlap: SM57-to-SM7 correction 00:02–00:27; compression/EQ 01:30–02:20; layers and width 03:00–07:36. YT2-01 preserves the extended choir-building discussion at 07:36–09:36. No preset values inferred."
+    },
+    {
+      "id": "YT3",
+      "title": "Drum Production on Deadbeat (member edit)",
+      "url": "https://www.youtube.com/watch?v=nwqOT7jwt4A",
+      "date": "2026-09-03",
+      "kind": "video",
+      "coverage": "Complete available English automatic captions read; no full human audio or video-frame audit.",
+      "notes": "Full member captions reviewed. Same drum discussion appears in public edit YT6 with inserted promotion and shifted later timings. TN188 covers amplifier-recorded drum-machine sound and full-song takes; YT3-01 and YT3-02 preserve offbeat cabasa and album-palette detail."
+    },
+    {
+      "id": "YT4",
+      "title": "Top 10 Production & Writing Insights (member edit)",
+      "url": "https://www.youtube.com/watch?v=o02n6ogEvcY",
+      "date": "2026-09-03",
+      "kind": "video",
+      "coverage": "Complete available English automatic captions read; no full human audio or video-frame audit.",
+      "notes": "Full member edit captions reviewed. Same Top 10 interview sequence as YT1, with a shorter promotional section and different later timestamps. Crosswalk: spontaneous ideas 03:30–04:17; private lyric setting 06:18–07:14; effortless impression 07:16–08:27; effects 08:32 onward. No independent corroboration implied."
+    },
+    {
+      "id": "YT5",
+      "title": "Tame Impala Breaks Down Deadbeat (teaser)",
+      "url": "https://www.youtube.com/watch?v=e65xhY6Qvqg",
+      "date": "2026-09-03",
+      "kind": "video",
+      "coverage": "Complete available English automatic captions read; no full human audio or video-frame audit.",
+      "notes": "Complete teaser repeats the drum palette at 00:14 and stereo whispers at 00:43. No distinct tip counted; isolated compression/EQ excerpt does not establish a chain."
+    },
+    {
+      "id": "YT6",
+      "title": "Drum Production on Deadbeat (public edit)",
+      "url": "https://www.youtube.com/watch?v=Pld6EOIF7xg",
+      "date": "2026-09-09",
+      "kind": "video",
+      "coverage": "Complete available English automatic captions read; no full human audio or video-frame audit.",
+      "notes": "Previously returned Private video on 8 September; now publicly available and caption-reviewed on 9 September. Same drum discussion as YT3; public promotional insert around 05:39–06:22 shifts later content. Use YT3 claim timestamps only with the member edit, or this public edit’s corresponding passage."
+    }
+  ]
+}

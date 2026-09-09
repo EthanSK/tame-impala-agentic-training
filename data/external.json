@@ -24,8 +24,8 @@
       "url": "https://www.guitarworld.com/features/tame-impala-kevin-parker",
       "date": "2022-05-09",
       "kind": "interview",
-      "coverage": "Relevant interview questions and answers read.",
-      "notes": "GR-55 claims concern the opening arrangement; do not infer synthesized acoustic drums or vocals."
+      "coverage": "Complete published introduction and Q&A read through final bedroom-producer advice; embedded media unreviewed.",
+      "notes": "GR-55 claims concern the opening arrangement; do not infer synthesized acoustic drums or vocals. Distinct missed method: guitar voicings controlling a piano patch. Emotional attachment overlaps BR20-06; retain existing claim instead of duplicating."
     },
     {
       "id": "S04",
@@ -42,8 +42,8 @@
       "url": "https://www.premierguitar.com/artists/guitarists/tame-impala-psych-wunderkind-kevin-parker",
       "date": "2015-08-26",
       "kind": "interview",
-      "coverage": "Relevant interview questions and answers read.",
-      "notes": "General Hofner comments do not identify the instrument on The Less I Know the Better."
+      "coverage": "Complete published introduction, Q&A and Synthful Guitar gear sidebar read; embedded performances unreviewed.",
+      "notes": "General Hofner comments do not identify the instrument on The Less I Know the Better. Sidebar routing and DGCFAD tuning are publisher narration, not direct Parker statements."
     },
     {
       "id": "S06",
@@ -51,8 +51,8 @@
       "url": "https://www.kexp.org/read/2015/7/8/interview-tame-impalas-kevin-parker-on-his-personal-danceable-new-album-currents/",
       "date": "2015-07-08",
       "kind": "interview",
-      "coverage": "Relevant interview questions and answers read.",
-      "notes": "Retrospective observations concern Currents."
+      "coverage": "Complete published interview read through closing backstage-fridge exchange.",
+      "notes": "Retrospective observations concern Currents. No additional substantive technique beyond KX01–KX03. Remaining discussion concerns touring, themes, artwork and remote Kendrick collaboration."
     },
     {
       "id": "S07",
@@ -60,8 +60,8 @@
       "url": "https://www.reddit.com/r/IAmA/comments/34clpm/i_am_kevin_parker_from_tame_impala_ask_me_anything/",
       "date": "2015",
       "kind": "artist-ama",
-      "coverage": "Selected artist-account replies read; exact calendar day unverified.",
-      "notes": "Identity evidence appears in the AMA introduction. Another commenter supplied the purple vibrato's brand; that identification is not attributed to Parker."
+      "coverage": "Expanded selection of complete tameimpalamusic replies read, including recording workflow and effects follow-up; comment tree remains incomplete.",
+      "notes": "Identity evidence appears in the AMA introduction. Another commenter supplied the purple vibrato's brand; that identification is not attributed to Parker. Collapsed replies and tail of thread not fully expanded; no claim of every artist reply. Displayed relative age does not verify calendar date."
     },
     {
       "id": "S08",
@@ -69,8 +69,8 @@
       "url": "https://rocksucker.co.uk/2011/06/interview-tame-impala.html",
       "date": "2011-06-20",
       "kind": "interview",
-      "coverage": "Relevant interview questions and answers read.",
-      "notes": "Guitar tuning interval unspecified."
+      "coverage": "Complete published introduction and Q&A read through final favourite-albums answer and closing show notice.",
+      "notes": "Guitar tuning interval unspecified. New substantive detail concerns coordinating separately recorded instrumental performances."
     },
     {
       "id": "S09",
@@ -80,6 +80,123 @@
       "kind": "publisher-metadata",
       "coverage": "Official episode listing and RSS read; audio not reviewed in this source record.",
       "notes": "Publisher metadata names My Old Ways and Loser. Gear mentions: EchoBoy, Decapitator, Valhalla Room, SM58, SM7B, U47, Vermona DRM1, dbx 165, SH-1, TR-808, Prophet-5, Ableton stock plugins and Echo. Mentions establish neither song-specific use nor settings. RSS: https://feeds.megaphone.fm/TNL8747838853 ."
+    },
+    {
+      "id": "EXP01",
+      "title": "Electronic Beats: Kevin Parker Reflects on Pop Success",
+      "url": "https://www.electronicbeats.net/tame-impalas-kevin-parker-reflects-on-pop-success/",
+      "date": "2016-01-04",
+      "kind": "interview",
+      "coverage": "Complete published interview text read.",
+      "notes": "Originally published Fall 2015; January date is web publication."
+    },
+    {
+      "id": "EXP02",
+      "title": "Stereogum: Progress Report: Tame Impala",
+      "url": "https://stereogum.com/1115931/progress-report-tame-impala/interviews/progress-report",
+      "date": "2012-08-06",
+      "kind": "interview",
+      "coverage": "Complete interview text read.",
+      "notes": ""
+    },
+    {
+      "id": "EXP03",
+      "title": "Coup De Main: Kevin Parker on Deadbeat",
+      "url": "https://www.coupdemainmagazine.com/tame-impala/20202",
+      "date": "2025-11-05",
+      "kind": "interview",
+      "coverage": "Complete edited interview text read; no audio.",
+      "notes": "Mostly lyrical and personal context; few concrete studio methods."
+    },
+    {
+      "id": "EXP04",
+      "title": "triple j: Deadbeat and simplicity",
+      "url": "https://www.abc.net.au/triplej/news/tame-impala-interview-deadbeat-new-album-lucy-smith/105905616",
+      "date": "2025-10-17",
+      "kind": "interview",
+      "coverage": "Complete publisher article read; claims use Parker quotations, not reporter paraphrases. Embedded video unreviewed.",
+      "notes": ""
+    },
+    {
+      "id": "EXP05",
+      "title": "Under the Radar: Cover Story Bonus Q&A",
+      "url": "https://www.undertheradarmag.com/interviews/tame_impala_cover_story_bonus_2015/",
+      "date": "2015-07-03",
+      "kind": "interview",
+      "coverage": "Complete bonus Q&A read. Main cover story also read for context.",
+      "notes": "Same interview as the main cover story, not independent corroboration. Explicitly identifies the Let It Happen voice as a keyboard sampler, not a vocoder; the partial device word in ZL25 automatic captions does not override that explanation."
+    },
+    {
+      "id": "EXP06",
+      "title": "MusicTech: Telepathic Instruments’ Orchid",
+      "url": "https://musictech.com/features/interviews/telepathic-instruments-orchid/",
+      "date": "2025-10-06",
+      "kind": "interview",
+      "coverage": "Full indexed original article read through primary-domain search; direct fetch returned 403.",
+      "notes": "No song-specific Orchid use established; Ace Tone pairing is publisher narration and excluded."
+    },
+    {
+      "id": "EXP07",
+      "title": "Guitar.com: Ten years of InnerSpeaker",
+      "url": "https://guitar.com/features/interviews/tame-impala-kevin-parker-10-years-innerspeaker/",
+      "date": "2021-04-09",
+      "kind": "interview",
+      "coverage": "Full indexed original interview read through primary-domain search; direct fetch returned 403.",
+      "notes": ""
+    },
+    {
+      "id": "EXP08",
+      "title": "Rolling Stone: Mind Tricks and Currents",
+      "url": "https://au.rollingstone.com/music/music-news/tame-impalas-mind-tricks-kevin-parker-on-sense-altering-currents-672/",
+      "date": "2015-05-15",
+      "kind": "interview",
+      "coverage": "Complete original Q&A text read.",
+      "notes": ""
+    },
+    {
+      "id": "EXP09",
+      "title": "Zane Lowe: The Slow Rush interview",
+      "url": "https://www.youtube.com/watch?v=Kr28pGJZ3nY",
+      "date": "2020-02-14",
+      "kind": "official-video-captions",
+      "coverage": "Complete 46:48 automatic captions reviewed from Interscope Records upload; no audio or frame audit.",
+      "notes": "ASR has errors and unlabelled turns. Only clear Parker statements retained."
+    },
+    {
+      "id": "ZL25",
+      "title": "Tame Impala: The Deadbeat Interview | Zane Lowe Interview",
+      "url": "https://www.youtube.com/watch?v=wXwcPtVrx7g",
+      "date": "2025-10-15",
+      "kind": "video",
+      "coverage": "Complete available English automatic captions read through 52:28.80 of the 52:40 interview; no complete audio or frame audit.",
+      "notes": "Caption errors and unlabelled turns remain possible. TN188-02 distinguishes the released My Old Ways piano re-recording from the voice memo that inspired its opening. Let It Happen device terminology is unresolved in this caption: EXP05 explicitly identifies a keyboard sampler rather than a vocoder."
+    },
+    {
+      "id": "BR20",
+      "title": "Broken Record: Tame Impala with Rick Rubin",
+      "url": "https://www.pushkin.fm/podcasts/broken-record/tame-impala",
+      "date": "2020-04-28",
+      "kind": "publisher-transcript",
+      "coverage": "Complete publisher-supplied transcript of the 54:06 episode read; no complete audio audit.",
+      "notes": "Publisher transcript has recognition errors, one opening timestamp and a single generic speaker label. Locations below are descriptive question/answer sections, not fabricated times. Rick Rubin’s advice and stories about other artists are not attributed to Parker. Transcript available through the episode’s current Omny RSS record."
+    },
+    {
+      "id": "EXP10",
+      "title": "Interview: Kevin Parker with Mac DeMarco",
+      "url": "https://www.interviewmagazine.com/music/kevin-parker-in-conversation-with-mac-demarco",
+      "date": "2026-02-19",
+      "kind": "interview",
+      "coverage": "Complete conversation read.",
+      "notes": "Mostly touring, personal context and live-show experience. No production claim promoted."
+    },
+    {
+      "id": "EXP11",
+      "title": "Under the Radar: main 2015 cover story",
+      "url": "https://www.undertheradarmag.com/interviews/tame_impala/",
+      "date": "2015-07-02",
+      "kind": "interview",
+      "coverage": "Complete main article read.",
+      "notes": "Same interview as EXP05; most useful explicit method appears in bonus Q&A. Reporter interpretations not converted to Parker claims."
     }
   ],
   "claims": [
@@ -518,9 +635,9 @@
       "id": "PG03",
       "topic": "Workflow",
       "title": "Rack preamp",
-      "claim": "He identified a Seymour Duncan KTG-1 rack preamp as a device he ran instruments through.",
+      "claim": "He described running instruments through a Seymour Duncan rack preamp; the publisher supplies the KTG-1 model in brackets.",
       "source_id": "S05",
-      "location": "What's on your pedalboard?",
+      "location": "What’s on your pedalboard?",
       "evidence": "publisher-report",
       "era": "Currents / 2015",
       "gear": [
@@ -531,9 +648,9 @@
       "id": "PG04",
       "topic": "Guitar",
       "title": "Escape muscle memory",
-      "claim": "He tries to escape automatic guitar muscle memory and treats the instrument as a source of other timbres.",
+      "claim": "He imagines a melody, then makes his fingers reproduce it until natural rather than following familiar guitar licks.",
       "source_id": "S05",
-      "location": "Guitarist influences answer",
+      "location": "Who influenced you as a guitarist?, second answer paragraph",
       "evidence": "first-hand",
       "era": "Currents / 2015",
       "gear": []
@@ -687,6 +804,587 @@
       "evidence": "first-hand",
       "era": "InnerSpeaker / 2011",
       "gear": []
+    },
+    {
+      "id": "EXP01-01",
+      "topic": "Writing",
+      "title": "Contrast emotional signals",
+      "claim": "He pairs emotionally contrasting lyrics and music to create tension beyond a uniformly sad song.",
+      "source_id": "EXP01",
+      "location": "Q: Production can be such a red herring",
+      "evidence": "first-hand",
+      "era": "Currents",
+      "gear": []
+    },
+    {
+      "id": "EXP01-02",
+      "topic": "Writing",
+      "title": "Compose with the sound",
+      "claim": "For Parker, production choices carry emotional meaning and develop alongside songwriting.",
+      "source_id": "EXP01",
+      "location": "Q: Would you consider production to be surface or content?",
+      "evidence": "first-hand",
+      "era": "Currents",
+      "gear": []
+    },
+    {
+      "id": "EXP01-03",
+      "topic": "Writing",
+      "title": "Change the foundation",
+      "claim": "On Currents, he explored drum-machine songs and arrangements without a driving guitar riff.",
+      "source_id": "EXP01",
+      "location": "Q: Could the infrastructure veto such a move?",
+      "evidence": "first-hand",
+      "era": "Currents",
+      "gear": []
+    },
+    {
+      "id": "EXP02-01",
+      "topic": "Mixing",
+      "title": "Send an intentional rough mix",
+      "claim": "He supplied Fridmann rough mixes expressing his intended sound before the mixer rebuilt clarity and impact.",
+      "source_id": "EXP02",
+      "location": "Q: You worked with Dave Fridmann again",
+      "evidence": "first-hand",
+      "era": "Lonerism",
+      "gear": []
+    },
+    {
+      "id": "EXP02-02",
+      "topic": "Writing",
+      "title": "Develop quickly, revisit later",
+      "claim": "An initial concentrated writing session could be followed by a year of adding and removing parts.",
+      "source_id": "EXP02",
+      "location": "Q: How does the song-making process usually work?",
+      "evidence": "first-hand",
+      "era": "Lonerism",
+      "gear": []
+    },
+    {
+      "id": "EXP02-03",
+      "topic": "Workflow",
+      "title": "Resist automatic cleanup",
+      "claim": "On moving from eight-track to computer recording, he resisted correcting every flaw and retained imperfect singing.",
+      "source_id": "EXP02",
+      "location": "Q: Does bringing in all those added elements make the entire process even more complicated?",
+      "evidence": "first-hand",
+      "era": "Lonerism",
+      "gear": []
+    },
+    {
+      "id": "EXP03-01",
+      "topic": "Vocals",
+      "title": "Write toward a performed persona",
+      "claim": "For Not My World, he wanted the impression of unpremeditated singing by someone detached from everyday reality.",
+      "source_id": "EXP03",
+      "location": "Q: What was running through your mind while writing Not My World?",
+      "evidence": "first-hand",
+      "era": "Deadbeat",
+      "gear": []
+    },
+    {
+      "id": "EXP03-02",
+      "topic": "Writing",
+      "title": "Read back for the subject",
+      "claim": "Reading back No Reply led him to recognize anxiety as its subject.",
+      "source_id": "EXP03",
+      "location": "No Reply discussion, preceding Q: Was it therapeutic writing that song?",
+      "evidence": "first-hand",
+      "era": "Deadbeat",
+      "gear": []
+    },
+    {
+      "id": "EXP04-01",
+      "topic": "Workflow",
+      "title": "A phone demo can become the master",
+      "claim": "No Reply uses his original piano phone memo after he lost a replacement recorded with a stereo microphone.",
+      "source_id": "EXP04",
+      "location": "Closing No Reply piano discussion",
+      "evidence": "first-hand",
+      "era": "Deadbeat",
+      "gear": []
+    },
+    {
+      "id": "EXP04-02",
+      "topic": "Writing",
+      "title": "Use a collaborator to clarify intent",
+      "claim": "Sarah Aarons helped him identify what he wanted and reject distracting choices, including an overlong introduction. The intro example is illustrative, not assigned to a named song.",
+      "source_id": "EXP04",
+      "location": "Sarah Aarons discussion, quoted 32-bar-intro example",
+      "evidence": "first-hand",
+      "era": "Deadbeat",
+      "gear": []
+    },
+    {
+      "id": "EXP04-03",
+      "topic": "Writing",
+      "title": "Limit an abundant studio",
+      "claim": "He pursued stripped-back, sometimes distorted sounds and consciously restricted the options offered by his extensive equipment.",
+      "source_id": "EXP04",
+      "location": "Opening sound discussion and gear-library discussion",
+      "evidence": "first-hand",
+      "era": "Deadbeat",
+      "gear": []
+    },
+    {
+      "id": "EXP05-01",
+      "topic": "Vocals",
+      "title": "Keep the phonetic take",
+      "claim": "Let It Happen retains the initial nonsensical sampler-vocal performance because later real lyrics lost its groove. He distinguishes it from a vocoder; exact device unknown.",
+      "source_id": "EXP05",
+      "location": "Q: You said before that you spend most of your studio time trying to recapture the spirit of your original demo",
+      "evidence": "first-hand",
+      "era": "Currents",
+      "gear": [
+        "keyboard sampler (unspecified)"
+      ]
+    },
+    {
+      "id": "EXP05-02",
+      "topic": "Writing",
+      "title": "Discover sections by looping",
+      "claim": "He developed Let It Happen through solitary looped jams, allowing new elements to suggest the next section.",
+      "source_id": "EXP05",
+      "location": "Q: Do you remember your first idea for that track?",
+      "evidence": "first-hand",
+      "era": "Currents",
+      "gear": []
+    },
+    {
+      "id": "EXP05-03",
+      "topic": "Vocals",
+      "title": "Take counters include fragments",
+      "claim": "His four-digit vocal-take count could include aborted words or individual lines, not thousands of complete performances.",
+      "source_id": "EXP05",
+      "location": "Opening question on minute details",
+      "evidence": "first-hand",
+      "era": "Currents",
+      "gear": []
+    },
+    {
+      "id": "EXP06-01",
+      "topic": "Writing",
+      "title": "Reach chords outside familiar fingering",
+      "claim": "He used a Casio’s chord buttons with his index fingers to discover combinations outside his habitual guitar shapes.",
+      "source_id": "EXP06",
+      "location": "Casio-origin paragraphs",
+      "evidence": "first-hand",
+      "era": "Lonerism-era recollection / Orchid development",
+      "gear": [
+        "Casio keyboard (unspecified)"
+      ]
+    },
+    {
+      "id": "EXP06-02",
+      "topic": "Writing",
+      "title": "Keep discovery in the process",
+      "claim": "He personally avoids ready-made chord packs because exploring the progression is part of his enjoyment of songwriting.",
+      "source_id": "EXP06",
+      "location": "Opening chord-pack discussion",
+      "evidence": "first-hand",
+      "era": "Lonerism-era recollection / Orchid development",
+      "gear": []
+    },
+    {
+      "id": "EXP07-01",
+      "topic": "Guitar",
+      "title": "Make guitar suggest an organ",
+      "claim": "He reduced the attack, rolled back the tone control and used fingers instead of a pick for organ-like guitar parts.",
+      "source_id": "EXP07",
+      "location": "Tools at hand",
+      "evidence": "first-hand",
+      "era": "Innerspeaker-era guitar, recalled in 2021",
+      "gear": []
+    },
+    {
+      "id": "EXP07-02",
+      "topic": "Guitar",
+      "title": "Explore recorder parameters by ear",
+      "claim": "The synthetic space-guitar sound emerged from trying recorder presets and changing parameters until a sound appealed. No exact preset or parameter values supplied.",
+      "source_id": "EXP07",
+      "location": "Tools at hand",
+      "evidence": "first-hand",
+      "era": "Early recordings, recalled in 2021",
+      "gear": []
+    },
+    {
+      "id": "EXP07-03",
+      "topic": "Workflow",
+      "title": "Make tone settings repeatable",
+      "claim": "He values the Hagstrom Impala’s switches because a known combination makes later alternate takes easier to match.",
+      "source_id": "EXP07",
+      "location": "Tamed impala",
+      "evidence": "first-hand",
+      "era": "Studio practice described in 2021",
+      "gear": [
+        "Hagstrom Impala"
+      ]
+    },
+    {
+      "id": "EXP07-04",
+      "topic": "Guitar",
+      "title": "Change the register and articulation",
+      "claim": "He describes playing funk figures on a cheap Teisco’s upper three strings for a distinctive recorded character.",
+      "source_id": "EXP07",
+      "location": "Bet on Backer",
+      "evidence": "first-hand",
+      "era": "Studio practice described in 2021",
+      "gear": [
+        "Teisco (model unspecified)"
+      ]
+    },
+    {
+      "id": "EXP08-01",
+      "topic": "Writing",
+      "title": "Make repetition disturb expectations",
+      "claim": "Let It Happen’s intentional skipping passage was designed to make listeners briefly suspect a playback fault. No editing command or plugin identified.",
+      "source_id": "EXP08",
+      "location": "Q: The single Let It Happen has this digital skip",
+      "evidence": "first-hand",
+      "era": "Currents",
+      "gear": []
+    },
+    {
+      "id": "EXP08-02",
+      "topic": "Writing",
+      "title": "Use an imagined playback aesthetic",
+      "claim": "Disciples pursued a seventies AM-radio character as its own sound world.",
+      "source_id": "EXP08",
+      "location": "Q: The album moves around a lot; Disciples",
+      "evidence": "first-hand",
+      "era": "Currents",
+      "gear": []
+    },
+    {
+      "id": "EXP08-03",
+      "topic": "Writing",
+      "title": "Let the song determine its treatment",
+      "claim": "For Currents he asked what would help each song flourish, avoiding a predetermined Tame Impala template.",
+      "source_id": "EXP08",
+      "location": "Disciples answer, concluding paragraph",
+      "evidence": "first-hand",
+      "era": "Currents",
+      "gear": []
+    },
+    {
+      "id": "EXP09-01",
+      "topic": "Drums",
+      "title": "Batch the drum session",
+      "claim": "He prepared drumless songs, then recorded their drum takes during a limited daytime session at a pub.",
+      "source_id": "EXP09",
+      "location": "27:13–27:56",
+      "evidence": "first-hand",
+      "era": "Early EP sessions, recalled in 2020",
+      "gear": []
+    },
+    {
+      "id": "EXP09-02",
+      "topic": "Writing",
+      "title": "Work from a transformed memory",
+      "claim": "He sometimes avoids replaying an influence so his imperfect memory can reshape it.",
+      "source_id": "EXP09",
+      "location": "22:03–22:48",
+      "evidence": "first-hand",
+      "era": "Influence and writing practice described in 2020",
+      "gear": []
+    },
+    {
+      "id": "EXP09-03",
+      "topic": "Drums",
+      "title": "Hear rhythm across the arrangement",
+      "claim": "He treats the interaction of vocal, bass and percussion rhythms as central to the music.",
+      "source_id": "EXP09",
+      "location": "21:34–22:01",
+      "evidence": "first-hand",
+      "era": "Rhythmic approach described in 2020",
+      "gear": []
+    },
+    {
+      "id": "EXP09-04",
+      "topic": "Writing",
+      "title": "Join contrasting fragments",
+      "claim": "Posthumous Forgiveness combined two existing ideas into sections expressing anger followed by relief.",
+      "source_id": "EXP09",
+      "location": "19:46–20:16",
+      "evidence": "first-hand",
+      "era": "The Slow Rush: Posthumous Forgiveness (2020)",
+      "gear": []
+    },
+    {
+      "id": "EXP09-05",
+      "topic": "Writing",
+      "title": "Adapt the recording for the band",
+      "claim": "Live arrangements allow players freedom instead of reproducing every edited loop and fleeting studio layer exactly.",
+      "source_id": "EXP09",
+      "location": "39:45–40:41",
+      "evidence": "first-hand",
+      "era": "Live arrangement practice described in 2020",
+      "gear": []
+    },
+    {
+      "id": "EXP09-06",
+      "topic": "Writing",
+      "title": "Design the closing time perspective",
+      "claim": "One More Hour represents the final hour of the year introduced by One More Year.",
+      "source_id": "EXP09",
+      "location": "45:19–45:28",
+      "evidence": "first-hand",
+      "era": "The Slow Rush: One More Year / One More Hour (2020)",
+      "gear": []
+    },
+    {
+      "id": "ZL25-01",
+      "title": "A restricted writing phase can reveal the next direction",
+      "topic": "Writing",
+      "era": "Deadbeat / preceding techno-writing phase, recalled 2025",
+      "claim": "A techno-only writing phase made Parker miss chords; following that impulse brought him back toward a Tame Impala album.",
+      "source_id": "ZL25",
+      "location": "01:26–02:22",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "ZL25-02",
+      "title": "Improvised syllables can remain in the finished vocal",
+      "topic": "Vocals",
+      "era": "Currents / Let It Happen, recalled 2025",
+      "claim": "Let It Happen retains improvised, nonliteral syllables. The caption’s partial device term is uncertain; EXP05 explicitly identifies a keyboard sampler.",
+      "source_id": "ZL25",
+      "location": "11:36–11:45",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "ZL25-03",
+      "title": "Audition rough ideas beside developed demos",
+      "topic": "Writing",
+      "era": "Deadbeat / My Old Ways opening",
+      "claim": "Alternating piano phone memos with fuller demos in the car suggested My Old Ways’ intimate opening. TN188-02 identifies the released re-recording.",
+      "source_id": "ZL25",
+      "location": "14:25–15:04",
+      "gear": [
+        "iPhone voice memos",
+        "Piano"
+      ],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "ZL25-04",
+      "title": "Choose a writing setting that prompts ideas",
+      "topic": "Workflow",
+      "era": "Deadbeat / temporary coastal writing spaces",
+      "claim": "He seeks writing rooms near the ocean and thinks its white noise prompts ideas; this is his personal response, not a verified mechanism.",
+      "source_id": "ZL25",
+      "location": "21:01–22:47",
+      "gear": [],
+      "evidence": "qualified-recollection"
+    },
+    {
+      "id": "ZL25-05",
+      "title": "Use an amp vocal for a spontaneous performance feel",
+      "topic": "Vocals",
+      "era": "Deadbeat / Not My World",
+      "claim": "For Not My World’s spontaneous feel, he sang through a guitar amp. Neither microphone nor amp model is specified.",
+      "source_id": "ZL25",
+      "location": "32:58–34:02",
+      "gear": [
+        "Microphone (model unspecified)",
+        "Guitar amplifier (model unspecified)"
+      ],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "ZL25-06",
+      "title": "Recognize when further revisions risk draining a song",
+      "topic": "Workflow",
+      "era": "Deadbeat / Piece of Heaven and Dracula",
+      "claim": "Piece of Heaven took days, while Dracula underwent prolonged revisions; he describes repeated editing as risking a song’s vitality.",
+      "source_id": "ZL25",
+      "location": "34:36–35:03",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "ZL25-07",
+      "title": "A late demo can still become a complete song",
+      "topic": "Writing",
+      "era": "Deadbeat / Afterthought",
+      "claim": "Afterthought developed from an existing demo during mastering, growing from possible interlude to full song; later mix revisions still followed.",
+      "source_id": "ZL25",
+      "location": "36:26–38:40",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "ZL25-08",
+      "title": "Preserve collective interplay in electronic live arrangements",
+      "topic": "Workflow",
+      "era": "Deadbeat / live-show preparation discussed in 2025",
+      "claim": "For the planned Deadbeat tour, he wanted collective musical interplay and spontaneity alongside quality. No live routing or synchronization method is specified.",
+      "source_id": "ZL25",
+      "location": "45:53–47:39",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "BR20-01",
+      "title": "Build structure from a short loop",
+      "claim": "For Currents, he built structures from short loops, influenced by hip-hop, R&B and electronic production.",
+      "source_id": "BR20",
+      "location": "Comparison of second and third album arrangements",
+      "era": "Currents, recalled 2020",
+      "topic": "Writing",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "BR20-02",
+      "title": "Imagine another session’s approach",
+      "claim": "Breath Deeper’s opening beat came from imagining a Pharrell/Justin Timberlake session after watching Justified studio footage.",
+      "source_id": "BR20",
+      "location": "Returning to solo work; Justified footage and Breath Deeper",
+      "era": "The Slow Rush / Breath Deeper",
+      "topic": "Writing",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "BR20-03",
+      "title": "Use accidental playback as an opening",
+      "claim": "An accidentally looped beat became Feels Like We Only Go Backwards’ jolting introduction.",
+      "source_id": "BR20",
+      "location": "Question about distinctive introductions",
+      "era": "Lonerism / Feels Like We Only Go Backwards",
+      "topic": "Writing",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "BR20-04",
+      "title": "Notice the transition into quiet",
+      "claim": "He notices ideas arriving when leaving busy, loud surroundings for quiet; this is an observed personal pattern.",
+      "source_id": "BR20",
+      "location": "Discussion of when song ideas arrive",
+      "era": "Writing practice described in 2020",
+      "topic": "Writing",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "BR20-05",
+      "title": "Let memory continue an influence",
+      "claim": "He tentatively connects Backwards to mentally continuing a Beach House song after it stopped playing.",
+      "source_id": "BR20",
+      "location": "Influence discussion; Walk in the Park and Backwards",
+      "era": "Lonerism / retrospective account in 2020",
+      "topic": "Writing",
+      "gear": [],
+      "evidence": "qualified-recollection"
+    },
+    {
+      "id": "BR20-06",
+      "title": "Keep the moment that made you care",
+      "claim": "He develops songs that have felt like his best work, then tries to retain that attachment through completion.",
+      "source_id": "BR20",
+      "location": "Album selection and the race to finish a song",
+      "era": "Album-making practice described in 2020",
+      "topic": "Writing",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "BR20-07",
+      "title": "Change tasks while preserving orientation",
+      "claim": "He switches among playing, writing, editing and mixing, but admits this can obscure how close a song is to completion.",
+      "source_id": "BR20",
+      "location": "Question about finishing one song before another",
+      "era": "Solo workflow described in 2020",
+      "topic": "Workflow",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "BR20-08",
+      "title": "Discover overdubbing with playback",
+      "claim": "As a child, he recorded keyboard over playback of his own drums using two cassette decks.",
+      "source_id": "BR20",
+      "location": "First experiments with recording and multitracking",
+      "era": "Childhood recording, recalled 2020",
+      "topic": "Workflow",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "GW09",
+      "source_id": "S03",
+      "topic": "Synths",
+      "title": "Use guitar voicings on keyboard sounds",
+      "claim": "Playing a piano patch through guitar synthesis gives familiar guitar chords different voicings from conventional keyboard playing.",
+      "location": "The Less I Know the Better answer, paragraph beginning Like, you can play a barre chord",
+      "era": "Writing practice described in 2022",
+      "gear": [
+        "Roland GR-55"
+      ],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "PG06",
+      "source_id": "S05",
+      "topic": "Guitar",
+      "title": "Arrange guitar as an answer",
+      "claim": "On Currents, guitars make intermittent appearances and answer other sounds; he adjusted chords and licks to fit the R&B rhythms and synth arrangement.",
+      "location": "Opening two guitar-arrangement questions",
+      "era": "Currents / 2015",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "PG07",
+      "source_id": "S05",
+      "topic": "Synths",
+      "title": "Build patches beyond the presets",
+      "claim": "He built GR-55 patches from scratch, then combined them with effects and outboard processing.",
+      "location": "Jazzmaster with Roland synth pickup question",
+      "era": "Currents / 2015",
+      "gear": [
+        "Roland GR-55"
+      ],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "RS05",
+      "source_id": "S08",
+      "topic": "Bass",
+      "title": "Respond to the recorded drummer",
+      "claim": "Recording bass over his own drums lets him anticipate and match the fills, creating interaction between separately performed parts.",
+      "location": "Question about imagining a band while recording alone",
+      "era": "InnerSpeaker / 2011",
+      "gear": [],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "AM06",
+      "source_id": "S07",
+      "topic": "Guitar",
+      "title": "Capture the idea with available input",
+      "claim": "Without an interface, he recorded the Apocalypse Dreams breakdown lead guitar directly into his MacBook line input to preserve the inspired moment.",
+      "location": "https://www.reddit.com/r/IAmA/comments/34clpm/comment/cqtkpgu/",
+      "era": "Lonerism, recalled in 2015",
+      "gear": [
+        "MacBook line input"
+      ],
+      "evidence": "first-hand"
+    },
+    {
+      "id": "AM07",
+      "source_id": "S07",
+      "topic": "Mixing",
+      "title": "Repeat the reverberant space",
+      "claim": "He suggests delaying an already reverberant signal because repeating its spatial reflections can alter the listener’s sense of space. A suggested preference, not a verified song-specific chain.",
+      "location": "https://www.reddit.com/r/IAmA/comments/34clpm/comment/cqthdc5/",
+      "era": "Effects preference described in 2015",
+      "gear": [],
+      "evidence": "first-hand"
     }
   ]
 }
