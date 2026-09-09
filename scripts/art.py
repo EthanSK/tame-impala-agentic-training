@@ -251,27 +251,63 @@ DUNE = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 96" preserveA
 PORTRAIT_OUTLINE = "M495 809 C520 752 642 724 785 674 C758 641 748 584 760 536 C753 519 755 513 765 496 L728 497 C744 483 746 468 738 457 C733 438 751 405 780 381 C774 355 780 328 799 302 L815 277 C831 245 841 226 869 211 C890 190 921 180 947 174 C962 170 982 172 989 170 L945 103 C943 80 963 62 984 50 C1041 44 1124 44 1173 70 C1229 98 1249 160 1257 183 C1276 245 1272 278 1263 330 L1248 388 C1238 385 1224 379 1223 372 L1213 373 C1206 407 1210 440 1214 490 C1226 531 1225 555 1218 600 C1203 642 1170 678 1157 687 C1159 699 1171 705 1185 711 C1306 728 1383 749 1425 809 Z"
 
 
-def brain_scene(portrait, mobile=False):
-    """Original-size portrait at the bottom; streamlines fan from its brain toward the upper left.
+# The hero scene is a shared 1942x3000 canvas: the 1942x809 portrait sits at its bottom edge and the
+# strands are drawn in the same units, so responsive scaling can never detach them from the brain.
+SCENE = (1942, 3000)
+PORTRAIT_TOP = SCENE[1] - 809
 
-    Portrait and lines share a coordinate system, so responsive scaling cannot detach the origin.
-    Raster pixels remain unchanged; SVG supplies only clipping and the surrounding original geometry.
+# Geometry of the cut, read off the portrait pixels (portrait coordinates, y down).
+# The lifted lid's cut edge runs from its tip near (945,100) down to the hinge near (1265,335), about 36 degrees.
+# The only exposed brain silhouette is the upper-left arc (815,277) -> (989,170) and the notch under the lid tip,
+# so strands that start along the skull's front rim (just under the fringe) and leave parallel to the lid's edge
+# all surface through that arc, as if pouring out of the opening. Origins further right would surface through the lid.
+CUT_RIM = ((845, 316), (1125, 358))
+LID_ANGLE = 36
+THREADS = 115
+
+
+def _thread(i):
+    """Control points of strand i in scene units: rim origin, parallel launch, then the approved desktop fan."""
+    s = i / (THREADS - 1)
+    (ax, ay), (bx, by) = CUT_RIM
+    p0 = (ax + (bx - ax) * s, PORTRAIT_TOP + ay + (by - ay) * s)
+    launch = math.radians(LID_ANGLE)
+    reach = 340 - 120 * s  # the straight run out of the opening; steeper strands turn upward sooner
+    p1 = (p0[0] - math.cos(launch) * reach, p0[1] - math.sin(launch) * reach)
+    end = (-300 + 10 * i, 2350 - 17 * i)  # far ends kept from the approved fan: level-left through nearly vertical
+    p2 = (end[0] + (p0[0] - end[0]) * .45, end[1] + (p0[1] - end[1]) * .45)
+    return p0, p1, p2, end
+
+
+def _bezier(p0, p1, p2, p3):
+    return f'M{p0[0]:.1f} {p0[1]:.1f} C{p1[0]:.1f} {p1[1]:.1f} {p2[0]:.1f} {p2[1]:.1f} {p3[0]:.1f} {p3[1]:.1f}'
+
+
+def brain_portrait(portrait):
+    """The clipped original portrait alone, at the bottom of the shared scene. Raster pixels are unchanged."""
+    data = base64.b64encode(portrait).decode('ascii')
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {SCENE[0]} {SCENE[1]}">'
+            f'<defs><clipPath id="kevin"><path d="{PORTRAIT_OUTLINE}"/></clipPath></defs>'
+            f'<g transform="translate(0 {PORTRAIT_TOP})"><image width="1942" height="809" clip-path="url(#kevin)" xlink:href="data:image/png;base64,{data}"/></g></svg>')
+
+
+def brain_lines():
+    """Inline vector layer drawn behind the portrait: a gradient wedge and strands bursting from the cut.
+
+    Every strand starts along the cut rim and leaves parallel to the lid's edge, so the bundle reads as the
+    opening extruded; the far ends then spread from level-left to nearly vertical. One geometry serves every
+    screen size: a narrow phone simply lets the shallow strands leave its left edge at the same angle.
+    Each strand carries its own transform origin (its rim point) so page CSS can sway it about the opening
+    without moving the join; the hidden run inside the head absorbs the pivot.
     """
-    o = ['<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1942 3000">']
-    o.append('<defs><clipPath id="kevin"><path d="'+PORTRAIT_OUTLINE+'"/></clipPath><linearGradient id="thought" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a88ae0"/><stop offset=".5" stop-color="#5b3a93"/><stop offset="1" stop-color="#f07ba6"/></linearGradient></defs>')
-    o.append('<g transform="translate(0 800)">')
-    # 1391 is the original portrait top in the shared canvas; the brain begins around y=1560.
-    envelope = ("M880 1610 C760 1320 160 800 100 -800 L1810 -800 C1756 800 1102 1320 1108 1701.2 Z" if mobile else "M880 1610 C780 1410 480 1570 -300 1550 L840 -388 C822 772 939.6 1182 1108 1701.2 Z")
-    o.append(f'<path d="{envelope}" fill="url(#thought)" opacity="{.28 if mobile else .42}"/>')
-    o.append('<g transform="translate(0 500)" fill="none" stroke-linecap="round">')
-    for i in range(115):
-        x,y=880+2*i,1110+.8*i
-        c1=(780+1.4*i,910-2*i);c2=(480+3*i,1070-7*i);end=(-300+10*i,1050-17*i)
-        if mobile:
-            c1=(760+3*i,820);c2=(160+14*i,300);end=(100+15*i,-1300)
-        colour='#4b286d' if i%7 not in (0,1) else ('#ea828e' if i%7==0 else '#43a8ad')
-        o.append(f'<path d="M{x:.1f} {y:.1f} C{c1[0]:.1f} {c1[1]:.1f} {c2[0]:.1f} {c2[1]:.1f} {end[0]:.1f} {end[1]:.1f}" stroke="{colour}" stroke-width="{3.4 if i%7 in (0,1) else 1.8}" opacity="{.46 if mobile else .82}"/>')
-    o.append('</g>')
-    data=base64.b64encode(portrait).decode('ascii')
-    o.append(f'<g transform="translate(0 1391)"><image width="1942" height="809" clip-path="url(#kevin)" xlink:href="data:image/png;base64,{data}"/></g></g></svg>')
+    o = [f'<svg class="mind-lines" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {SCENE[0]} {SCENE[1]}" aria-hidden="true" focusable="false">',
+         '<defs><linearGradient id="thought" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a88ae0"/><stop offset=".5" stop-color="#5b3a93"/><stop offset="1" stop-color="#f07ba6"/></linearGradient></defs>']
+    first, last = _thread(0), _thread(THREADS - 1)
+    o.append(f'<path class="thought" d="{_bezier(*first)} L{last[3][0]:.1f} {last[3][1]:.1f} C{last[2][0]:.1f} {last[2][1]:.1f} {last[1][0]:.1f} {last[1][1]:.1f} {last[0][0]:.1f} {last[0][1]:.1f} Z" fill="url(#thought)"/>')
+    o.append('<g fill="none" stroke-linecap="round">')
+    for i in range(THREADS):
+        p0, p1, p2, end = _thread(i)
+        colour = '#4b286d' if i % 7 not in (0, 1) else ('#ea828e' if i % 7 == 0 else '#43a8ad')
+        o.append(f'<path class="thread" style="transform-origin:{p0[0]:.1f}px {p0[1]:.1f}px;animation-delay:-{i * .08:.2f}s" d="{_bezier(p0, p1, p2, end)}" stroke="{colour}" stroke-width="{3.4 if i % 7 in (0, 1) else 1.8}"/>')
+    o.append('</g></svg>')
     return ''.join(o)

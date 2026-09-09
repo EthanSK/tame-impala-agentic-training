@@ -62,8 +62,11 @@ svg { display: block; }
 .masthead nav a { text-decoration: none; border-bottom: 2px solid transparent; padding: 4px 0; white-space: nowrap; }
 .masthead nav a:hover { border-color: var(--ink); }
 
-/* The portrait keeps its original proportions at the lower edge. Lines radiate from the brain
-   into the upper-left background; both share the same SVG coordinates on every screen size. */
+/* The portrait keeps its original proportions at the lower edge. Strands burst from the cut in the
+   brain toward the upper left on every screen size: the inline vector layer and the portrait image share
+   one 1942x3000 scene box, so the join never moves. Each strand sways about its own rim origin (set
+   inline as transform-origin) with staggered delays, giving a slow ripple across the fan; the pivot sits
+   inside the head, keeping the strands attached. Reduced motion stops the sway. */
 .mind-hero { position: relative; isolation: isolate; --hero-h: clamp(620px, calc(100svh - 24px), 860px); height: var(--hero-h); overflow: hidden; background: var(--paper); }
 .mind-layout { position: relative; display: flex; justify-content: space-between; align-items: flex-start; padding: clamp(45px, 6.5vh, 84px) var(--gutter) 0; gap: 36px; }
 .mind-title { position: relative; z-index: 3; color: #f3eee8; mix-blend-mode: difference; width: 31%; max-width: 390px; font: 700 clamp(26px, 3vw, 44px)/1.18 var(--brand); letter-spacing: -.02em; text-transform: uppercase; margin: 0; }
@@ -74,8 +77,12 @@ svg { display: block; }
 .mind-count { font: 400 10px/1.6 var(--plain); color: var(--mute); }
 .mind-actions { display: flex; align-items: flex-start; flex-direction: column; gap: 18px; }
 .mind-actions .primary { font-size: 11px; padding: 11px 13px; }
-.mind-scene { position: absolute; bottom: 0; left: 50%; width: clamp(1280px, 110vw, 1800px); transform: translateX(-50%); z-index: 1; pointer-events: none; }
-.mind-scene img { display: block; width: 100%; height: auto; }
+.mind-scene { position: absolute; bottom: 0; left: 50%; width: clamp(1280px, 110vw, 1800px); transform: translateX(-50%); z-index: 1; pointer-events: none; --thread-opacity: .82; --thought-opacity: .42; }
+.mind-scene img { position: relative; display: block; width: 100%; height: auto; }
+.mind-lines { position: absolute; inset: 0; width: 100%; height: 100%; }
+.thought { opacity: var(--thought-opacity); }
+.thread { opacity: var(--thread-opacity); transform-box: view-box; animation: sway 9s ease-in-out infinite alternate; }
+@keyframes sway { from { transform: rotate(-.7deg); } to { transform: rotate(.7deg); } }
 @media (max-width: 1000px) {
   .mind-hero { --hero-h: clamp(720px, calc(100svh - 24px), 980px); }
   .mind-layout { padding-top: 28px; display: block; text-align: center; }
@@ -86,7 +93,7 @@ svg { display: block; }
   .mind-summary { font-size: 13px; margin-bottom: 9px; }
   .mind-count { margin-bottom: 13px; color: var(--ink); }
   .mind-actions { flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; gap: 14px 22px; }
-  .mind-scene { width: clamp(780px, 145vw, 1160px); }
+  .mind-scene { width: clamp(780px, 145vw, 1160px); --thread-opacity: .46; --thought-opacity: .28; }
 }
 @media (max-width: 400px) { .mind-actions { gap: 12px; } .mind-actions .primary { font-size: 10px; padding: 10px 12px; } }
 
@@ -265,6 +272,7 @@ textarea { display: block; width: 100%; min-height: 200px; resize: vertical; bac
   html { scroll-behavior: auto; }
   .primary { transition: none; }
   .caret { transition: none; }
+  .thread { animation: none; }
 }
 @media print {
   .masthead, .mind-hero, .controls, .agent-section, .contribute, .site-footer { display: none; }

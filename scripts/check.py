@@ -70,10 +70,16 @@ for p in R.rglob('*'):
     assert (p.parent/dest.split('#')[0]).exists(),(p,dest)
 # Site: canonical filename, hashed assets, static content and the 404 under the repository prefix.
 digest=lambda p:hashlib.sha256((R/'docs'/p).read_bytes()).hexdigest()[:10]
-for asset in ['style.css','app.js','favicon.png','art/currents.svg','art/brain-currents.svg','art/brain-currents-mobile.svg','art/inside-kevins-mind.png']:
+for asset in ['style.css','app.js','favicon.png','art/currents.svg','art/brain-portrait.svg','art/inside-kevins-mind.png']:
  assert f'{asset}?v={digest(asset)}' in index,asset
-# Portrait and upward streamlines share one scene; lower body ribbons are no longer part of the hero.
-assert 'class="mind-scene"' in index and 'class="mind-strings"' not in index
+# One scene for every screen: the inline strand layer precedes the portrait image inside .mind-scene, every strand
+# pivots on its own rim origin, and no separate mobile scene or lower body ribbons remain.
+assert 'class="mind-scene"' in index and 'class="mind-strings"' not in index and 'brain-currents' not in index
+scene=index[index.index('class="mind-scene"'):index.index('</section>',index.index('class="mind-scene"'))]
+assert scene.index('class="mind-lines"')<scene.index('class="thought"')<scene.index('class="thread"')<scene.index('art/brain-portrait.svg')
+threads=re.findall(r'<path class="thread" style="transform-origin:[\d.]+px [\d.]+px;animation-delay:-[\d.]+s"',scene)
+assert len(threads)==115 and scene.count('class="thread"')==115
+assert not (R/'docs/art/brain-currents.svg').exists() and not (R/'docs/art/brain-currents-mobile.svg').exists()
 lost=(R/'docs/404.html').read_text()
 assert f'/tame-impala-agentic-training/style.css?v={digest("style.css")}' in lost
 assert 'href="TAME_IMPALA_AGENTS.md" download' in index and 'href="reference.json" download' in index
@@ -83,6 +89,9 @@ for word in ['BIBLE','Bible','bible','TAME_IMPALA.md']:
   assert word not in (R/p).read_text(),(p,word)
 css=(R/'docs/style.css').read_text()
 assert 'prefers-reduced-motion' in css and ':focus-visible' in css
+# The strand sway is page CSS so the reduced-motion rule can stop it; the pivot must be each strand's own origin.
+assert '@keyframes sway' in css and 'transform-box: view-box' in css
+assert '.thread { animation: none; }' in css[css.index('prefers-reduced-motion'):]
 # Type is pinned to the two AIMVS faces: Michroma for plain text, Microgramma D Extended Bold for headings and emphasis. No other family or a monospace role.
 assert (R/'docs/fonts/Michroma-Regular.ttf').exists() and (R/'docs/fonts/OFL-Michroma.txt').exists() and 'fonts/Michroma-Regular.ttf' in css
 assert (R/'docs/fonts/Microgramma D Extended Bold.otf').exists() and 'fonts/Microgramma%20D%20Extended%20Bold.otf' in css and 'font-synthesis: none' in css
