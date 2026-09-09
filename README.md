@@ -66,7 +66,7 @@ Full third-party transcripts, videos, audio, lyrics and course files are not red
 
 ## The website
 
-The website opens inside Tame Impala’s mind: a playful fan collage of Kevin Parker, based on a 2025 press portrait, with a colourful brain peeking out and an invented, impossibly long liquid body whose waves run as strings into the *Currents* strip below. Around it, the five albums supply the visual language: an *Innerspeaker* landscape fragment, *Lonerism*’s gate around search, *Deadbeat*’s black-on-white notes, *Currents*’ streamlines behind the agent prompt and *The Slow Rush*’s red room for the sources. Every note is in the static HTML, so agents and readers without JavaScript get the full text. [ART_DIRECTION.md](ART_DIRECTION.md) records the mapping, portrait source, fonts and artwork credits.
+The website opens inside Tame Impala’s mind: a playful fan collage of Kevin Parker, based on a 2025 press portrait, poking out from the bottom with a colourful brain cutaway. *Currents*-inspired lines fan from his brain into the background, upward on mobile and toward the top left behind the blended title on desktop. Around it, album colours mark each note, *Lonerism* supplies the gate around search, *Deadbeat* the black-on-white notes, *Currents* the agent section and *The Slow Rush* the red room for the sources. Every note is in the static HTML, so agents and readers without JavaScript get the full text. [ART_DIRECTION.md](ART_DIRECTION.md) records the mapping, portrait source, fonts and artwork credits.
 
 ## Contribute
 

@@ -65,11 +65,10 @@ for p in R.rglob('*'):
     assert (p.parent/dest.split('#')[0]).exists(),(p,dest)
 # Site: canonical filename, hashed assets, static content and the 404 under the repository prefix.
 digest=lambda p:hashlib.sha256((R/'docs'/p).read_bytes()).hexdigest()[:10]
-for asset in ['style.css','app.js','favicon.png','art/currents.svg','art/strings.svg','art/inside-kevins-mind.png','art/psychedelic-body.png']:
+for asset in ['style.css','app.js','favicon.png','art/currents.svg','art/brain-currents.svg','art/brain-currents-mobile.svg','art/inside-kevins-mind.png']:
  assert f'{asset}?v={digest(asset)}' in index,asset
-# Hero order: figure, then the generated ribbon band, then the dark lip, all before the agent strip; no spacer element.
-assert index.index('class="mind-figure"')<index.index('class="mind-strings"')<index.index('class="mind-lip"')<index.index('id="agents"')
-assert 'mind-portrait' not in index and 'mind-spacer' not in index
+# Portrait and upward streamlines share one scene; lower body ribbons are no longer part of the hero.
+assert 'class="mind-scene"' in index and 'class="mind-strings"' not in index
 lost=(R/'docs/404.html').read_text()
 assert f'/tame-impala-agentic-training/style.css?v={digest("style.css")}' in lost
 assert 'href="TAME_IMPALA_AGENTS.md" download' in index and 'href="reference.json" download' in index
@@ -91,7 +90,7 @@ assert index.index('id="agent-disclosure"')<index.index('id="agents-title"')<ind
 assert '#agent-disclosure' in (R/'docs/app.js').read_text()
 # SVG illustration files must be well-formed XML or browsers will show nothing.
 import xml.dom.minidom
-for p in (R/'docs/art').glob('*.svg'):
+for p in [*(R/'docs/art').glob('*.svg'),R/'docs/favicon.svg']:
  xml.dom.minidom.parseString(p.read_bytes())
 assert 'whether' not in (R/'site/index.html').read_text().lower()
 expected=re.sub(r'\]\((?!https?://|#)([^)]+)\)',lambda m:'](https://github.com/EthanSK/tame-impala-agentic-training/blob/main/'+m[1]+')',(R/'TAME_IMPALA_AGENTS.md').read_text())
@@ -102,6 +101,6 @@ assert 'href="BEST_PRODUCTION_2025_AGENTS.md" download' in index
 
 # Browser icon must be the shipped square PNG at its intended display/export size.
 icon=(R/"docs/favicon.png").read_bytes()
-assert icon[:8] == b"\x89PNG\r\n\x1a\n" and int.from_bytes(icon[16:20],"big") == 64 and int.from_bytes(icon[20:24],"big") == 64
+assert icon[:8] == b"\x89PNG\r\n\x1a\n" and icon[25] == 6 and int.from_bytes(icon[16:20],"big") == 64 and int.from_bytes(icon[20:24],"big") == 64
 assert f'favicon.png?v={digest("favicon.png")}' in lost
 print(f'PASS: {len(a["claims"])} unchanged factual claims, six technique groups, {len(best["notes"])} separately attributed compilation notes, generated parity, hashed assets, local links and public-content scan')

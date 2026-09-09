@@ -128,10 +128,12 @@ sourcehtml=''.join(f'<details id="source-{e(s["id"])}"><summary><span class="sid
 (D/'art').mkdir(exist_ok=True)
 (D/'art/currents.svg').write_text(art.currents()+'\n')
 (D/'art/strings.svg').write_text(art.strings()+'\n')
+(D/'art/brain-currents.svg').write_text(art.brain_scene((D/'art/inside-kevins-mind.png').read_bytes())+'\n')
+(D/'art/brain-currents-mobile.svg').write_text(art.brain_scene((D/'art/inside-kevins-mind.png').read_bytes(),mobile=True)+'\n')
 digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()[:10]
 assets=dict(css_hash=digest(D/'style.css'),js_hash=digest(D/'app.js'),icon_hash=digest(D/'favicon.png'),currents_src='art/currents.svg?v='+digest(D/'art/currents.svg'),strings_src='art/strings.svg?v='+digest(D/'art/strings.svg'))
 # Two saved raster assets: the wide head collage stays as the social preview; the elongated figure carries the hero.
-common=dict(portrait_src='art/inside-kevins-mind.png?v='+digest(D/'art/inside-kevins-mind.png'),figure_src='art/psychedelic-body.png?v='+digest(D/'art/psychedelic-body.png'),site=site,repo=repo,prefix=prefix,updated=updated,count=len(claims),companion_count=companion_count,nsources=len(sources),arch_svg=art.ARCH,**assets)
+common=dict(mobile_figure_src='art/brain-currents-mobile.svg?v='+digest(D/'art/brain-currents-mobile.svg'),portrait_src='art/inside-kevins-mind.png?v='+digest(D/'art/inside-kevins-mind.png'),figure_src='art/brain-currents.svg?v='+digest(D/'art/brain-currents.svg'),site=site,repo=repo,prefix=prefix,updated=updated,count=len(claims),companion_count=companion_count,nsources=len(sources),arch_svg=art.ARCH,**assets)
 page=Template((R/'site/index.html').read_text()).substitute(common,cover_svg=art.innerspeaker(),lip_svg=art.lip(),dune_svg=art.DUNE,notes=''.join(articles),sources=sourcehtml,
  source_options=''.join(f'<option value="{s["id"]}">{e(s["id"]+" · "+s["title"])}</option>' for s in sources),
  topic_options=''.join(f'<option value="{t}">{t}</option>' for t in topics),
