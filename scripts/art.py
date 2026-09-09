@@ -283,6 +283,14 @@ def _bezier(p0, p1, p2, p3):
     return f'M{p0[0]:.1f} {p0[1]:.1f} C{p1[0]:.1f} {p1[1]:.1f} {p2[0]:.1f} {p2[1]:.1f} {p3[0]:.1f} {p3[1]:.1f}'
 
 
+def _far_end(points):
+    """Continue the endpoint tangent well beyond the tallest hero, including narrow phones."""
+    _, _, control, end = points
+    dx, dy = end[0] - control[0], end[1] - control[1]
+    length = math.hypot(dx, dy)
+    return end[0] + dx / length * 10000, end[1] + dy / length * 10000
+
+
 def brain_portrait(portrait):
     """The clipped original portrait alone, at the bottom of the shared scene. Raster pixels are unchanged."""
     data = base64.b64encode(portrait).decode('ascii')
@@ -297,17 +305,19 @@ def brain_lines():
     Every strand starts along the cut rim and leaves parallel to the lid's edge, so the bundle reads as the
     opening extruded; the far ends then spread from level-left to nearly vertical. One geometry serves every
     screen size: a narrow phone simply lets the shallow strands leave its left edge at the same angle.
-    Each strand carries its own transform origin (its rim point) so page CSS can sway it about the opening
-    without moving the join; the hidden run inside the head absorbs the pivot.
+    The canvas renderer samples these same paths, leaving the opening fixed while waves travel outward.
+    The full-length SVG remains the static fallback, including when JavaScript is unavailable.
     """
     o = [f'<svg class="mind-lines" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {SCENE[0]} {SCENE[1]}" aria-hidden="true" focusable="false">',
          '<defs><linearGradient id="thought" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a88ae0"/><stop offset=".5" stop-color="#5b3a93"/><stop offset="1" stop-color="#f07ba6"/></linearGradient></defs>']
     first, last = _thread(0), _thread(THREADS - 1)
-    o.append(f'<path class="thought" d="{_bezier(*first)} L{last[3][0]:.1f} {last[3][1]:.1f} C{last[2][0]:.1f} {last[2][1]:.1f} {last[1][0]:.1f} {last[1][1]:.1f} {last[0][0]:.1f} {last[0][1]:.1f} Z" fill="url(#thought)"/>')
+    far_first, far_last = _far_end(first), _far_end(last)
+    o.append(f'<path class="thought" d="{_bezier(*first)} L{far_first[0]:.1f} {far_first[1]:.1f} L{far_last[0]:.1f} {far_last[1]:.1f} L{last[3][0]:.1f} {last[3][1]:.1f} C{last[2][0]:.1f} {last[2][1]:.1f} {last[1][0]:.1f} {last[1][1]:.1f} {last[0][0]:.1f} {last[0][1]:.1f} Z" fill="url(#thought)"/>')
     o.append('<g fill="none" stroke-linecap="round">')
     for i in range(THREADS):
         p0, p1, p2, end = _thread(i)
+        far = _far_end((p0, p1, p2, end))
         colour = '#4b286d' if i % 7 not in (0, 1) else ('#ea828e' if i % 7 == 0 else '#43a8ad')
-        o.append(f'<path class="thread" style="transform-origin:{p0[0]:.1f}px {p0[1]:.1f}px;animation-delay:-{i * .08:.2f}s" d="{_bezier(p0, p1, p2, end)}" stroke="{colour}" stroke-width="{3.4 if i % 7 in (0, 1) else 1.8}"/>')
+        o.append(f'<path class="thread" d="{_bezier(p0, p1, p2, end)} L{far[0]:.1f} {far[1]:.1f}" stroke="{colour}" stroke-width="{3.4 if i % 7 in (0, 1) else 1.8}"/>')
     o.append('</g></svg>')
     return ''.join(o)

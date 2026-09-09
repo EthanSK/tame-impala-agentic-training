@@ -137,11 +137,11 @@ sourcehtml=''.join(f'<details id="source-{e(s["id"])}"><summary><span class="sid
 (D/'art/currents.svg').write_text(art.currents()+'\n')
 (D/'art/strings.svg').write_text(art.strings()+'\n')
 # The hero portrait is one static SVG (clipped raster in the shared scene); the strands are inline vector markup
-# in the page so CSS can sway them and honour reduced motion. The former single-file desktop/mobile scenes are stale.
+# as the canvas geometry source and static fallback. The former desktop/mobile scenes are stale.
 (D/'art/brain-portrait.svg').write_text(art.brain_portrait((D/'art/inside-kevins-mind.png').read_bytes())+'\n')
 for stale in ['brain-currents.svg','brain-currents-mobile.svg']:(D/'art'/stale).unlink(missing_ok=True)
 digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()[:10]
-assets=dict(css_hash=digest(D/'style.css'),js_hash=digest(D/'app.js'),icon_hash=digest(D/'favicon.png'),currents_src='art/currents.svg?v='+digest(D/'art/currents.svg'),strings_src='art/strings.svg?v='+digest(D/'art/strings.svg'))
+assets=dict(css_hash=digest(D/'style.css'),js_hash=digest(D/'app.js'),waves_hash=digest(D/'waves.js'),icon_hash=digest(D/'favicon.png'),currents_src='art/currents.svg?v='+digest(D/'art/currents.svg'),strings_src='art/strings.svg?v='+digest(D/'art/strings.svg'))
 # The wide head collage is both the social preview and, clipped into the scene, the hero portrait.
 common=dict(portrait_src='art/inside-kevins-mind.png?v='+digest(D/'art/inside-kevins-mind.png'),figure_src='art/brain-portrait.svg?v='+digest(D/'art/brain-portrait.svg'),site=site,repo=repo,prefix=prefix,updated=updated,count=len(claims),companion_count=companion_count,nsources=len(sources),arch_svg=art.ARCH,**assets)
 page=Template((R/'site/index.html').read_text()).substitute(common,cover_svg=art.innerspeaker(),lip_svg=art.lip(),dune_svg=art.DUNE,brain_lines_svg=art.brain_lines(),notes=''.join(articles),sources=sourcehtml,
