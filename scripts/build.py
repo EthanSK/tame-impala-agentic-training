@@ -26,6 +26,12 @@ for c in claims:
 # Practical methods come first; topic and era remain independent source context.
 family_order={f['id']:i for i,f in enumerate(families)}
 claims.sort(key=lambda c:(c['priority'],family_order[c['technique']]))
+# The website has an explicit editorial reading order across technique families.
+# Keep source records and the grouped master guide in their established order.
+website_order=techniques['website_usefulness']['order']
+assert len(website_order)==len(set(website_order))==len(claims)
+assert set(website_order)=={c['id'] for c in claims}
+website_rank={id:rank for rank,id in enumerate(website_order)}
 companion_count=companion.build(R,families)
 clips=[('YT1','r8lKPPm1sYo','Top 10 Production & Writing Insights (public edit)','Complete available automatic captions reviewed; no video-frame or human audio audit.','Cross-checks TN188: full drum takes 00:25; 808/DRM1 02:45; capture ideas 05:23; effects 09:28; producer judgment 11:14; vocal width 12:41. These repeat the interview, not six independent sources.'),('YT2','1WMxwm3Tu70','Vocal Chain, Layering & Vocal Production Techniques','Metadata only; research extraction session encountered membership gate.','Authorized browser playback access was observed, but no caption export was available through that controller. Content is not claimed reviewed.'),('YT3','nwqOT7jwt4A','Drum Production on Deadbeat','Metadata only; research extraction session encountered membership gate.','Caption availability in an authorized session remains unverified. Do not infer details from the title.'),('YT4','o02n6ogEvcY','Top 10 Production & Writing Insights (member edit)','Metadata only; research extraction session encountered membership gate.','13:00 playlist duration differs from the public edit. Their equivalence is unverified.'),('YT5','e65xhY6Qvqg','Tame Impala Breaks Down Deadbeat (teaser)','Complete available automatic captions reviewed; no video-frame or human audio audit.','Repeats drum palette at 00:14 and stereo whispers at 00:43. No distinct tip counted; isolated compression/EQ excerpt does not establish a chain.'),('YT6','Pld6EOIF7xg','Unavailable playlist entry (title unknown)','Video ID identified; ordinary extraction returned Private video.','Content, duration and relation to the interview unknown.')]
 for id,vid,title,coverage,notes in clips:
@@ -120,7 +126,7 @@ def album_of(era):
  hits=[(low.find(name.lower()),key) for key,name,_ in ALBUMS if name.lower() in low]
  return min(hits)[1] if hits else 'other'
 articles=[]
-for c in claims:
+for c in sorted(claims,key=lambda c:website_rank[c['id']]):
  s=lookup[c['source_id']];album=album_of(c['era'])
  articles.append(f'<article class="note" id="{e(c["id"])}" data-technique="{e(c["technique"])}" data-priority="{c["priority"]}" data-topic="{e(c["topic"])}" data-source="{e(s["id"])}" data-evidence="{e(c["evidence"])}" data-album="{album}"><div class="note-code"><a href="#{e(c["id"])}">{e(c["id"])}</a><span class="note-method">{e(family_lookup[c["technique"]]["title"])}</span><span class="note-topic">{e(c["topic"])}</span></div><div class="note-body"><h3>{e(c["title"])}</h3><p class="claim">{e(c["claim"])}</p><p class="note-era"><span class="era-chip album album-{album}" aria-hidden="true"></span>{e(c["era"])}</p><p class="gear">{e(" / ".join(c["gear"]))}</p><footer><span class="evidence" data-evidence="{e(c["evidence"])}">{e(c["evidence"].replace("-"," "))}</span><a href="{e(s["url"])}">{e(s["title"])} ↗</a><span class="timestamp">{location_html(c["location"])}</span></footer></div></article>')
 sourcehtml=''.join(f'<details id="source-{e(s["id"])}"><summary><span class="sid">{e(s["id"])}</span><span>{e(s["title"])}</span></summary><p>{e(s["coverage"])}</p><p>{e(s["notes"])}</p><p class="source-links"><a href="{e(s["url"])}">Open source ↗</a> · <a href="{repo}/blob/main/{paths[s["id"]]}">Source notes</a></p></details>' for s in sources)

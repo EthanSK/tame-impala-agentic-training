@@ -4,6 +4,7 @@
 - Ask for the target sound, DAW and available instruments/plugins when those are missing. Explain the source-supported method, suggest a small experiment and say what to listen for.
 - Read TAME_IMPALA_AGENTS.md and COVERAGE.md, then follow claim IDs into data/reference.json and the source records.
 - Technique families and priorities are editorial navigation, not evidence ratings. Prefer specific methods before gear identification and historical context; preserve the latter for questions that need them.
+- Default website notes run from most to least useful for a general production session. Maintain the explicit `website_usefulness.order` in `data/techniques.json`, favoring musical impact, concrete actions and adaptability with available tools. Do not fall back to note IDs or technique-family order. This is editorial judgment, not an objective score or evidence rating; search and filters preserve that order.
 - BEST_PRODUCTION_2025_AGENTS.md and data/best-production-2025.json are a separate multi-artist companion. Cite BP25 IDs with compilation timestamps, preserve contextual/unassigned speaker labels, and never attribute another producer's method to Kevin Parker.
 - Cite the original source plus timestamp or section for every factual production claim. Include the claim ID so the answer can be audited.
 - Preserve song/album/era and distinguish first-hand statements, qualified recollections and publisher reports. First-hand is not a guarantee of transcription accuracy.

@@ -28,6 +28,11 @@ for c in a['claims']:
  assert c['technique'] in families and c['priority'] in (1,2,3)
  assert f'data-technique="{c["technique"]}"' in index
 assert index.index('id="agents"')<index.index('id="reference"')
+# Static order also supplies the no-JS default and survives filtering/clearing.
+website_order=json.loads((R/'data/techniques.json').read_text())['website_usefulness']['order']
+assert len(website_order)==len(set(website_order))==len(originals)
+assert set(website_order)==set(originals)
+assert re.findall(r'<article class="note" id="([^"]+)"',index)==website_order
 assert 'id="topic-filter"' in index and 'data-technique=""' in index
 assert 'Explore the production techniques' in index and 'Explore the drums' not in index
 # The compilation remains a separately attributed, complete chronological extraction.

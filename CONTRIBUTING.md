@@ -10,6 +10,8 @@ Existing primary-source records live in `data/external.json`; the course and ful
 
 For a new Parker claim, also add its method family and practical priority to `data/techniques.json`. Prefer a title that names the production technique or decision. Keep every factual qualification; priority is editorial usefulness, not confidence. The separate best-of compilation lives in `data/best-production-2025.json` and uses BP25 note IDs. Its speaker attributions and timestamps must not be merged into Parker's claims.
 
+The website's default reading order is curated from most to least useful for a general production session in `data/techniques.json` → `website_usefulness.order`. Include every Parker note ID exactly once, placing new notes among comparable methods. Favor musical impact, a concrete action and adaptability with available tools, followed by specialized methods, supporting practices and equipment or historical context. This editorial order crosses technique families and is independent of evidence confidence; it does not change the grouped master guide or original source records. Search and filters preserve it.
+
 Regenerate and check the outputs:
 
 ```sh
