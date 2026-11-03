@@ -86,9 +86,4 @@ Open `http://localhost:8080`. The full note collection is present in the initial
 
 ## Rights and attribution
 
-Original project code and generated SVG illustrations use [the no-sale source terms](LICENSE). Original research notes retain their prior MIT permission. See [licensing scope](LICENSING.md). This license does not grant rights to third-party interviews, course material, music, album artwork, transcripts, trademarks or linked sites. The portrait collage derives from a third-party photograph, whose rights remain with its owner. Michroma ships under its SIL Open Font License; Microgramma D Extended Bold is a third-party typeface whose rights remain with its owner, and neither font is covered by the project code license. Each source retains its attribution and link; artwork credits are in [ART_DIRECTION.md](ART_DIRECTION.md). Research, design and editorial drafting were assisted by AI; corrections and direct verification are welcome.
-
-
-## License
-
-Source-available under [Ethan Source-Available No-Sale Terms 1.0](LICENSE). You can use and modify the covered code, including internally at work, and share it without charge. Selling the software, modified versions, paid access, or bundles requires a separate commercial license. Earlier licenses and third-party rights remain in force. See [scope and release policy](LICENSING.md).
+Original project code, original notes and generated SVG illustrations are MIT-licensed; see [LICENSE](LICENSE). This license does not grant rights to third-party interviews, course material, music, album artwork, transcripts, trademarks or linked sites. The portrait collage derives from a third-party photograph, whose rights remain with its owner. Michroma ships under its SIL Open Font License; Microgramma D Extended Bold is a third-party typeface whose rights remain with its owner, and neither font is covered by the MIT license. Each source retains its attribution and link; artwork credits are in [ART_DIRECTION.md](ART_DIRECTION.md). Research, design and editorial drafting were assisted by AI; corrections and direct verification are welcome.
